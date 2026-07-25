@@ -1,0 +1,390 @@
+# See config.example.yml for documentation.
+object_base: orig/GSNE8P
+object: sys/main.dol
+hash: e4c50f32242a3cd36cdc8ae776661601a52130a2
+symbols: config/GSNE8P/symbols.txt
+splits: config/GSNE8P/splits.txt
+# Change this to match the linker version.
+# See config.example.yml for a list.
+mw_comment_version: 11
+
+modules:
+# - object: files/ChaoStgLobby.rel
+#   hash: ad942cb3e97ead0019b4537bc3e9b032fee1a547
+#   symbols: config/GSNE8P/ChaoStgLobby/symbols.txt
+#   splits: config/GSNE8P/ChaoStgLobby/splits.txt
+
+- object: files/Boss_GolemD.rel
+  hash: 07afe5716bea12588255bc94d2fdae482caaae7c
+  symbols: config/GSNE8P/Boss_GolemD/symbols.txt
+  splits: config/GSNE8P/Boss_GolemD/splits.txt
+
+- object: files/Boss_GolemED.rel
+  hash: c4916f4373f68268771b6027a2e0a7d45ad2c3ef
+  symbols: config/GSNE8P/Boss_GolemED/symbols.txt
+  splits: config/GSNE8P/Boss_GolemED/splits.txt
+
+- object: files/Boss_Last2D.rel
+  hash: 677bd0b0e842031097612a905ee82eba50f444cc
+  symbols: config/GSNE8P/Boss_Last2D/symbols.txt
+  splits: config/GSNE8P/Boss_Last2D/splits.txt
+
+- object: files/CartD.rel
+  hash: 3a7aa2470d6c4334067bf216783a3ad739c1dbd7
+  symbols: config/GSNE8P/CartD/symbols.txt
+  splits: config/GSNE8P/CartD/splits.txt
+
+- object: files/ChaoMotionsD.rel
+  hash: e60502ef11973d8ff7c81c90d1a3bd9cd74e9b09
+  symbols: config/GSNE8P/ChaoMotionsD/symbols.txt
+  splits: config/GSNE8P/ChaoMotionsD/splits.txt
+
+- object: files/EmblemGetD.rel
+  hash: b3bc84cffbb902d3dd5f417abc1e356ddbf2b94c
+  symbols: config/GSNE8P/EmblemGetD/symbols.txt
+  splits: config/GSNE8P/EmblemGetD/splits.txt
+
+- object: files/EndingD.rel
+  hash: caba450b77e165189120e37a6c202e8a8e06f0d4
+  symbols: config/GSNE8P/EndingD/symbols.txt
+  splits: config/GSNE8P/EndingD/splits.txt
+
+- object: files/advertiseD.rel
+  hash: 1764d34512136037e914daa688b0fc2c605398fe
+  symbols: config/GSNE8P/advertiseD/symbols.txt
+  splits: config/GSNE8P/advertiseD/splits.txt
+
+- object: files/boss_bigbogyD.rel
+  hash: e83e55891db0e8baed9038ed1ef71290e9fc690d
+  symbols: config/GSNE8P/boss_bigbogyD/symbols.txt
+  splits: config/GSNE8P/boss_bigbogyD/splits.txt
+
+- object: files/boss_bigfootD.rel
+  hash: d967fde6c63aaa7f7ae57116f2cb5bffb2846084
+  symbols: config/GSNE8P/boss_bigfootD/symbols.txt
+  splits: config/GSNE8P/boss_bigfootD/splits.txt
+
+- object: files/boss_fdogD.rel
+  hash: 9a5f6c2dee422ec300db7f36dc72eddf9e4ae028
+  symbols: config/GSNE8P/boss_fdogD/symbols.txt
+  splits: config/GSNE8P/boss_fdogD/splits.txt
+
+- object: files/boss_hotshotD.rel
+  hash: 98d15c6e8fdf63216cbd6d718225d7515f2a9494
+  symbols: config/GSNE8P/boss_hotshotD/symbols.txt
+  splits: config/GSNE8P/boss_hotshotD/splits.txt
+
+- object: files/boss_last1D.rel
+  hash: 2393ed486a62af5cdff29d43171191d377d268c7
+  symbols: config/GSNE8P/boss_last1D/symbols.txt
+  splits: config/GSNE8P/boss_last1D/splits.txt
+
+- object: files/eventD.rel
+  hash: 188a4276b8180b9d70ca3b6f1d22bfc3ac99b22d
+  symbols: config/GSNE8P/eventD/symbols.txt
+  splits: config/GSNE8P/eventD/splits.txt
+
+- object: files/mcwarnD.rel
+  hash: 5344686948f7deb3e82e2df8d38d8ba1018be777
+  symbols: config/GSNE8P/mcwarnD/symbols.txt
+  splits: config/GSNE8P/mcwarnD/splits.txt
+
+- object: files/otherprintD.rel
+  hash: 4bf8d4fb431fff42ded04e12ae01d5846a083fc6
+  symbols: config/GSNE8P/otherprintD/symbols.txt
+  splits: config/GSNE8P/otherprintD/splits.txt
+
+- object: files/stg00D.rel
+  hash: 38aa2f5614ded2a2a0a96007552e9140603f0ea1
+  symbols: config/GSNE8P/stg00D/symbols.txt
+  splits: config/GSNE8P/stg00D/splits.txt
+
+- object: files/stg03D.rel
+  hash: 79eda3b69de5f486943910c7b53e72776d8eeb36
+  symbols: config/GSNE8P/stg03D/symbols.txt
+  splits: config/GSNE8P/stg03D/splits.txt
+
+- object: files/stg04D.rel
+  hash: 505d4395e365613c6e449d79d29df2ad599247a4
+  symbols: config/GSNE8P/stg04D/symbols.txt
+  splits: config/GSNE8P/stg04D/splits.txt
+
+- object: files/stg05D.rel
+  hash: 5d31b54cbcb88916a0e91332b24c5845efae1f93
+  symbols: config/GSNE8P/stg05D/symbols.txt
+  splits: config/GSNE8P/stg05D/splits.txt
+
+- object: files/stg06D.rel
+  hash: 1b05ca30ff4688ebfbfabab337f4fa4205add40b
+  symbols: config/GSNE8P/stg06D/symbols.txt
+  splits: config/GSNE8P/stg06D/splits.txt
+
+- object: files/stg07D.rel
+  hash: 553f478ffb41073621b2eaa0246be9c8407d7d42
+  symbols: config/GSNE8P/stg07D/symbols.txt
+  splits: config/GSNE8P/stg07D/splits.txt
+
+- object: files/stg08D.rel
+  hash: 43cabacb6261641042b0bcbbdd27afdbc6ee1646
+  symbols: config/GSNE8P/stg08D/symbols.txt
+  splits: config/GSNE8P/stg08D/splits.txt
+
+- object: files/stg09D.rel
+  hash: 91fdb50d67e69d04439f19eb10b0777db5fefeaf
+  symbols: config/GSNE8P/stg09D/symbols.txt
+  splits: config/GSNE8P/stg09D/splits.txt
+
+- object: files/stg10D.rel
+  hash: 298158aa195bb792d609fbd285b63c1d3d376cdf
+  symbols: config/GSNE8P/stg10D/symbols.txt
+  splits: config/GSNE8P/stg10D/splits.txt
+
+- object: files/stg11D.rel
+  hash: 8fbe506bcbbe6f012d2bb8240edb5f6c8cb6ece0
+  symbols: config/GSNE8P/stg11D/symbols.txt
+  splits: config/GSNE8P/stg11D/splits.txt
+
+- object: files/stg12D.rel
+  hash: 119d3da1c7881c586df413b19b2397752335cefb
+  symbols: config/GSNE8P/stg12D/symbols.txt
+  splits: config/GSNE8P/stg12D/splits.txt
+
+- object: files/stg13D.rel
+  hash: 3a36fca0ad82957f2221832255ec636078ea8683
+  symbols: config/GSNE8P/stg13D/symbols.txt
+  splits: config/GSNE8P/stg13D/splits.txt
+
+- object: files/stg14D.rel
+  hash: 68b094fa0f3e58adb7276d34d4b9881ac1c64fae
+  symbols: config/GSNE8P/stg14D/symbols.txt
+  splits: config/GSNE8P/stg14D/splits.txt
+
+- object: files/stg15D.rel
+  hash: 0fbe72d0902c09020f7c2674358d8f5003e4b5e7
+  symbols: config/GSNE8P/stg15D/symbols.txt
+  splits: config/GSNE8P/stg15D/splits.txt
+
+- object: files/stg16D.rel
+  hash: 10d0e903562d9fd29464abe56a7b28fb64cd783b
+  symbols: config/GSNE8P/stg16D/symbols.txt
+  splits: config/GSNE8P/stg16D/splits.txt
+
+- object: files/stg17D.rel
+  hash: b2a464d4dbf3516e4691c4ec468594dc2b9632c9
+  symbols: config/GSNE8P/stg17D/symbols.txt
+  splits: config/GSNE8P/stg17D/splits.txt
+
+- object: files/stg18D.rel
+  hash: a25d43bf6fbfb8502192dc30c43d0d6071dcad99
+  symbols: config/GSNE8P/stg18D/symbols.txt
+  splits: config/GSNE8P/stg18D/splits.txt
+
+- object: files/stg19D.rel
+  hash: c99357c2344dac1c77a32316c62d10daae67f97a
+  symbols: config/GSNE8P/stg19D/symbols.txt
+  splits: config/GSNE8P/stg19D/splits.txt
+
+- object: files/stg20D.rel
+  hash: 30dece39cd429b877fc0cf4e5de9e4b014f3b8cc
+  symbols: config/GSNE8P/stg20D/symbols.txt
+  splits: config/GSNE8P/stg20D/splits.txt
+
+- object: files/stg21D.rel
+  hash: 20bf7f6d7b23ca39019fa9d0ebebbb11a6df27f5
+  symbols: config/GSNE8P/stg21D/symbols.txt
+  splits: config/GSNE8P/stg21D/splits.txt
+
+- object: files/stg22D.rel
+  hash: fdb92884d14ebf6402672c198dd44e3f49dae6c0
+  symbols: config/GSNE8P/stg22D/symbols.txt
+  splits: config/GSNE8P/stg22D/splits.txt
+
+- object: files/stg23D.rel
+  hash: e70ecbc3d9e388139c3f17e51f431d5c0218d1a1
+  symbols: config/GSNE8P/stg23D/symbols.txt
+  splits: config/GSNE8P/stg23D/splits.txt
+
+- object: files/stg24D.rel
+  hash: 021cbd0346fa4c5d5f4f31dd47ac3c23f8ade313
+  symbols: config/GSNE8P/stg24D/symbols.txt
+  splits: config/GSNE8P/stg24D/splits.txt
+
+- object: files/stg25D.rel
+  hash: 472450fae3bdb699ea5050b2df0518651a3fa95d
+  symbols: config/GSNE8P/stg25D/symbols.txt
+  splits: config/GSNE8P/stg25D/splits.txt
+
+- object: files/stg26D.rel
+  hash: 422b5269dfab1b456c59a1330f980526d96e8b42
+  symbols: config/GSNE8P/stg26D/symbols.txt
+  splits: config/GSNE8P/stg26D/splits.txt
+
+- object: files/stg27D.rel
+  hash: 1f771377fb876aa16c1e689356fcaf4dca7730fc
+  symbols: config/GSNE8P/stg27D/symbols.txt
+  splits: config/GSNE8P/stg27D/splits.txt
+
+- object: files/stg28D.rel
+  hash: 3d37dbc6a4fc067ccf179f71fb6f9b063730ac13
+  symbols: config/GSNE8P/stg28D/symbols.txt
+  splits: config/GSNE8P/stg28D/splits.txt
+
+- object: files/stg29D.rel
+  hash: f29cd3bdff743569954df6ade161f759f81cb80f
+  symbols: config/GSNE8P/stg29D/symbols.txt
+  splits: config/GSNE8P/stg29D/splits.txt
+
+- object: files/stg30D.rel
+  hash: f1f20b1482c0b0b6d6c3a704f204ffaf9ad20d61
+  symbols: config/GSNE8P/stg30D/symbols.txt
+  splits: config/GSNE8P/stg30D/splits.txt
+
+- object: files/stg31D.rel
+  hash: 1c3864b5fb8eea49d643a36f65449e7d8d62eb0f
+  symbols: config/GSNE8P/stg31D/symbols.txt
+  splits: config/GSNE8P/stg31D/splits.txt
+
+- object: files/stg32D.rel
+  hash: fbca7181a65353b33d421405cc6d1e32571e9801
+  symbols: config/GSNE8P/stg32D/symbols.txt
+  splits: config/GSNE8P/stg32D/splits.txt
+
+- object: files/stg33D.rel
+  hash: e113e6500f985dacfd388eaa858376da9ac51980
+  symbols: config/GSNE8P/stg33D/symbols.txt
+  splits: config/GSNE8P/stg33D/splits.txt
+
+- object: files/stg34D.rel
+  hash: dac3ed6ea94b903e4d4c82d8150999706ccace3b
+  symbols: config/GSNE8P/stg34D/symbols.txt
+  splits: config/GSNE8P/stg34D/splits.txt
+
+- object: files/stg35D.rel
+  hash: 9490839026c4cda53afc26fae93ec59330ba3fe8
+  symbols: config/GSNE8P/stg35D/symbols.txt
+  splits: config/GSNE8P/stg35D/splits.txt
+
+- object: files/stg36D.rel
+  hash: 1a379b03c70b3f887cac11158d78e50275f5f29f
+  symbols: config/GSNE8P/stg36D/symbols.txt
+  splits: config/GSNE8P/stg36D/splits.txt
+
+- object: files/stg37D.rel
+  hash: 5351f425609aa2e9eecd6cff1b734eff9389ee5e
+  symbols: config/GSNE8P/stg37D/symbols.txt
+  splits: config/GSNE8P/stg37D/splits.txt
+
+- object: files/stg38D.rel
+  hash: 550b95890f32ae2827560b2f57345f5b5082a46f
+  symbols: config/GSNE8P/stg38D/symbols.txt
+  splits: config/GSNE8P/stg38D/splits.txt
+
+- object: files/stg39D.rel
+  hash: 2878aedafe9b77a806d6309873756d17a50e26a9
+  symbols: config/GSNE8P/stg39D/symbols.txt
+  splits: config/GSNE8P/stg39D/splits.txt
+
+- object: files/stg40D.rel
+  hash: 8bd0c9dbe95c650a2c77252d36abf8e7089d4387
+  symbols: config/GSNE8P/stg40D/symbols.txt
+  splits: config/GSNE8P/stg40D/splits.txt
+
+- object: files/stg41D.rel
+  hash: a873d2cb599ad6277ed60f9d6d23ad30980c0c89
+  symbols: config/GSNE8P/stg41D/symbols.txt
+  splits: config/GSNE8P/stg41D/splits.txt
+
+- object: files/stg42D.rel
+  hash: 8feac8b6e4e36aa9eacacf43fbbec4ade1222cf8
+  symbols: config/GSNE8P/stg42D/symbols.txt
+  splits: config/GSNE8P/stg42D/splits.txt
+
+- object: files/stg43D.rel
+  hash: dd8b7b7e76ae65a241283bf6d6c249df7b56df1f
+  symbols: config/GSNE8P/stg43D/symbols.txt
+  splits: config/GSNE8P/stg43D/splits.txt
+
+- object: files/stg44D.rel
+  hash: 8f310f6717d1ee71d70262cd629dae93866961c0
+  symbols: config/GSNE8P/stg44D/symbols.txt
+  splits: config/GSNE8P/stg44D/splits.txt
+
+- object: files/stg45D.rel
+  hash: 7478cd6bc422a4645110737d3c7fe4e26434b787
+  symbols: config/GSNE8P/stg45D/symbols.txt
+  splits: config/GSNE8P/stg45D/splits.txt
+
+- object: files/stg46D.rel
+  hash: 112da484543784fcfab3107e49a2d34a7cfb56fd
+  symbols: config/GSNE8P/stg46D/symbols.txt
+  splits: config/GSNE8P/stg46D/splits.txt
+
+- object: files/stg47D.rel
+  hash: 05db01b42d0663ab588cccd199eea20393dff2c0
+  symbols: config/GSNE8P/stg47D/symbols.txt
+  splits: config/GSNE8P/stg47D/splits.txt
+
+- object: files/stg48D.rel
+  hash: 5d0a95ac2f11ceecafe1422d6482c52b4657a4a8
+  symbols: config/GSNE8P/stg48D/symbols.txt
+  splits: config/GSNE8P/stg48D/splits.txt
+
+- object: files/stg49D.rel
+  hash: 42d61f969faec4c6ab22de4886017e6b547a40e0
+  symbols: config/GSNE8P/stg49D/symbols.txt
+  splits: config/GSNE8P/stg49D/splits.txt
+
+- object: files/stg50D.rel
+  hash: e903b4a3b3609c4d06ea0bd3c2caecdde6d245e5
+  symbols: config/GSNE8P/stg50D/symbols.txt
+  splits: config/GSNE8P/stg50D/splits.txt
+
+- object: files/stg51D.rel
+  hash: df8e320b6bf6bb30f9eaf10ea45323d080449219
+  symbols: config/GSNE8P/stg51D/symbols.txt
+  splits: config/GSNE8P/stg51D/splits.txt
+
+- object: files/stg52D.rel
+  hash: 2e165f3dcacba4f6f260789bd28abb163db2d58e
+  symbols: config/GSNE8P/stg52D/symbols.txt
+  splits: config/GSNE8P/stg52D/splits.txt
+
+- object: files/stg53D.rel
+  hash: 2171e754201eff61b37cd4047f64fb8c99348fd2
+  symbols: config/GSNE8P/stg53D/symbols.txt
+  splits: config/GSNE8P/stg53D/splits.txt
+
+- object: files/stg54D.rel
+  hash: cc4ac7d50e8116fc6000c284914e08262c20d2f2
+  symbols: config/GSNE8P/stg54D/symbols.txt
+  splits: config/GSNE8P/stg54D/splits.txt
+
+- object: files/stg55D.rel
+  hash: b7e307cc0db93267ed9aecf2d8ac5593d224248c
+  symbols: config/GSNE8P/stg55D/symbols.txt
+  splits: config/GSNE8P/stg55D/splits.txt
+
+- object: files/stg56D.rel
+  hash: ea048db60f28b71bf53ba0088b2fc348cb21e053
+  symbols: config/GSNE8P/stg56D/symbols.txt
+  splits: config/GSNE8P/stg56D/splits.txt
+
+- object: files/stg57D.rel
+  hash: bf269a652082b6ac16eb4fdfb54d7d036b94e4c5
+  symbols: config/GSNE8P/stg57D/symbols.txt
+  splits: config/GSNE8P/stg57D/splits.txt
+
+- object: files/stg58D.rel
+  hash: 0ae690047e1e834fa9583d427e89ca170c0a0044
+  symbols: config/GSNE8P/stg58D/symbols.txt
+  splits: config/GSNE8P/stg58D/splits.txt
+
+- object: files/stg59D.rel
+  hash: 305b118aa8601539b3cd53636c4211cfc7a017af
+  symbols: config/GSNE8P/stg59D/symbols.txt
+  splits: config/GSNE8P/stg59D/splits.txt
+
+- object: files/titleD.rel
+  hash: 68ff4296329274c250e5dab409927012bbe3774b
+  symbols: config/GSNE8P/titleD/symbols.txt
+  splits: config/GSNE8P/titleD/splits.txt
