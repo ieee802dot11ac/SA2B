@@ -7,7 +7,7 @@ Sections:
 	.bss        type:bss align:8
 
 54d_0.c:
-	.text       start:0x00000000 end:0x000009A4
+	.text       start:0x00000000 end:0x00000A18
 	.rodata     start:0x00000000 end:0x00000048
 
 54d_1.c:
@@ -79,4 +79,164 @@ Sections:
 	.rodata     start:0x000003B0 end:0x00000418
 
 54d_18.c:
-	.text       start:0x0000C6A4 end:0x0000C7A4
+	.text       start:0x0000C6A4 end:0x0000D118
+	.rodata     start:0x00000418 end:0x00000460
+
+54d_19.c:
+	.text       start:0x0000D118 end:0x0000D424
+	.rodata     start:0x00000460 end:0x00000488
+
+54d_20.c:
+	.text       start:0x0000D424 end:0x0000D7EC
+	.rodata     start:0x00000488 end:0x000004B8
+
+54d_21.c:
+	.text       start:0x0000D7EC end:0x0000E374
+	.rodata     start:0x000004B8 end:0x00000510
+
+54d_22.c:
+	.text       start:0x0000E374 end:0x0000E73C
+	.rodata     start:0x00000510 end:0x00000540
+
+54d_23.c:
+	.text       start:0x0000E73C end:0x0000E9D4
+	.rodata     start:0x00000540 end:0x00000568
+
+54d_24.c:
+	.text       start:0x0000E9D4 end:0x0000EB78
+
+54d_25.c:
+	.text       start:0x0000EB78 end:0x0000F014
+	.rodata     start:0x00000568 end:0x00000588
+
+54d_26.c:
+	.text       start:0x0000F014 end:0x0000F49C
+	.rodata     start:0x00000588 end:0x000005A8
+
+54d_27.c:
+	.text       start:0x0000F49C end:0x0000FABC
+	.rodata     start:0x000005A8 end:0x000005C8
+
+54d_28.c:
+	.text       start:0x0000FABC end:0x00011014
+	.rodata     start:0x000005C8 end:0x00000610
+
+54d_29.c:
+	.text       start:0x00011014 end:0x00011AD4
+	.rodata     start:0x00000610 end:0x00000660
+
+54d_30.c:
+	.text       start:0x00011AD4 end:0x00011E88
+	.rodata     start:0x00000660 end:0x00000680
+
+54d_31.c:
+	.text       start:0x00011E88 end:0x000127F8
+	.rodata     start:0x00000680 end:0x000006C8
+
+54d_32.c:
+	.text       start:0x000127F8 end:0x00013148
+	.rodata     start:0x000006C8 end:0x000006E0
+
+54d_33.c:
+	.text       start:0x00013148 end:0x00013B4C
+	.rodata     start:0x000006E0 end:0x00000700
+
+54d_34.c:
+	.text       start:0x00013B4C end:0x00014E68
+	.rodata     start:0x00000700 end:0x00000758
+
+54d_35.c:
+	.text       start:0x00014E68 end:0x000159D4
+	.rodata     start:0x00000758 end:0x00000780
+
+54d_36.c:
+	.text       start:0x000159D4 end:0x00016A44
+	.rodata     start:0x00000780 end:0x000007B8
+
+54d_37.c:
+	.text       start:0x00016A44 end:0x000176EC
+	.rodata     start:0x000007B8 end:0x000007F8
+
+54d_38.c:
+	.text       start:0x000176EC end:0x000183BC
+	.rodata     start:0x000007F8 end:0x00000840
+
+54d_39.c:
+	.text       start:0x000183BC end:0x00019330
+	.rodata     start:0x00000840 end:0x00000870
+
+54d_40.c:
+	.text       start:0x00019330 end:0x00019780
+	.rodata     start:0x00000870 end:0x00000878
+
+54d_41.c:
+	.text       start:0x00019780 end:0x0001B8D0
+	.rodata     start:0x00000878 end:0x000008E8
+
+54d_42.c:
+	.text       start:0x0001C2B8 end:0x000206C4
+	.rodata     start:0x000008E8 end:0x000009D0
+
+54d_43.c:
+	.text       start:0x00020720 end:0x00022948
+	.rodata     start:0x000009D0 end:0x00000A68
+
+54d_44.c:
+	.text       start:0x000229DC end:0x00023A6C
+	.rodata     start:0x00000A68 end:0x00000AA0
+
+54d_45.c:
+	.text       start:0x00023A8C end:0x000242C4
+	.rodata     start:0x00000AA0 end:0x00000AD8
+
+54d_46.c:
+	.text       start:0x000244B0 end:0x000255C0
+	.rodata     start:0x00000AD8 end:0x00000B38
+
+54d_47.c:
+	.text       start:0x000255D4 end:0x00026784
+	.rodata     start:0x00000B38 end:0x00000B78
+
+54d_48.c:
+	.text       start:0x000267B8 end:0x000276DC
+	.rodata     start:0x00000B78 end:0x00000BA8
+
+54d_49.c:
+	.text       start:0x000277A0 end:0x00028A98
+	.rodata     start:0x00000BA8 end:0x00000C28
+
+54d_50.c:
+	.text       start:0x00028D00 end:0x0002A248
+	.rodata     start:0x00000C28 end:0x00000C88
+
+54d_51.c:
+	.text       start:0x0002A248 end:0x0002C278
+	.rodata     start:0x00000C88 end:0x00000D48
+
+54d_52.c:
+	.text       start:0x0002C328 end:0x0002D090
+	.rodata     start:0x00000D48 end:0x00000D90
+
+54d_53.c:
+	.text       start:0x0002D090 end:0x0002D6A0
+	.rodata     start:0x00000D90 end:0x00000E28
+
+54d_54.c:
+	.text       start:0x0002D878 end:0x0002EDA4
+	.rodata     start:0x00000E28 end:0x00000EE8
+
+54d_55.c:
+	.text       start:0x0002EDA8 end:0x0002FB88
+	.rodata     start:0x00000EE8 end:0x00000F30
+
+54d_56.c:
+	.text       start:0x0002FBDC end:0x00032838
+	.rodata     start:0x00000F30 end:0x00000FE8
+
+54d_57.c:
+	.text       start:0x00032874 end:0x00033DC0
+	.rodata     start:0x00000FE8 end:0x00001058
+
+54d_58.c:
+	.text       start:0x0003420C end:0x000356A4
+	.rodata     start:0x00001058 end:0x000010E8
