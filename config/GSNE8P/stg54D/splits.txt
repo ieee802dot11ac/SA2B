@@ -25,3 +25,58 @@ Sections:
 54d_4.c:
 	.text       start:0x000026A8 end:0x00002734
 	.rodata     start:0x00000100 end:0x00000118
+
+54d_5.c:
+	.text       start:0x00002734 end:0x000028B8
+
+54d_6.c:
+	.text       start:0x000028B8 end:0x00002F68
+	.rodata     start:0x00000118 end:0x00000140
+
+54d_7.c:
+	.text       start:0x00002F68 end:0x00003A3C
+	.rodata     start:0x00000140 end:0x00000180
+
+54d_8.c:
+	.text       start:0x00003A3C end:0x00003DE0
+	.rodata     start:0x00000180 end:0x000001A8
+
+54d_9.c:
+	.text       start:0x00003DE0 end:0x00003FB8
+
+54d_10.c:
+	.text       start:0x00003FB8 end:0x00004304
+
+54_prolog_epilog.c:
+	.text       start:0x00004304 end:0x00004330
+
+54d_11.c:
+	.text       start:0x00004330 end:0x00005044
+	.rodata     start:0x000001A8 end:0x00000278
+
+54d_12.c:
+	.text       start:0x00005044 end:0x00005638
+	.rodata     start:0x00000278 end:0x000002A0
+
+54d_13.c:
+	.text       start:0x00005638 end:0x000064E8
+	.rodata     start:0x000002A0 end:0x000002A8
+
+54d_14.c:
+	.text       start:0x000064E8 end:0x0000A56C
+	.rodata     start:0x000002A8 end:0x00000398
+
+54d_15.c:
+	.text       start:0x0000A56C end:0x0000A6A0
+	.rodata     start:0x00000398 end:0x000003A8
+
+54d_16.c:
+	.text       start:0x0000A6A0 end:0x0000A768
+	.rodata     start:0x000003A8 end:0x000003B0
+
+54d_17.c:
+	.text       start:0x0000A768 end:0x0000C6A4
+	.rodata     start:0x000003B0 end:0x00000418
+
+54d_18.c:
+	.text       start:0x0000C6A4 end:0x0000C7A4
