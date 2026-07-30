@@ -226,17 +226,17 @@ Sections:
 	.rodata     start:0x00000E28 end:0x00000EE8
 
 54d_55.c:
-	.text       start:0x0002EDA8 end:0x0002FB88
+	.text       start:0x0002EDA4 end:0x0002FB88
 	.rodata     start:0x00000EE8 end:0x00000F30
 
 54d_56.c:
-	.text       start:0x0002FBDC end:0x00032838
+	.text       start:0x0002FBD8 end:0x00032838
 	.rodata     start:0x00000F30 end:0x00000FE8
 
 54d_57.c:
-	.text       start:0x00032874 end:0x00033DC0
+	.text       start:0x00032870 end:0x00033DC0
 	.rodata     start:0x00000FE8 end:0x00001058
 
 54d_58.c:
-	.text       start:0x0003420C end:0x000356A4
+	.text       start:0x00034208 end:0x000356A4
 	.rodata     start:0x00001058 end:0x000010E8
