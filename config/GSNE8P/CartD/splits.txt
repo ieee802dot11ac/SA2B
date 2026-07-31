@@ -1,7 +1,107 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
-	.data       type:data align:32
-	.bss        type:bss align:32
+	.data       type:data align:8
+	.bss        type:bss align:8
+CartD_0.c:
+	.text	start:0X000001A4 end:0X00000624
+	.rodata	start:0X00000000 end:0X00000150
+CartD_1.c:
+	.text	start:0X00000734 end:0X000009AC
+	.rodata	start:0X00000150 end:0X00000160
+CartD_2.c:
+	.text	start:0X000009AC end:0X00000C74
+	.rodata	start:0X00000160 end:0X00000170
+CartD_3.c:
+	.text	start:0X00000C74 end:0X00000D00
+	.rodata	start:0X00000170 end:0X00000188
+CartD_4.c:
+	.text	start:0X00000F18 end:0X000016C8
+	.rodata	start:0X00000188 end:0X000001C0
+CartD_5.c:
+	.text	start:0X000017E8 end:0X0000190C
+	.rodata	start:0X000001C0 end:0X000001C8
+CartD_6.c:
+	.text	start:0X00001968 end:0X00005E78
+	.rodata	start:0X000001C8 end:0X000002A8
+CartD_7.c:
+	.text	start:0X0000684C end:0X00006A30
+	.rodata	start:0X000002A8 end:0X000002B8
+CartD_8.c:
+	.text	start:0X00006CA8 end:0X00006EF0
+	.rodata	start:0X000002B8 end:0X000002D0
+CartD_9.c:
+	.text	start:0X000070E4 end:0X00007578
+	.rodata	start:0X000002D0 end:0X000002F0
+CartD_10.c:
+	.text	start:0X000077B8 end:0X000078B0
+	.rodata	start:0X000002F0 end:0X000002F8
+CartD_11.c:
+	.text	start:0X000079C8 end:0X00008044
+	.rodata	start:0X000002F8 end:0X00000330
+CartD_12.c:
+	.text	start:0X000082C8 end:0X000094F4
+	.rodata	start:0X00000330 end:0X00000358
+CartD_13.c:
+	.text	start:0X00009B60 end:0X00009F0C
+	.rodata	start:0X00000358 end:0X00000370
+CartD_14.c:
+	.text	start:0X0000A004 end:0X0000A0F0
+	.rodata	start:0X00000370 end:0X00000378
+CartD_15.c:
+	.text	start:0X0000A138 end:0X0000A7B4
+	.rodata	start:0X00000378 end:0X000003B8
+CartD_16.c:
+	.text	start:0X0000A824 end:0X0000AC40
+	.rodata	start:0X000003B8 end:0X000003E0
+CartD_17.c:
+	.text	start:0X0000AC40 end:0X0000AE40
+	.rodata	start:0X000003E0 end:0X000003F0
+CartD_18.c:
+	.text	start:0X0000B014 end:0X0000B24C
+	.rodata	start:0X000003F0 end:0X00000400
+CartD_19.c:
+	.text	start:0X0000B5CC end:0X0000B834
+	.rodata	start:0X00000400 end:0X00000408
+CartD_20.c:
+	.text	start:0X0000BBE4 end:0X0000BC94
+	.rodata	start:0X00000408 end:0X00000410
+CartD_21.c:
+	.text	start:0X0000BC98 end:0X0000BF50
+	.rodata	start:0X00000410 end:0X00000420
+CartD_22.c:
+	.text	start:0X0000C004 end:0X0000C164
+	.rodata	start:0X00000420 end:0X00000428
+CartD_23.c:
+	.text	start:0X0000C168 end:0X0000C228
+	.rodata	start:0X00000428 end:0X00000438
+CartD_24.c:
+	.text	start:0X0000C390 end:0X0000D954
+	.rodata	start:0X00000438 end:0X00000480
+CartD_25.c:
+	.text	start:0X0000D968 end:0X0000DBE0
+	.rodata	start:0X00000480 end:0X00000490
+CartD_26.c:
+	.text	start:0X0000DBE0 end:0X0000DD00
+	.rodata	start:0X00000490 end:0X000004A0
+CartD_27.c:
+	.text	start:0X0000E2E4 end:0X0000EE2C
+	.rodata	start:0X000004A0 end:0X000004C0
+CartD_28.c:
+	.text	start:0X0000EEC0 end:0X0000F524
+	.rodata	start:0X000004C0 end:0X000004E8
+CartD_29.c:
+	.text	start:0X0000F5E8 end:0X0000F64C
+	.rodata	start:0X000004E8 end:0X000004F0
+CartD_30.c:
+	.text	start:0X0000F8DC end:0X0000FC10
+	.rodata	start:0X000004F0 end:0X00000520
+CartD_31.c:
+	.text	start:0X00010304 end:0X00010614
+	.rodata	start:0X00000520 end:0X00000540
+CartD_32.c:
+	.text	start:0X00010B54 end:0X00010F1C
+	.rodata	start:0X00000540 end:0X00000570

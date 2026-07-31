@@ -1,7 +1,23 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
-	.data       type:data align:32
+	.data       type:data align:8
 	.bss        type:bss align:8
+EmblemGetD_0.c:
+	.text	start:0X000005CC end:0X000006FC
+	.rodata	start:0X00000000 end:0X00000008
+EmblemGetD_1.c:
+	.text	start:0X000007F0 end:0X00000E28
+	.rodata	start:0X00000008 end:0X00000030
+EmblemGetD_2.c:
+	.text	start:0X00000EE4 end:0X000010E4
+	.rodata	start:0X00000030 end:0X00000050
+EmblemGetD_3.c:
+	.text	start:0X000011A0 end:0X000014AC
+	.rodata	start:0X00000050 end:0X00000078
+EmblemGetD_4.c:
+	.text	start:0X000014AC end:0X00001510
+	.rodata	start:0X00000078 end:0X00000080

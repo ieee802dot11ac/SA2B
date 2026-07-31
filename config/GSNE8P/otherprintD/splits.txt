@@ -1,3 +1,4 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -5,3 +6,12 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+otherprintD_0.c:
+	.text	start:0X00000248 end:0X00000414
+	.rodata	start:0X00000000 end:0X00000010
+otherprintD_1.c:
+	.text	start:0X00000414 end:0X00000C5C
+	.rodata	start:0X00000010 end:0X00000020
+otherprintD_2.c:
+	.text	start:0X00000D2C end:0X00000F00
+	.rodata	start:0X00000020 end:0X00000030

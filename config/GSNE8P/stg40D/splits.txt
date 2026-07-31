@@ -1,7 +1,308 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
-	.data       type:data align:32
+	.data       type:data align:8
 	.bss        type:bss align:8
+stg40D_0.c:
+	.text	start:0X000000B8 end:0X00000200
+	.rodata	start:0X00000000 end:0X00000008
+stg40D_1.c:
+	.text	start:0X00000544 end:0X00000694
+	.rodata	start:0X00000008 end:0X00000010
+stg40D_2.c:
+	.text	start:0X0000070C end:0X000022AC
+	.rodata	start:0X00000010 end:0X00000050
+stg40D_3.c:
+	.text	start:0X000023B8 end:0X000033F8
+	.rodata	start:0X00000050 end:0X000000A8
+stg40D_4.c:
+	.text	start:0X00003510 end:0X00003664
+	.rodata	start:0X000000A8 end:0X000000B0
+stg40D_5.c:
+	.text	start:0X000037B0 end:0X00003880
+	.rodata	start:0X000000B0 end:0X000000B8
+stg40D_6.c:
+	.text	start:0X00003924 end:0X00003B28
+	.rodata	start:0X000000B8 end:0X000000C8
+stg40D_7.c:
+	.text	start:0X00003C00 end:0X00003D40
+	.rodata	start:0X000000C8 end:0X000000D0
+stg40D_8.c:
+	.text	start:0X00003D40 end:0X00003FD8
+	.rodata	start:0X000000D0 end:0X000000E0
+stg40D_9.c:
+	.text	start:0X00004034 end:0X0000420C
+	.rodata	start:0X000000E0 end:0X000000F0
+stg40D_10.c:
+	.text	start:0X000044C8 end:0X00005504
+	.rodata	start:0X00000158 end:0X00000198
+stg40D_11.c:
+	.text	start:0X00005708 end:0X00005A78
+	.rodata	start:0X00000198 end:0X000001B0
+stg40D_12.c:
+	.text	start:0X00005B30 end:0X00005C0C
+	.rodata	start:0X000001B0 end:0X000001B8
+stg40D_13.c:
+	.text	start:0X000060AC end:0X0000AFD4
+	.rodata	start:0X000001B8 end:0X000002D0
+stg40D_14.c:
+	.text	start:0X0000AFD4 end:0X0000B100
+	.rodata	start:0X000002D0 end:0X000002E0
+stg40D_15.c:
+	.text	start:0X0000B108 end:0X0000B1D0
+	.rodata	start:0X000002E0 end:0X000002E8
+stg40D_16.c:
+	.text	start:0X0000B1D0 end:0X0000D624
+	.rodata	start:0X000002E8 end:0X00000350
+stg40D_17.c:
+	.text	start:0X0000D624 end:0X0000D7B0
+	.rodata	start:0X00000350 end:0X00000378
+stg40D_18.c:
+	.text	start:0X0000D880 end:0X0000DDF4
+	.rodata	start:0X00000378 end:0X000003B0
+stg40D_19.c:
+	.text	start:0X0000DEF4 end:0X0000E868
+	.rodata	start:0X000003B0 end:0X000003F8
+stg40D_20.c:
+	.text	start:0X0000E868 end:0X0000EB74
+	.rodata	start:0X000003F8 end:0X00000420
+stg40D_21.c:
+	.text	start:0X0000EB74 end:0X0000F1D8
+	.rodata	start:0X00000420 end:0X00000448
+stg40D_22.c:
+	.text	start:0X0000F4B8 end:0X0000FAB0
+	.rodata	start:0X00000448 end:0X00000490
+stg40D_23.c:
+	.text	start:0X0000FB2C end:0X0000FE40
+	.rodata	start:0X00000490 end:0X000004A8
+stg40D_24.c:
+	.text	start:0X0000FE40 end:0X000100C8
+	.rodata	start:0X000004A8 end:0X000004B0
+stg40D_25.c:
+	.text	start:0X000101D4 end:0X00010910
+	.rodata	start:0X000004B0 end:0X000004E0
+stg40D_26.c:
+	.text	start:0X00010910 end:0X00010A8C
+	.rodata	start:0X000004E0 end:0X000004F8
+stg40D_27.c:
+	.text	start:0X00010A8C end:0X00010E30
+	.rodata	start:0X000004F8 end:0X00000500
+stg40D_28.c:
+	.text	start:0X00010E30 end:0X00011498
+	.rodata	start:0X00000500 end:0X00000538
+stg40D_29.c:
+	.text	start:0X00011498 end:0X00011C68
+	.rodata	start:0X00000538 end:0X00000578
+stg40D_30.c:
+	.text	start:0X00011EE8 end:0X00012900
+	.rodata	start:0X00000578 end:0X000005B8
+stg40D_31.c:
+	.text	start:0X00012900 end:0X00012C54
+	.rodata	start:0X000005B8 end:0X000005E8
+stg40D_32.c:
+	.text	start:0X00012D24 end:0X0001307C
+	.rodata	start:0X000005E8 end:0X00000600
+stg40D_33.c:
+	.text	start:0X0001307C end:0X000134AC
+	.rodata	start:0X00000600 end:0X00000610
+stg40D_34.c:
+	.text	start:0X0001352C end:0X000136E8
+	.rodata	start:0X00000610 end:0X00000638
+stg40D_35.c:
+	.text	start:0X000136E8 end:0X00014728
+	.rodata	start:0X00000638 end:0X00000688
+stg40D_36.c:
+	.text	start:0X00014A68 end:0X00014C00
+	.rodata	start:0X00000688 end:0X000006A0
+stg40D_37.c:
+	.text	start:0X00014C00 end:0X00014F04
+	.rodata	start:0X000006A0 end:0X000006A8
+stg40D_38.c:
+	.text	start:0X00014F04 end:0X0001538C
+	.rodata	start:0X000006A8 end:0X000006C8
+stg40D_39.c:
+	.text	start:0X00015428 end:0X000158AC
+	.rodata	start:0X000006C8 end:0X000006E8
+stg40D_40.c:
+	.text	start:0X00015AA8 end:0X00016F04
+	.rodata	start:0X000006E8 end:0X00000730
+stg40D_41.c:
+	.text	start:0X00016F04 end:0X000179C4
+	.rodata	start:0X00000730 end:0X00000780
+stg40D_42.c:
+	.text	start:0X000179C4 end:0X00017CB8
+	.rodata	start:0X00000780 end:0X00000798
+stg40D_43.c:
+	.text	start:0X00017CB8 end:0X00017D78
+	.rodata	start:0X00000798 end:0X000007A0
+stg40D_44.c:
+	.text	start:0X00017D78 end:0X000185FC
+	.rodata	start:0X000007A0 end:0X000007E8
+stg40D_45.c:
+	.text	start:0X000186E8 end:0X000191E0
+	.rodata	start:0X000007E8 end:0X00000830
+stg40D_46.c:
+	.text	start:0X00019300 end:0X0001A144
+	.rodata	start:0X00000830 end:0X00000888
+stg40D_47.c:
+	.text	start:0X0001A178 end:0X0001A904
+	.rodata	start:0X00000888 end:0X000008A0
+stg40D_48.c:
+	.text	start:0X0001B188 end:0X0001B498
+	.rodata	start:0X000008A0 end:0X000008C0
+stg40D_49.c:
+	.text	start:0X0001B498 end:0X0001BEBC
+	.rodata	start:0X000008C0 end:0X000008E0
+stg40D_50.c:
+	.text	start:0X0001BF10 end:0X0001C890
+	.rodata	start:0X000008E0 end:0X00000910
+stg40D_51.c:
+	.text	start:0X0001C890 end:0X0001F440
+	.rodata	start:0X00000910 end:0X00000960
+stg40D_52.c:
+	.text	start:0X0001F440 end:0X0001F4FC
+	.rodata	start:0X00000960 end:0X00000968
+stg40D_53.c:
+	.text	start:0X0001F6A4 end:0X000209BC
+	.rodata	start:0X00000968 end:0X000009C0
+stg40D_54.c:
+	.text	start:0X00020A84 end:0X000214A4
+	.rodata	start:0X000009C0 end:0X000009F0
+stg40D_55.c:
+	.text	start:0X000214A4 end:0X00022010
+	.rodata	start:0X000009F0 end:0X00000A18
+stg40D_56.c:
+	.text	start:0X0002214C end:0X00022F38
+	.rodata	start:0X00000A18 end:0X00000A48
+stg40D_57.c:
+	.text	start:0X00022F38 end:0X00023008
+	.rodata	start:0X00000A48 end:0X00000A50
+stg40D_58.c:
+	.text	start:0X0002328C end:0X00023D34
+	.rodata	start:0X00000A50 end:0X00000A88
+stg40D_59.c:
+	.text	start:0X00023DA8 end:0X00023DEC
+	.rodata	start:0X00000A88 end:0X00000A90
+stg40D_60.c:
+	.text	start:0X00023FA4 end:0X00024A04
+	.rodata	start:0X00000A90 end:0X00000AD0
+stg40D_61.c:
+	.text	start:0X00024A78 end:0X00024ABC
+	.rodata	start:0X00000AD0 end:0X00000AD8
+stg40D_62.c:
+	.text	start:0X00024B30 end:0X000254E4
+	.rodata	start:0X00000AD8 end:0X00000B28
+stg40D_63.c:
+	.text	start:0X000254E4 end:0X00025F00
+	.rodata	start:0X00000B28 end:0X00000B60
+stg40D_64.c:
+	.text	start:0X0002614C end:0X0002708C
+	.rodata	start:0X00000B60 end:0X00000B90
+stg40D_65.c:
+	.text	start:0X000273C0 end:0X000285DC
+	.rodata	start:0X00000B90 end:0X00000BB8
+stg40D_66.c:
+	.text	start:0X000285DC end:0X00028FA4
+	.rodata	start:0X00000BB8 end:0X00000BE8
+stg40D_67.c:
+	.text	start:0X00029040 end:0X0002B190
+	.rodata	start:0X00000BE8 end:0X00000C58
+stg40D_68.c:
+	.text	start:0X0002BBA8 end:0X0002FFB4
+	.rodata	start:0X00000C58 end:0X00000D40
+stg40D_69.c:
+	.text	start:0X0002FFB4 end:0X0003091C
+	.rodata	start:0X00000D40 end:0X00000D88
+stg40D_70.c:
+	.text	start:0X00030ADC end:0X00032D04
+	.rodata	start:0X00000D88 end:0X00000E20
+stg40D_71.c:
+	.text	start:0X00032DC0 end:0X000348E0
+	.rodata	start:0X00000E20 end:0X00000EB8
+stg40D_72.c:
+	.text	start:0X00034A24 end:0X000364C8
+	.rodata	start:0X00000EB8 end:0X00000F48
+stg40D_73.c:
+	.text	start:0X000366D4 end:0X00037764
+	.rodata	start:0X00000F48 end:0X00000F80
+stg40D_74.c:
+	.text	start:0X00037DC8 end:0X00039274
+	.rodata	start:0X00000F80 end:0X00000FD0
+stg40D_75.c:
+	.text	start:0X00039294 end:0X00039ACC
+	.rodata	start:0X00000FD0 end:0X00001008
+stg40D_76.c:
+	.text	start:0X00039CB8 end:0X00039FF0
+	.rodata	start:0X00001008 end:0X00001030
+stg40D_77.c:
+	.text	start:0X0003A05C end:0X0003B16C
+	.rodata	start:0X00001030 end:0X00001090
+stg40D_78.c:
+	.text	start:0X0003B180 end:0X0003C4D4
+	.rodata	start:0X00001090 end:0X000010F0
+stg40D_79.c:
+	.text	start:0X0003C62C end:0X0003DD18
+	.rodata	start:0X000010F0 end:0X00001178
+stg40D_80.c:
+	.text	start:0X0003DD18 end:0X0003F260
+	.rodata	start:0X00001178 end:0X000011D8
+stg40D_81.c:
+	.text	start:0X0003F2E8 end:0X0003F514
+	.rodata	start:0X000011D8 end:0X000011E0
+stg40D_82.c:
+	.text	start:0X0003F5CC end:0X0003F678
+	.rodata	start:0X000011E0 end:0X000011E8
+stg40D_83.c:
+	.text	start:0X0003F678 end:0X0003F808
+	.rodata	start:0X000011E8 end:0X000011F0
+stg40D_84.c:
+	.text	start:0X0003F808 end:0X0003FC2C
+	.rodata	start:0X000011F0 end:0X00001210
+stg40D_85.c:
+	.text	start:0X0003FC2C end:0X000416A8
+	.rodata	start:0X00001210 end:0X000012A8
+stg40D_86.c:
+	.text	start:0X000416A8 end:0X00042648
+	.rodata	start:0X000012A8 end:0X00001300
+stg40D_87.c:
+	.text	start:0X00042648 end:0X00042790
+	.rodata	start:0X00001300 end:0X00001308
+stg40D_88.c:
+	.text	start:0X00042794 end:0X00042A34
+	.rodata	start:0X00001308 end:0X00001340
+stg40D_89.c:
+	.text	start:0X00042BB8 end:0X00043920
+	.rodata	start:0X00001340 end:0X00001388
+stg40D_90.c:
+	.text	start:0X00043920 end:0X00044418
+	.rodata	start:0X00001388 end:0X000013C0
+stg40D_91.c:
+	.text	start:0X00044418 end:0X00044614
+	.rodata	start:0X000013C0 end:0X00001430
+stg40D_92.c:
+	.text	start:0X00044734 end:0X00044A28
+	.rodata	start:0X00001430 end:0X00001458
+stg40D_93.c:
+	.text	start:0X00044C00 end:0X00045FC8
+	.rodata	start:0X00001458 end:0X00001518
+stg40D_94.c:
+	.text	start:0X00046168 end:0X00047B84
+	.rodata	start:0X00001518 end:0X000015B0
+stg40D_95.c:
+	.text	start:0X00048048 end:0X00048E28
+	.rodata	start:0X000015B0 end:0X000015F8
+stg40D_96.c:
+	.text	start:0X00048E64 end:0X0004E6F4
+	.rodata	start:0X000015F8 end:0X000016C0
+stg40D_97.c:
+	.text	start:0X0004E810 end:0X00050C3C
+	.rodata	start:0X000016C0 end:0X00001760
+stg40D_98.c:
+	.text	start:0X00050C78 end:0X000536E8
+	.rodata	start:0X00001760 end:0X00001838
+stg40D_99.c:
+	.text	start:0X00053724 end:0X00056298
+	.rodata	start:0X00001838 end:0X000018E8

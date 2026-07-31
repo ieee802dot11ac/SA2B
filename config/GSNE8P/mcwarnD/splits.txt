@@ -1,3 +1,4 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -5,3 +6,6 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+mcwarnD_0.c:
+	.text	start:0X00000900 end:0X00000B44
+	.rodata	start:0X00000000 end:0X00000008

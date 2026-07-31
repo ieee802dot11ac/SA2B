@@ -1,3 +1,4 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -5,3 +6,252 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+boss_bigbogyD_0.c:
+	.text	start:0X00000110 end:0X0000F124
+	.rodata	start:0X00000000 end:0X00000A80
+boss_bigbogyD_1.c:
+	.text	start:0X0000F144 end:0X00010B24
+	.rodata	start:0X00000A80 end:0X00000AF8
+boss_bigbogyD_2.c:
+	.text	start:0X00010F74 end:0X00011004
+	.rodata	start:0X00000AF8 end:0X00000B08
+boss_bigbogyD_3.c:
+	.text	start:0X000110EC end:0X000111A4
+	.rodata	start:0X00000B08 end:0X00000B10
+boss_bigbogyD_4.c:
+	.text	start:0X000112C4 end:0X00015090
+	.rodata	start:0X00000B10 end:0X00000C00
+boss_bigbogyD_5.c:
+	.text	start:0X00015090 end:0X000151BC
+	.rodata	start:0X00000C00 end:0X00000C10
+boss_bigbogyD_6.c:
+	.text	start:0X000151BC end:0X00015284
+	.rodata	start:0X00000C10 end:0X00000C18
+boss_bigbogyD_7.c:
+	.text	start:0X00015284 end:0X00016A58
+	.rodata	start:0X00000C18 end:0X00000C80
+boss_bigbogyD_8.c:
+	.text	start:0X00016A58 end:0X00016BE4
+	.rodata	start:0X00000C80 end:0X00000CA8
+boss_bigbogyD_9.c:
+	.text	start:0X00016CB4 end:0X00017228
+	.rodata	start:0X00000CA8 end:0X00000CE0
+boss_bigbogyD_10.c:
+	.text	start:0X00017328 end:0X00017C9C
+	.rodata	start:0X00000CE0 end:0X00000D28
+boss_bigbogyD_11.c:
+	.text	start:0X00017C9C end:0X00017FA8
+	.rodata	start:0X00000D28 end:0X00000D50
+boss_bigbogyD_12.c:
+	.text	start:0X000181C4 end:0X000187BC
+	.rodata	start:0X00000D50 end:0X00000D98
+boss_bigbogyD_13.c:
+	.text	start:0X00018838 end:0X00018B4C
+	.rodata	start:0X00000D98 end:0X00000DB0
+boss_bigbogyD_14.c:
+	.text	start:0X00018B4C end:0X00018DD4
+	.rodata	start:0X00000DB0 end:0X00000DB8
+boss_bigbogyD_15.c:
+	.text	start:0X00018EE0 end:0X0001961C
+	.rodata	start:0X00000DB8 end:0X00000DE8
+boss_bigbogyD_16.c:
+	.text	start:0X0001961C end:0X00019798
+	.rodata	start:0X00000DE8 end:0X00000E00
+boss_bigbogyD_17.c:
+	.text	start:0X00019798 end:0X000197FC
+	.rodata	start:0X00000E00 end:0X00000E08
+boss_bigbogyD_18.c:
+	.text	start:0X00019A8C end:0X0001A0F4
+	.rodata	start:0X00000E08 end:0X00000E40
+boss_bigbogyD_19.c:
+	.text	start:0X0001A0F4 end:0X0001A8C4
+	.rodata	start:0X00000E40 end:0X00000E80
+boss_bigbogyD_20.c:
+	.text	start:0X0001AA34 end:0X0001B44C
+	.rodata	start:0X00000E80 end:0X00000EC0
+boss_bigbogyD_21.c:
+	.text	start:0X0001B44C end:0X0001B7A0
+	.rodata	start:0X00000EC0 end:0X00000EF0
+boss_bigbogyD_22.c:
+	.text	start:0X0001B870 end:0X0001BBC8
+	.rodata	start:0X00000EF0 end:0X00000F08
+boss_bigbogyD_23.c:
+	.text	start:0X0001BBC8 end:0X0001BFF8
+	.rodata	start:0X00000F08 end:0X00000F18
+boss_bigbogyD_24.c:
+	.text	start:0X0001C078 end:0X0001C234
+	.rodata	start:0X00000F18 end:0X00000F40
+boss_bigbogyD_25.c:
+	.text	start:0X0001C234 end:0X0001C5E4
+	.rodata	start:0X00000F40 end:0X00000F70
+boss_bigbogyD_26.c:
+	.text	start:0X0001C788 end:0X0001C920
+	.rodata	start:0X00000F70 end:0X00000F88
+boss_bigbogyD_27.c:
+	.text	start:0X0001C920 end:0X0001CC24
+	.rodata	start:0X00000F88 end:0X00000F90
+boss_bigbogyD_28.c:
+	.text	start:0X0001CC24 end:0X0001D0AC
+	.rodata	start:0X00000F90 end:0X00000FB0
+boss_bigbogyD_29.c:
+	.text	start:0X0001D148 end:0X0001D5CC
+	.rodata	start:0X00000FB0 end:0X00000FD0
+boss_bigbogyD_30.c:
+	.text	start:0X0001D7C8 end:0X0001EC24
+	.rodata	start:0X00000FD0 end:0X00001018
+boss_bigbogyD_31.c:
+	.text	start:0X0001EC24 end:0X0001EF18
+	.rodata	start:0X00001018 end:0X00001030
+boss_bigbogyD_32.c:
+	.text	start:0X0001EF18 end:0X0001EFD8
+	.rodata	start:0X00001030 end:0X00001038
+boss_bigbogyD_33.c:
+	.text	start:0X0001EFD8 end:0X0001FAD0
+	.rodata	start:0X00001038 end:0X00001080
+boss_bigbogyD_34.c:
+	.text	start:0X0001FBF0 end:0X00020A34
+	.rodata	start:0X00001080 end:0X000010D8
+boss_bigbogyD_35.c:
+	.text	start:0X00020A68 end:0X000211F4
+	.rodata	start:0X000010D8 end:0X000010F0
+boss_bigbogyD_36.c:
+	.text	start:0X00021384 end:0X00021DA8
+	.rodata	start:0X000010F0 end:0X00001110
+boss_bigbogyD_37.c:
+	.text	start:0X00021DFC end:0X0002277C
+	.rodata	start:0X00001110 end:0X00001140
+boss_bigbogyD_38.c:
+	.text	start:0X0002277C end:0X0002532C
+	.rodata	start:0X00001140 end:0X00001190
+boss_bigbogyD_39.c:
+	.text	start:0X0002532C end:0X000253E8
+	.rodata	start:0X00001190 end:0X00001198
+boss_bigbogyD_40.c:
+	.text	start:0X00025590 end:0X000268A8
+	.rodata	start:0X00001198 end:0X000011F0
+boss_bigbogyD_41.c:
+	.text	start:0X000268A8 end:0X00027414
+	.rodata	start:0X000011F0 end:0X00001218
+boss_bigbogyD_42.c:
+	.text	start:0X00027550 end:0X0002833C
+	.rodata	start:0X00001218 end:0X00001248
+boss_bigbogyD_43.c:
+	.text	start:0X0002833C end:0X0002840C
+	.rodata	start:0X00001248 end:0X00001250
+boss_bigbogyD_44.c:
+	.text	start:0X00028690 end:0X00029138
+	.rodata	start:0X00001250 end:0X00001288
+boss_bigbogyD_45.c:
+	.text	start:0X000291AC end:0X000291F0
+	.rodata	start:0X00001288 end:0X00001290
+boss_bigbogyD_46.c:
+	.text	start:0X000293A8 end:0X00029E08
+	.rodata	start:0X00001290 end:0X000012D0
+boss_bigbogyD_47.c:
+	.text	start:0X00029E7C end:0X00029EC0
+	.rodata	start:0X000012D0 end:0X000012D8
+boss_bigbogyD_48.c:
+	.text	start:0X00029F34 end:0X0002C084
+	.rodata	start:0X000012D8 end:0X00001348
+boss_bigbogyD_49.c:
+	.text	start:0X0002C7A8 end:0X00030EE8
+	.rodata	start:0X00001348 end:0X00001430
+boss_bigbogyD_50.c:
+	.text	start:0X00030EE8 end:0X00031850
+	.rodata	start:0X00001430 end:0X00001478
+boss_bigbogyD_51.c:
+	.text	start:0X00031A10 end:0X00033C38
+	.rodata	start:0X00001478 end:0X00001510
+boss_bigbogyD_52.c:
+	.text	start:0X00033CCC end:0X000357EC
+	.rodata	start:0X00001510 end:0X000015A8
+boss_bigbogyD_53.c:
+	.text	start:0X00035930 end:0X000373D4
+	.rodata	start:0X000015A8 end:0X00001638
+boss_bigbogyD_54.c:
+	.text	start:0X000375E0 end:0X0003785C
+	.rodata	start:0X00001638 end:0X00001658
+boss_bigbogyD_55.c:
+	.text	start:0X00037BA8 end:0X00038C38
+	.rodata	start:0X00001658 end:0X00001690
+boss_bigbogyD_56.c:
+	.text	start:0X00038C90 end:0X00038E68
+	.rodata	start:0X00001690 end:0X00001698
+boss_bigbogyD_57.c:
+	.text	start:0X00039054 end:0X0003A164
+	.rodata	start:0X00001698 end:0X000016F8
+boss_bigbogyD_58.c:
+	.text	start:0X0003A178 end:0X0003B4CC
+	.rodata	start:0X000016F8 end:0X00001758
+boss_bigbogyD_59.c:
+	.text	start:0X0003B590 end:0X0003C888
+	.rodata	start:0X00001758 end:0X000017D8
+boss_bigbogyD_60.c:
+	.text	start:0X0003CAF0 end:0X0003E038
+	.rodata	start:0X000017D8 end:0X00001838
+boss_bigbogyD_61.c:
+	.text	start:0X0003E0EC end:0X0003E198
+	.rodata	start:0X00001838 end:0X00001840
+boss_bigbogyD_62.c:
+	.text	start:0X0003E198 end:0X0003E328
+	.rodata	start:0X00001840 end:0X00001848
+boss_bigbogyD_63.c:
+	.text	start:0X0003E328 end:0X0003E74C
+	.rodata	start:0X00001848 end:0X00001868
+boss_bigbogyD_64.c:
+	.text	start:0X0003E74C end:0X000401C8
+	.rodata	start:0X00001868 end:0X00001900
+boss_bigbogyD_65.c:
+	.text	start:0X000401C8 end:0X00041168
+	.rodata	start:0X00001900 end:0X00001958
+boss_bigbogyD_66.c:
+	.text	start:0X00041168 end:0X000412B0
+	.rodata	start:0X00001958 end:0X00001960
+boss_bigbogyD_67.c:
+	.text	start:0X000412B4 end:0X00041554
+	.rodata	start:0X00001960 end:0X00001998
+boss_bigbogyD_68.c:
+	.text	start:0X000416D8 end:0X00042440
+	.rodata	start:0X00001998 end:0X000019E0
+boss_bigbogyD_69.c:
+	.text	start:0X00042440 end:0X00042FB0
+	.rodata	start:0X000019E0 end:0X00001A18
+boss_bigbogyD_70.c:
+	.text	start:0X00042FB0 end:0X000431AC
+	.rodata	start:0X00001A18 end:0X00001A88
+boss_bigbogyD_71.c:
+	.text	start:0X000432CC end:0X000435C0
+	.rodata	start:0X00001A88 end:0X00001AB0
+boss_bigbogyD_72.c:
+	.text	start:0X00043798 end:0X00044B60
+	.rodata	start:0X00001AB0 end:0X00001B70
+boss_bigbogyD_73.c:
+	.text	start:0X00044DA8 end:0X000471D4
+	.rodata	start:0X00001B70 end:0X00001C10
+boss_bigbogyD_74.c:
+	.text	start:0X00047248 end:0X000492B0
+	.rodata	start:0X00001C10 end:0X00001CE0
+boss_bigbogyD_75.c:
+	.text	start:0X000492EC end:0X0004BD5C
+	.rodata	start:0X00001CE0 end:0X00001DB8
+boss_bigbogyD_76.c:
+	.text	start:0X0004BD98 end:0X0004E90C
+	.rodata	start:0X00001DB8 end:0X00001E68
+boss_bigbogyD_77.c:
+	.text	start:0X0004EA5C end:0X000510CC
+	.rodata	start:0X00001E68 end:0X00001EF8
+boss_bigbogyD_78.c:
+	.text	start:0X00051120 end:0X00053D7C
+	.rodata	start:0X00001EF8 end:0X00001FB0
+boss_bigbogyD_79.c:
+	.text	start:0X00053DB8 end:0X000561DC
+	.rodata	start:0X00001FB0 end:0X00002070
+boss_bigbogyD_80.c:
+	.text	start:0X00056378 end:0X00056CDC
+	.rodata	start:0X00002070 end:0X000020D8
+boss_bigbogyD_81.c:
+	.text	start:0X00056D10 end:0X00056DCC
+	.rodata	start:0X000020D8 end:0X000020E0
+boss_bigbogyD_82.c:
+	.text	start:0X00056E4C end:0X00058480
+	.rodata	start:0X000020E0 end:0X000021D0

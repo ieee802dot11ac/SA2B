@@ -1,7 +1,236 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
-	.data       type:data align:32
+	.data       type:data align:8
 	.bss        type:bss align:8
+Boss_GolemD_0.c:
+	.text	start:0X00000178 end:0X00000590
+	.rodata	start:0X00000000 end:0X00000020
+Boss_GolemD_1.c:
+	.text	start:0X00000590 end:0X00002BFC
+	.rodata	start:0X00000020 end:0X00000858
+Boss_GolemD_2.c:
+	.text	start:0X00002C04 end:0X00002CF4
+	.rodata	start:0X00000858 end:0X00000860
+Boss_GolemD_3.c:
+	.text	start:0X00002F90 end:0X00003C00
+	.rodata	start:0X00000860 end:0X00000880
+Boss_GolemD_4.c:
+	.text	start:0X00003FD4 end:0X00005288
+	.rodata	start:0X00000880 end:0X00000910
+Boss_GolemD_5.c:
+	.text	start:0X00005288 end:0X00007AB8
+	.rodata	start:0X00000910 end:0X000009C8
+Boss_GolemD_6.c:
+	.text	start:0X00007C60 end:0X0000A380
+	.rodata	start:0X000009C8 end:0X000009E8
+Boss_GolemD_7.c:
+	.text	start:0X0000A380 end:0X0000A400
+	.rodata	start:0X000009E8 end:0X000009F0
+Boss_GolemD_8.c:
+	.text	start:0X0000A400 end:0X0000B218
+	.rodata	start:0X000009F0 end:0X00000A10
+Boss_GolemD_9.c:
+	.text	start:0X0000B218 end:0X0000D330
+	.rodata	start:0X00000A10 end:0X00000A70
+Boss_GolemD_10.c:
+	.text	start:0X0000D654 end:0X0000DAEC
+	.rodata	start:0X00000A70 end:0X00000AB0
+Boss_GolemD_11.c:
+	.text	start:0X0000DAF0 end:0X0000F15C
+	.rodata	start:0X00000AB0 end:0X00000B10
+Boss_GolemD_12.c:
+	.text	start:0X0000F15C end:0X0000F778
+	.rodata	start:0X00000B10 end:0X00000B28
+Boss_GolemD_13.c:
+	.text	start:0X0000F97C end:0X0000FBC4
+	.rodata	start:0X00000BA8 end:0X00000BB0
+Boss_GolemD_14.c:
+	.text	start:0X0000FC74 end:0X00010154
+	.rodata	start:0X00000BB0 end:0X00000BF0
+Boss_GolemD_15.c:
+	.text	start:0X00010274 end:0X00014040
+	.rodata	start:0X00000BF0 end:0X00000CE0
+Boss_GolemD_16.c:
+	.text	start:0X00014040 end:0X0001416C
+	.rodata	start:0X00000CE0 end:0X00000CF0
+Boss_GolemD_17.c:
+	.text	start:0X0001416C end:0X00014234
+	.rodata	start:0X00000CF0 end:0X00000CF8
+Boss_GolemD_18.c:
+	.text	start:0X00014234 end:0X00015A08
+	.rodata	start:0X00000CF8 end:0X00000D60
+Boss_GolemD_19.c:
+	.text	start:0X00015A08 end:0X00015B94
+	.rodata	start:0X00000D60 end:0X00000D88
+Boss_GolemD_20.c:
+	.text	start:0X00015C64 end:0X000161D8
+	.rodata	start:0X00000D88 end:0X00000DC0
+Boss_GolemD_21.c:
+	.text	start:0X000162D8 end:0X00016C4C
+	.rodata	start:0X00000DC0 end:0X00000E08
+Boss_GolemD_22.c:
+	.text	start:0X00016C4C end:0X00016F58
+	.rodata	start:0X00000E08 end:0X00000E30
+Boss_GolemD_23.c:
+	.text	start:0X00016F58 end:0X0001726C
+	.rodata	start:0X00000E30 end:0X00000E48
+Boss_GolemD_24.c:
+	.text	start:0X0001726C end:0X000174F4
+	.rodata	start:0X00000E48 end:0X00000E50
+Boss_GolemD_25.c:
+	.text	start:0X00017600 end:0X00017D3C
+	.rodata	start:0X00000E50 end:0X00000E80
+Boss_GolemD_26.c:
+	.text	start:0X00017D3C end:0X00017EB8
+	.rodata	start:0X00000E80 end:0X00000E98
+Boss_GolemD_27.c:
+	.text	start:0X00017EB8 end:0X00017F1C
+	.rodata	start:0X00000E98 end:0X00000EA0
+Boss_GolemD_28.c:
+	.text	start:0X000181AC end:0X00018814
+	.rodata	start:0X00000EA0 end:0X00000ED8
+Boss_GolemD_29.c:
+	.text	start:0X00018814 end:0X00018FE4
+	.rodata	start:0X00000ED8 end:0X00000F18
+Boss_GolemD_30.c:
+	.text	start:0X00019154 end:0X00019B6C
+	.rodata	start:0X00000F18 end:0X00000F58
+Boss_GolemD_31.c:
+	.text	start:0X00019B6C end:0X00019EC0
+	.rodata	start:0X00000F58 end:0X00000F88
+Boss_GolemD_32.c:
+	.text	start:0X00019F90 end:0X0001A2E8
+	.rodata	start:0X00000F88 end:0X00000FA0
+Boss_GolemD_33.c:
+	.text	start:0X0001A2E8 end:0X0001A718
+	.rodata	start:0X00000FA0 end:0X00000FB0
+Boss_GolemD_34.c:
+	.text	start:0X0001A798 end:0X0001A954
+	.rodata	start:0X00000FB0 end:0X00000FD8
+Boss_GolemD_35.c:
+	.text	start:0X0001A954 end:0X0001AD04
+	.rodata	start:0X00000FD8 end:0X00001008
+Boss_GolemD_36.c:
+	.text	start:0X0001AEA8 end:0X0001B040
+	.rodata	start:0X00001008 end:0X00001020
+Boss_GolemD_37.c:
+	.text	start:0X0001B040 end:0X0001B344
+	.rodata	start:0X00001020 end:0X00001028
+Boss_GolemD_38.c:
+	.text	start:0X0001B344 end:0X0001B7CC
+	.rodata	start:0X00001028 end:0X00001048
+Boss_GolemD_39.c:
+	.text	start:0X0001B868 end:0X0001BCEC
+	.rodata	start:0X00001048 end:0X00001068
+Boss_GolemD_40.c:
+	.text	start:0X0001BEE8 end:0X0001D344
+	.rodata	start:0X00001068 end:0X000010B0
+Boss_GolemD_41.c:
+	.text	start:0X0001D344 end:0X0001D638
+	.rodata	start:0X000010B0 end:0X000010C8
+Boss_GolemD_42.c:
+	.text	start:0X0001D638 end:0X0001D6F8
+	.rodata	start:0X000010C8 end:0X000010D0
+Boss_GolemD_43.c:
+	.text	start:0X0001D6F8 end:0X0001E1F0
+	.rodata	start:0X000010D0 end:0X00001118
+Boss_GolemD_44.c:
+	.text	start:0X0001E310 end:0X0001F154
+	.rodata	start:0X00001118 end:0X00001170
+Boss_GolemD_45.c:
+	.text	start:0X0001F188 end:0X0001F914
+	.rodata	start:0X00001170 end:0X00001188
+Boss_GolemD_46.c:
+	.text	start:0X00020198 end:0X000204A8
+	.rodata	start:0X00001188 end:0X000011A8
+Boss_GolemD_47.c:
+	.text	start:0X000204A8 end:0X00020ECC
+	.rodata	start:0X000011A8 end:0X000011C8
+Boss_GolemD_48.c:
+	.text	start:0X00020F20 end:0X000218A0
+	.rodata	start:0X000011C8 end:0X000011F8
+Boss_GolemD_49.c:
+	.text	start:0X000218A0 end:0X00024450
+	.rodata	start:0X000011F8 end:0X00001248
+Boss_GolemD_50.c:
+	.text	start:0X00024450 end:0X0002450C
+	.rodata	start:0X00001248 end:0X00001250
+Boss_GolemD_51.c:
+	.text	start:0X000246B4 end:0X000259CC
+	.rodata	start:0X00001250 end:0X000012A8
+Boss_GolemD_52.c:
+	.text	start:0X000259CC end:0X00026538
+	.rodata	start:0X000012A8 end:0X000012D0
+Boss_GolemD_53.c:
+	.text	start:0X00026674 end:0X00027460
+	.rodata	start:0X000012D0 end:0X00001300
+Boss_GolemD_54.c:
+	.text	start:0X00027460 end:0X00027530
+	.rodata	start:0X00001300 end:0X00001308
+Boss_GolemD_55.c:
+	.text	start:0X000277B4 end:0X0002825C
+	.rodata	start:0X00001308 end:0X00001340
+Boss_GolemD_56.c:
+	.text	start:0X000282D0 end:0X00028314
+	.rodata	start:0X00001340 end:0X00001348
+Boss_GolemD_57.c:
+	.text	start:0X000284CC end:0X00028F2C
+	.rodata	start:0X00001348 end:0X00001388
+Boss_GolemD_58.c:
+	.text	start:0X00028FA0 end:0X00028FE4
+	.rodata	start:0X00001388 end:0X00001390
+Boss_GolemD_59.c:
+	.text	start:0X00029058 end:0X0002B1A8
+	.rodata	start:0X00001390 end:0X00001400
+Boss_GolemD_60.c:
+	.text	start:0X0002B8CC end:0X0003000C
+	.rodata	start:0X00001400 end:0X000014E8
+Boss_GolemD_61.c:
+	.text	start:0X0003000C end:0X00030974
+	.rodata	start:0X000014E8 end:0X00001530
+Boss_GolemD_62.c:
+	.text	start:0X00030B34 end:0X00032CF0
+	.rodata	start:0X00001530 end:0X000015C8
+Boss_GolemD_63.c:
+	.text	start:0X00032D84 end:0X000348A4
+	.rodata	start:0X000015C8 end:0X00001660
+Boss_GolemD_64.c:
+	.text	start:0X000349E8 end:0X0003648C
+	.rodata	start:0X00001660 end:0X000016F0
+Boss_GolemD_65.c:
+	.text	start:0X00036698 end:0X00036914
+	.rodata	start:0X000016F0 end:0X00001710
+Boss_GolemD_66.c:
+	.text	start:0X00036C60 end:0X00037CF0
+	.rodata	start:0X00001710 end:0X00001748
+Boss_GolemD_67.c:
+	.text	start:0X00037D48 end:0X00037F20
+	.rodata	start:0X00001748 end:0X00001750
+Boss_GolemD_68.c:
+	.text	start:0X0003810C end:0X0003921C
+	.rodata	start:0X00001750 end:0X000017B0
+Boss_GolemD_69.c:
+	.text	start:0X00039230 end:0X0003AE44
+	.rodata	start:0X000017B0 end:0X00001830
+Boss_GolemD_70.c:
+	.text	start:0X0003AF08 end:0X0003C200
+	.rodata	start:0X00001830 end:0X000018B0
+Boss_GolemD_71.c:
+	.text	start:0X0003C51C end:0X0003C5C8
+	.rodata	start:0X000018B0 end:0X000018B8
+Boss_GolemD_72.c:
+	.text	start:0X0003C644 end:0X0003DA0C
+	.rodata	start:0X000018B8 end:0X00001978
+Boss_GolemD_73.c:
+	.text	start:0X0003DCD4 end:0X0003E638
+	.rodata	start:0X00001978 end:0X000019E0
+Boss_GolemD_74.c:
+	.text	start:0X0003E66C end:0X0003E728
+	.rodata	start:0X000019E0 end:0X000019E8
+Boss_GolemD_75.c:
+	.text	start:0X0003E7A8 end:0X0003FDDC
+	.rodata	start:0X000019E8 end:0X00001AD8

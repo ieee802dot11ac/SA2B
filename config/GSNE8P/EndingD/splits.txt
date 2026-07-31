@@ -1,3 +1,4 @@
+
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -5,3 +6,15 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+EndingD_0.c:
+	.text	start:0X00000220 end:0X00000740
+	.rodata	start:0X00000000 end:0X00000028
+EndingD_1.c:
+	.text	start:0X000009B4 end:0X00000A24
+	.rodata	start:0X00000028 end:0X00000030
+EndingD_2.c:
+	.text	start:0X00000A98 end:0X00000CC4
+	.rodata	start:0X00000030 end:0X00000058
+EndingD_3.c:
+	.text	start:0X00000CC4 end:0X00000DE4
+	.rodata	start:0X00000058 end:0X00000060
