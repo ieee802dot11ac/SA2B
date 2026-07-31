@@ -1,4 +1,3 @@
-
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -6,66 +5,87 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+
 Boss_Last2D_0.c:
-	.text	start:0X00000000 end:0X00000414
-	.rodata	start:0X00000000 end:0X00000030
+	.text       start:0x00000000 end:0x00000414
+	.rodata     start:0x00000000 end:0x00000030
+
 Boss_Last2D_1.c:
-	.text	start:0X00000414 end:0X00006E58
-	.rodata	start:0X00000030 end:0X00000288
+	.text       start:0x00000414 end:0x00006E58
+	.rodata     start:0x00000030 end:0x00000288
+
 Boss_Last2D_2.c:
-	.text	start:0X00006F10 end:0X000072E0
-	.rodata	start:0X00000288 end:0X000002A8
+	.text       start:0x00006F10 end:0x000072E0
+	.rodata     start:0x00000288 end:0x000002A8
+
 Boss_Last2D_3.c:
-	.text	start:0X000072E0 end:0X000097CC
-	.rodata	start:0X000002A8 end:0X000003C8
+	.text       start:0x000072E0 end:0x000097CC
+	.rodata     start:0x000002A8 end:0x000003C8
+
 Boss_Last2D_4.c:
-	.text	start:0X000097CC end:0X00009FC8
-	.rodata	start:0X000003C8 end:0X000003F8
+	.text       start:0x000097CC end:0x00009FC8
+	.rodata     start:0x000003C8 end:0x000003F8
+
 Boss_Last2D_5.c:
-	.text	start:0X0000A078 end:0X0000A2A0
-	.rodata	start:0X00000490 end:0X00000498
+	.text       start:0x0000A078 end:0x0000A2A0
+	.rodata     start:0x00000490 end:0x00000498
+
 Boss_Last2D_6.c:
-	.text	start:0X0000A3F4 end:0X0000A840
-	.rodata	start:0X00000498 end:0X000004B0
+	.text       start:0x0000A3F4 end:0x0000A840
+	.rodata     start:0x00000498 end:0x000004B0
+
 Boss_Last2D_7.c:
-	.text	start:0X0000A87C end:0X0000FF58
-	.rodata	start:0X000004B0 end:0X00000580
+	.text       start:0x0000A87C end:0x0000FF58
+	.rodata     start:0x000004B0 end:0x00000580
+
 Boss_Last2D_8.c:
-	.text	start:0X00010018 end:0X00010134
-	.rodata	start:0X00000580 end:0X00000590
+	.text       start:0x00010018 end:0x00010134
+	.rodata     start:0x00000580 end:0x00000590
+
 Boss_Last2D_9.c:
-	.text	start:0X00010134 end:0X00010A20
-	.rodata	start:0X00000590 end:0X00000618
+	.text       start:0x00010134 end:0x00010A20
+	.rodata     start:0x00000590 end:0x00000618
+
 Boss_Last2D_10.c:
-	.text	start:0X00010DA0 end:0X00013DB8
-	.rodata	start:0X00000618 end:0X000006F8
+	.text       start:0x00010DA0 end:0x00013DB8
+	.rodata     start:0x00000618 end:0x000006F8
+
 Boss_Last2D_11.c:
-	.text	start:0X00013E24 end:0X00013F50
-	.rodata	start:0X000006F8 end:0X00000708
+	.text       start:0x00013E24 end:0x00013F50
+	.rodata     start:0x000006F8 end:0x00000708
+
 Boss_Last2D_12.c:
-	.text	start:0X00013F50 end:0X0001425C
-	.rodata	start:0X00000708 end:0X00000730
+	.text       start:0x00013F50 end:0x0001425C
+	.rodata     start:0x00000708 end:0x00000730
+
 Boss_Last2D_13.c:
-	.text	start:0X0001425C end:0X000142C0
-	.rodata	start:0X00000730 end:0X00000738
+	.text       start:0x0001425C end:0x000142C0
+	.rodata     start:0x00000730 end:0x00000738
+
 Boss_Last2D_14.c:
-	.text	start:0X00014550 end:0X00014BB8
-	.rodata	start:0X00000738 end:0X00000770
+	.text       start:0x00014550 end:0x00014BB8
+	.rodata     start:0x00000738 end:0x00000770
+
 Boss_Last2D_15.c:
-	.text	start:0X00014EE8 end:0X00019628
-	.rodata	start:0X00000770 end:0X00000858
+	.text       start:0x00014EE8 end:0x00019628
+	.rodata     start:0x00000770 end:0x00000858
+
 Boss_Last2D_16.c:
-	.text	start:0X00019628 end:0X0001AEBC
-	.rodata	start:0X00000858 end:0X000008D8
+	.text       start:0x00019628 end:0x0001AEBC
+	.rodata     start:0x00000858 end:0x000008D8
+
 Boss_Last2D_17.c:
-	.text	start:0X0001AF50 end:0X0001B104
-	.rodata	start:0X000008D8 end:0X000008F8
+	.text       start:0x0001AF50 end:0x0001B104
+	.rodata     start:0x000008D8 end:0x000008F8
+
 Boss_Last2D_18.c:
-	.text	start:0X0001B104 end:0X0001B1FC
-	.rodata	start:0X000008F8 end:0X00000900
+	.text       start:0x0001B104 end:0x0001B1FC
+	.rodata     start:0x000008F8 end:0x00000900
+
 Boss_Last2D_19.c:
-	.text	start:0X0001B3E8 end:0X0001BD4C
-	.rodata	start:0X00000900 end:0X00000968
+	.text       start:0x0001B3E8 end:0x0001BD4C
+	.rodata     start:0x00000900 end:0x00000968
+
 Boss_Last2D_20.c:
-	.text	start:0X0001BDCC end:0X0001D454
-	.rodata	start:0X00000968 end:0X00000A58
+	.text       start:0x0001BDCC end:0x0001D454
+	.rodata     start:0x00000968 end:0x00000A54

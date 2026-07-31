@@ -1,4 +1,3 @@
-
 Sections:
 	.text       type:code align:4
 	.ctors      type:rodata align:4
@@ -6,285 +5,379 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+
 stg35D_0.c:
-	.text	start:0X000000B4 end:0X00000160
-	.rodata	start:0X00000000 end:0X00000008
+	.text       start:0x000000B4 end:0x00000160
+	.rodata     start:0x00000000 end:0x00000008
+
 stg35D_1.c:
-	.text	start:0X00000518 end:0X00000A4C
-	.rodata	start:0X00000008 end:0X00000028
+	.text       start:0x00000518 end:0x00000A4C
+	.rodata     start:0x00000008 end:0x00000028
+
 stg35D_2.c:
-	.text	start:0X00000C2C end:0X00011148
-	.rodata	start:0X00000028 end:0X00000508
+	.text       start:0x00000C2C end:0x00011148
+	.rodata     start:0x00000028 end:0x00000508
+
 stg35D_3.c:
-	.text	start:0X00011148 end:0X000125D4
-	.rodata	start:0X00000508 end:0X00000558
+	.text       start:0x00011148 end:0x000125D4
+	.rodata     start:0x00000508 end:0x00000558
+
 stg35D_4.c:
-	.text	start:0X000128D8 end:0X0001347C
-	.rodata	start:0X00000558 end:0X00000560
+	.text       start:0x000128D8 end:0x0001347C
+	.rodata     start:0x00000558 end:0x00000560
+
 stg35D_5.c:
-	.text	start:0X00013994 end:0X00017D10
-	.rodata	start:0X00000560 end:0X00000660
+	.text       start:0x00013994 end:0x00017D10
+	.rodata     start:0x00000560 end:0x00000660
+
 stg35D_6.c:
-	.text	start:0X00017D10 end:0X00017E3C
-	.rodata	start:0X00000660 end:0X00000670
+	.text       start:0x00017D10 end:0x00017E3C
+	.rodata     start:0x00000660 end:0x00000670
+
 stg35D_7.c:
-	.text	start:0X00017F0C end:0X00018968
-	.rodata	start:0X00000670 end:0X000006F8
+	.text       start:0x00017F0C end:0x00018968
+	.rodata     start:0x00000670 end:0x000006F8
+
 stg35D_8.c:
-	.text	start:0X0001896C end:0X00018A34
-	.rodata	start:0X000006F8 end:0X00000700
+	.text       start:0x0001896C end:0x00018A34
+	.rodata     start:0x000006F8 end:0x00000700
+
 stg35D_9.c:
-	.text	start:0X00018A34 end:0X0001AE88
-	.rodata	start:0X00000700 end:0X00000768
+	.text       start:0x00018A34 end:0x0001AE88
+	.rodata     start:0x00000700 end:0x00000768
+
 stg35D_10.c:
-	.text	start:0X0001AE88 end:0X0001B450
-	.rodata	start:0X00000768 end:0X00000790
+	.text       start:0x0001AE88 end:0x0001B450
+	.rodata     start:0x00000768 end:0x00000790
+
 stg35D_11.c:
-	.text	start:0X0001B450 end:0X0001B5DC
-	.rodata	start:0X00000790 end:0X000007B8
+	.text       start:0x0001B450 end:0x0001B5DC
+	.rodata     start:0x00000790 end:0x000007B8
+
 stg35D_12.c:
-	.text	start:0X0001B6AC end:0X0001BD08
-	.rodata	start:0X000007B8 end:0X000007F0
+	.text       start:0x0001B6AC end:0x0001BD08
+	.rodata     start:0x000007B8 end:0x000007F0
+
 stg35D_13.c:
-	.text	start:0X0001BE08 end:0X0001C77C
-	.rodata	start:0X000007F0 end:0X00000838
+	.text       start:0x0001BE08 end:0x0001C77C
+	.rodata     start:0x000007F0 end:0x00000838
+
 stg35D_14.c:
-	.text	start:0X0001C77C end:0X0001CA88
-	.rodata	start:0X00000838 end:0X00000860
+	.text       start:0x0001C77C end:0x0001CA88
+	.rodata     start:0x00000838 end:0x00000860
+
 stg35D_15.c:
-	.text	start:0X0001CA88 end:0X0001CB10
-	.rodata	start:0X00000860 end:0X00000868
+	.text       start:0x0001CA88 end:0x0001CB10
+	.rodata     start:0x00000860 end:0x00000868
+
 stg35D_16.c:
-	.text	start:0X0001CD2C end:0X0001D324
-	.rodata	start:0X00000868 end:0X000008B0
+	.text       start:0x0001CD2C end:0x0001D324
+	.rodata     start:0x00000868 end:0x000008B0
+
 stg35D_17.c:
-	.text	start:0X0001D3A0 end:0X0001D6B4
-	.rodata	start:0X000008B0 end:0X000008C8
+	.text       start:0x0001D3A0 end:0x0001D6B4
+	.rodata     start:0x000008B0 end:0x000008C8
+
 stg35D_18.c:
-	.text	start:0X0001D6B4 end:0X0001D93C
-	.rodata	start:0X000008C8 end:0X000008D0
+	.text       start:0x0001D6B4 end:0x0001D93C
+	.rodata     start:0x000008C8 end:0x000008D0
+
 stg35D_19.c:
-	.text	start:0X0001DA48 end:0X0001E96C
-	.rodata	start:0X000008D0 end:0X00000938
+	.text       start:0x0001DA48 end:0x0001E96C
+	.rodata     start:0x000008D0 end:0x00000938
+
 stg35D_20.c:
-	.text	start:0X0001E96C end:0X0001ED10
-	.rodata	start:0X00000938 end:0X00000940
+	.text       start:0x0001E96C end:0x0001ED10
+	.rodata     start:0x00000938 end:0x00000940
+
 stg35D_21.c:
-	.text	start:0X0001ED10 end:0X0001F378
-	.rodata	start:0X00000940 end:0X00000978
+	.text       start:0x0001ED10 end:0x0001F378
+	.rodata     start:0x00000940 end:0x00000978
+
 stg35D_22.c:
-	.text	start:0X0001F378 end:0X0001FB48
-	.rodata	start:0X00000978 end:0X000009B8
+	.text       start:0x0001F378 end:0x0001FB48
+	.rodata     start:0x00000978 end:0x000009B8
+
 stg35D_23.c:
-	.text	start:0X0001FDC8 end:0X000207E0
-	.rodata	start:0X000009B8 end:0X000009F8
+	.text       start:0x0001FDC8 end:0x000207E0
+	.rodata     start:0x000009B8 end:0x000009F8
+
 stg35D_24.c:
-	.text	start:0X000207E0 end:0X00020B34
-	.rodata	start:0X000009F8 end:0X00000A28
+	.text       start:0x000207E0 end:0x00020B34
+	.rodata     start:0x000009F8 end:0x00000A28
+
 stg35D_25.c:
-	.text	start:0X00020C04 end:0X00020F5C
-	.rodata	start:0X00000A28 end:0X00000A40
+	.text       start:0x00020C04 end:0x00020F5C
+	.rodata     start:0x00000A28 end:0x00000A40
+
 stg35D_26.c:
-	.text	start:0X00020F5C end:0X0002138C
-	.rodata	start:0X00000A40 end:0X00000A50
+	.text       start:0x00020F5C end:0x0002138C
+	.rodata     start:0x00000A40 end:0x00000A50
+
 stg35D_27.c:
-	.text	start:0X0002140C end:0X000215C8
-	.rodata	start:0X00000A50 end:0X00000A78
+	.text       start:0x0002140C end:0x000215C8
+	.rodata     start:0x00000A50 end:0x00000A78
+
 stg35D_28.c:
-	.text	start:0X000215C8 end:0X000218B0
-	.rodata	start:0X00000A78 end:0X00000A98
+	.text       start:0x000215C8 end:0x000218B0
+	.rodata     start:0x00000A78 end:0x00000A98
+
 stg35D_29.c:
-	.text	start:0X000218C4 end:0X00022904
-	.rodata	start:0X00000A98 end:0X00000AE8
+	.text       start:0x000218C4 end:0x00022904
+	.rodata     start:0x00000A98 end:0x00000AE8
+
 stg35D_30.c:
-	.text	start:0X00022AA8 end:0X00022C40
-	.rodata	start:0X00000AE8 end:0X00000B00
+	.text       start:0x00022AA8 end:0x00022C40
+	.rodata     start:0x00000AE8 end:0x00000B00
+
 stg35D_31.c:
-	.text	start:0X00022C40 end:0X00022F44
-	.rodata	start:0X00000B00 end:0X00000B08
+	.text       start:0x00022C40 end:0x00022F44
+	.rodata     start:0x00000B00 end:0x00000B08
+
 stg35D_32.c:
-	.text	start:0X00022F44 end:0X000233CC
-	.rodata	start:0X00000B08 end:0X00000B28
+	.text       start:0x00022F44 end:0x000233CC
+	.rodata     start:0x00000B08 end:0x00000B28
+
 stg35D_33.c:
-	.text	start:0X00023468 end:0X000238EC
-	.rodata	start:0X00000B28 end:0X00000B48
+	.text       start:0x00023468 end:0x000238EC
+	.rodata     start:0x00000B28 end:0x00000B48
+
 stg35D_34.c:
-	.text	start:0X00023AE8 end:0X00024F44
-	.rodata	start:0X00000B48 end:0X00000B90
+	.text       start:0x00023AE8 end:0x00024F44
+	.rodata     start:0x00000B48 end:0x00000B90
+
 stg35D_35.c:
-	.text	start:0X00024F44 end:0X00025A04
-	.rodata	start:0X00000B90 end:0X00000BE0
+	.text       start:0x00024F44 end:0x00025A04
+	.rodata     start:0x00000B90 end:0x00000BE0
+
 stg35D_36.c:
-	.text	start:0X00025A04 end:0X00025CF8
-	.rodata	start:0X00000BE0 end:0X00000BF8
+	.text       start:0x00025A04 end:0x00025CF8
+	.rodata     start:0x00000BE0 end:0x00000BF8
+
 stg35D_37.c:
-	.text	start:0X00025CF8 end:0X00025DB8
-	.rodata	start:0X00000BF8 end:0X00000C00
+	.text       start:0x00025CF8 end:0x00025DB8
+	.rodata     start:0x00000BF8 end:0x00000C00
+
 stg35D_38.c:
-	.text	start:0X00025DB8 end:0X0002663C
-	.rodata	start:0X00000C00 end:0X00000C48
+	.text       start:0x00025DB8 end:0x0002663C
+	.rodata     start:0x00000C00 end:0x00000C48
+
 stg35D_39.c:
-	.text	start:0X00026728 end:0X00027220
-	.rodata	start:0X00000C48 end:0X00000C90
+	.text       start:0x00026728 end:0x00027220
+	.rodata     start:0x00000C48 end:0x00000C90
+
 stg35D_40.c:
-	.text	start:0X00027340 end:0X00028184
-	.rodata	start:0X00000C90 end:0X00000CE8
+	.text       start:0x00027340 end:0x00028184
+	.rodata     start:0x00000C90 end:0x00000CE8
+
 stg35D_41.c:
-	.text	start:0X000281B8 end:0X00028944
-	.rodata	start:0X00000CE8 end:0X00000D00
+	.text       start:0x000281B8 end:0x00028944
+	.rodata     start:0x00000CE8 end:0x00000D00
+
 stg35D_42.c:
-	.text	start:0X000291C8 end:0X000294D8
-	.rodata	start:0X00000D00 end:0X00000D20
+	.text       start:0x000291C8 end:0x000294D8
+	.rodata     start:0x00000D00 end:0x00000D20
+
 stg35D_43.c:
-	.text	start:0X000294D8 end:0X0002A0B4
-	.rodata	start:0X00000D20 end:0X00000D40
+	.text       start:0x000294D8 end:0x0002A0B4
+	.rodata     start:0x00000D20 end:0x00000D40
+
 stg35D_44.c:
-	.text	start:0X0002A108 end:0X0002AA88
-	.rodata	start:0X00000D40 end:0X00000D70
+	.text       start:0x0002A108 end:0x0002AA88
+	.rodata     start:0x00000D40 end:0x00000D70
+
 stg35D_45.c:
-	.text	start:0X0002AA8C end:0X0002BDA4
-	.rodata	start:0X00000D70 end:0X00000DC8
+	.text       start:0x0002AA8C end:0x0002BDA4
+	.rodata     start:0x00000D70 end:0x00000DC8
+
 stg35D_46.c:
-	.text	start:0X0002BDA4 end:0X0002C7C4
-	.rodata	start:0X00000DC8 end:0X00000DF8
+	.text       start:0x0002BDA4 end:0x0002C7C4
+	.rodata     start:0x00000DC8 end:0x00000DF8
+
 stg35D_47.c:
-	.text	start:0X0002C7C4 end:0X0002D330
-	.rodata	start:0X00000DF8 end:0X00000E20
+	.text       start:0x0002C7C4 end:0x0002D330
+	.rodata     start:0x00000DF8 end:0x00000E20
+
 stg35D_48.c:
-	.text	start:0X0002D46C end:0X0002E258
-	.rodata	start:0X00000E20 end:0X00000E50
+	.text       start:0x0002D46C end:0x0002E258
+	.rodata     start:0x00000E20 end:0x00000E50
+
 stg35D_49.c:
-	.text	start:0X0002E258 end:0X0002E328
-	.rodata	start:0X00000E50 end:0X00000E58
+	.text       start:0x0002E258 end:0x0002E328
+	.rodata     start:0x00000E50 end:0x00000E58
+
 stg35D_50.c:
-	.text	start:0X0002E5AC end:0X0002F054
-	.rodata	start:0X00000E58 end:0X00000E90
+	.text       start:0x0002E5AC end:0x0002F054
+	.rodata     start:0x00000E58 end:0x00000E90
+
 stg35D_51.c:
-	.text	start:0X0002F0C8 end:0X0002F10C
-	.rodata	start:0X00000E90 end:0X00000E98
+	.text       start:0x0002F0C8 end:0x0002F10C
+	.rodata     start:0x00000E90 end:0x00000E98
+
 stg35D_52.c:
-	.text	start:0X0002F2C4 end:0X0002FD24
-	.rodata	start:0X00000E98 end:0X00000ED8
+	.text       start:0x0002F2C4 end:0x0002FD24
+	.rodata     start:0x00000E98 end:0x00000ED8
+
 stg35D_53.c:
-	.text	start:0X0002FD98 end:0X0002FDDC
-	.rodata	start:0X00000ED8 end:0X00000EE0
+	.text       start:0x0002FD98 end:0x0002FDDC
+	.rodata     start:0x00000ED8 end:0x00000EE0
+
 stg35D_54.c:
-	.text	start:0X0002FE50 end:0X00030804
-	.rodata	start:0X00000EE0 end:0X00000F30
+	.text       start:0x0002FE50 end:0x00030804
+	.rodata     start:0x00000EE0 end:0x00000F30
+
 stg35D_55.c:
-	.text	start:0X00030804 end:0X00031220
-	.rodata	start:0X00000F30 end:0X00000F68
+	.text       start:0x00030804 end:0x00031220
+	.rodata     start:0x00000F30 end:0x00000F68
+
 stg35D_56.c:
-	.text	start:0X0003146C end:0X000323AC
-	.rodata	start:0X00000F68 end:0X00000F98
+	.text       start:0x0003146C end:0x000323AC
+	.rodata     start:0x00000F68 end:0x00000F98
+
 stg35D_57.c:
-	.text	start:0X000326E0 end:0X000338FC
-	.rodata	start:0X00000F98 end:0X00000FC0
+	.text       start:0x000326E0 end:0x000338FC
+	.rodata     start:0x00000F98 end:0x00000FC0
+
 stg35D_58.c:
-	.text	start:0X000338FC end:0X000342C4
-	.rodata	start:0X00000FC0 end:0X00000FF0
+	.text       start:0x000338FC end:0x000342C4
+	.rodata     start:0x00000FC0 end:0x00000FF0
+
 stg35D_59.c:
-	.text	start:0X00034360 end:0X000364B0
-	.rodata	start:0X00000FF0 end:0X00001060
+	.text       start:0x00034360 end:0x000364B0
+	.rodata     start:0x00000FF0 end:0x00001060
+
 stg35D_60.c:
-	.text	start:0X00036C04 end:0X0003B344
-	.rodata	start:0X00001060 end:0X00001148
+	.text       start:0x00036C04 end:0x0003B344
+	.rodata     start:0x00001060 end:0x00001148
+
 stg35D_61.c:
-	.text	start:0X0003B344 end:0X0003BCAC
-	.rodata	start:0X00001148 end:0X00001190
+	.text       start:0x0003B344 end:0x0003BCAC
+	.rodata     start:0x00001148 end:0x00001190
+
 stg35D_62.c:
-	.text	start:0X0003BE6C end:0X0003E094
-	.rodata	start:0X00001190 end:0X00001228
+	.text       start:0x0003BE6C end:0x0003E094
+	.rodata     start:0x00001190 end:0x00001228
+
 stg35D_63.c:
-	.text	start:0X0003E128 end:0X0003FC48
-	.rodata	start:0X00001228 end:0X000012C0
+	.text       start:0x0003E128 end:0x0003FC48
+	.rodata     start:0x00001228 end:0x000012C0
+
 stg35D_64.c:
-	.text	start:0X0003FD8C end:0X00041830
-	.rodata	start:0X000012C0 end:0X00001350
+	.text       start:0x0003FD8C end:0x00041830
+	.rodata     start:0x000012C0 end:0x00001350
+
 stg35D_65.c:
-	.text	start:0X00041A3C end:0X00042ACC
-	.rodata	start:0X00001350 end:0X00001388
+	.text       start:0x00041A3C end:0x00042ACC
+	.rodata     start:0x00001350 end:0x00001388
+
 stg35D_66.c:
-	.text	start:0X00043130 end:0X000445DC
-	.rodata	start:0X00001388 end:0X000013D8
+	.text       start:0x00043130 end:0x000445DC
+	.rodata     start:0x00001388 end:0x000013D8
+
 stg35D_67.c:
-	.text	start:0X000445FC end:0X00044E34
-	.rodata	start:0X000013D8 end:0X00001410
+	.text       start:0x000445FC end:0x00044E34
+	.rodata     start:0x000013D8 end:0x00001410
+
 stg35D_68.c:
-	.text	start:0X00045020 end:0X00045358
-	.rodata	start:0X00001410 end:0X00001438
+	.text       start:0x00045020 end:0x00045358
+	.rodata     start:0x00001410 end:0x00001438
+
 stg35D_69.c:
-	.text	start:0X000453C4 end:0X000464D4
-	.rodata	start:0X00001438 end:0X00001498
+	.text       start:0x000453C4 end:0x000464D4
+	.rodata     start:0x00001438 end:0x00001498
+
 stg35D_70.c:
-	.text	start:0X000464E8 end:0X00047A20
-	.rodata	start:0X00001498 end:0X000014F8
+	.text       start:0x000464E8 end:0x00047A20
+	.rodata     start:0x00001498 end:0x000014F8
+
 stg35D_71.c:
-	.text	start:0X00047B78 end:0X00049264
-	.rodata	start:0X000014F8 end:0X00001580
+	.text       start:0x00047B78 end:0x00049264
+	.rodata     start:0x000014F8 end:0x00001580
+
 stg35D_72.c:
-	.text	start:0X00049264 end:0X0004A7AC
-	.rodata	start:0X00001580 end:0X000015E0
+	.text       start:0x00049264 end:0x0004A7AC
+	.rodata     start:0x00001580 end:0x000015E0
+
 stg35D_73.c:
-	.text	start:0X0004A834 end:0X0004AA60
-	.rodata	start:0X000015E0 end:0X000015E8
+	.text       start:0x0004A834 end:0x0004AA60
+	.rodata     start:0x000015E0 end:0x000015E8
+
 stg35D_74.c:
-	.text	start:0X0004AA64 end:0X0004ABF4
-	.rodata	start:0X000015E8 end:0X000015F0
+	.text       start:0x0004AA64 end:0x0004ABF4
+	.rodata     start:0x000015E8 end:0x000015F0
+
 stg35D_75.c:
-	.text	start:0X0004ABF4 end:0X0004B018
-	.rodata	start:0X000015F0 end:0X00001610
+	.text       start:0x0004ABF4 end:0x0004B018
+	.rodata     start:0x000015F0 end:0x00001610
+
 stg35D_76.c:
-	.text	start:0X0004B018 end:0X0004CA94
-	.rodata	start:0X00001610 end:0X000016A8
+	.text       start:0x0004B018 end:0x0004CA94
+	.rodata     start:0x00001610 end:0x000016A8
+
 stg35D_77.c:
-	.text	start:0X0004CA94 end:0X0004DA34
-	.rodata	start:0X000016A8 end:0X00001700
+	.text       start:0x0004CA94 end:0x0004DA34
+	.rodata     start:0x000016A8 end:0x00001700
+
 stg35D_78.c:
-	.text	start:0X0004DA34 end:0X0004DB7C
-	.rodata	start:0X00001700 end:0X00001708
+	.text       start:0x0004DA34 end:0x0004DB7C
+	.rodata     start:0x00001700 end:0x00001708
+
 stg35D_79.c:
-	.text	start:0X0004DB80 end:0X0004DE20
-	.rodata	start:0X00001708 end:0X00001740
+	.text       start:0x0004DB80 end:0x0004DE20
+	.rodata     start:0x00001708 end:0x00001740
+
 stg35D_80.c:
-	.text	start:0X0004DFA4 end:0X0004ED0C
-	.rodata	start:0X00001740 end:0X00001788
+	.text       start:0x0004DFA4 end:0x0004ED0C
+	.rodata     start:0x00001740 end:0x00001788
+
 stg35D_81.c:
-	.text	start:0X0004ED0C end:0X0004F97C
-	.rodata	start:0X00001788 end:0X000017C0
+	.text       start:0x0004ED0C end:0x0004F97C
+	.rodata     start:0x00001788 end:0x000017C0
+
 stg35D_82.c:
-	.text	start:0X0004F97C end:0X0004FB78
-	.rodata	start:0X000017C0 end:0X00001830
+	.text       start:0x0004F97C end:0x0004FB78
+	.rodata     start:0x000017C0 end:0x00001830
+
 stg35D_83.c:
-	.text	start:0X0004FC98 end:0X0004FF8C
-	.rodata	start:0X00001830 end:0X00001858
+	.text       start:0x0004FC98 end:0x0004FF8C
+	.rodata     start:0x00001830 end:0x00001858
+
 stg35D_84.c:
-	.text	start:0X00050164 end:0X0005152C
-	.rodata	start:0X00001858 end:0X00001918
+	.text       start:0x00050164 end:0x0005152C
+	.rodata     start:0x00001858 end:0x00001918
+
 stg35D_85.c:
-	.text	start:0X000516CC end:0X000530E8
-	.rodata	start:0X00001918 end:0X000019B0
+	.text       start:0x000516CC end:0x000530E8
+	.rodata     start:0x00001918 end:0x000019B0
+
 stg35D_86.c:
-	.text	start:0X000535AC end:0X0005438C
-	.rodata	start:0X000019B0 end:0X000019F8
+	.text       start:0x000535AC end:0x0005438C
+	.rodata     start:0x000019B0 end:0x000019F8
+
 stg35D_87.c:
-	.text	start:0X000543C8 end:0X0005ABD4
-	.rodata	start:0X000019F8 end:0X00001AD8
+	.text       start:0x000543C8 end:0x0005ABD4
+	.rodata     start:0x000019F8 end:0x00001AD8
+
 stg35D_88.c:
-	.text	start:0X0005B0FC end:0X0005D528
-	.rodata	start:0X00001AD8 end:0X00001B78
+	.text       start:0x0005B0FC end:0x0005D528
+	.rodata     start:0x00001AD8 end:0x00001B78
+
 stg35D_89.c:
-	.text	start:0X0005D59C end:0X0005F604
-	.rodata	start:0X00001B78 end:0X00001C48
+	.text       start:0x0005D59C end:0x0005F604
+	.rodata     start:0x00001B78 end:0x00001C48
+
 stg35D_90.c:
-	.text	start:0X0005F640 end:0X000620B0
-	.rodata	start:0X00001C48 end:0X00001D20
+	.text       start:0x0005F640 end:0x000620B0
+	.rodata     start:0x00001C48 end:0x00001D20
+
 stg35D_91.c:
-	.text	start:0X000620EC end:0X00064C60
-	.rodata	start:0X00001D20 end:0X00001DD0
+	.text       start:0x000620EC end:0x00064C60
+	.rodata     start:0x00001D20 end:0x00001DD0
+
 stg35D_92.c:
-	.text	start:0X00064DB0 end:0X00067420
-	.rodata	start:0X00001DD0 end:0X00001E60
+	.text       start:0x00064DB0 end:0x00067420
+	.rodata     start:0x00001DD0 end:0x00001E60
+
 stg35D_93.c:
-	.text	start:0X0006745C end:0X00069880
-	.rodata	start:0X00001E60 end:0X00001F20
+	.text       start:0x0006745C end:0x00069880
+	.rodata     start:0x00001E60 end:0x00001F20
