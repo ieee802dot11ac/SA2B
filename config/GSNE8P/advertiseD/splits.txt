@@ -3,8 +3,8 @@ Sections:
 	.ctors      type:rodata align:4
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
-	.data       type:data align:8
-	.bss        type:bss align:8
+	.data       type:data align:32
+	.bss        type:bss align:32
 
 advertiseD_0.c:
 	.text       start:0x00001068 end:0x00001BB4
