@@ -6,12 +6,15 @@ Sections:
 	.data       type:data align:32
 	.bss        type:bss align:8
 
+stg13D_00.c:
+	.text       start:0x00000000 end:0x00000208
+
 stg13D_0.c:
-	.text       start:0x00000518 end:0x0000092C
+	.text       start:0x00000208 end:0x0000096C
 	.rodata     start:0x00000000 end:0x00000010
 
 stg13D_1.c:
-	.text       start:0x00000970 end:0x00000C20
+	.text       start:0x0000096C end:0x00000C70
 	.rodata     start:0x00000010 end:0x00000018
 
 stg13D_2.c:
@@ -343,11 +346,11 @@ stg13D_83.c:
 	.rodata     start:0x000012A8 end:0x000012E0
 
 stg13D_84.c:
-	.text       start:0x00047214 end:0x0004754C
+	.text       start:0x00047214 end:0x000475B8
 	.rodata     start:0x000012E0 end:0x00001308
 
-stg13D_85.c:
-	.text       start:0x000475B8 end:0x000486C8
+OBJECT/o_spring.c:
+	.text       start:0x000475B8 end:0x000486DC
 	.rodata     start:0x00001308 end:0x00001368
 
 stg13D_86.c:

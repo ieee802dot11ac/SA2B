@@ -265,8 +265,8 @@ def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
 def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
-        "mw_version": "GC/1.3.2",
-        "cflags": cflags_rel,
+        "mw_version": "GC/1.2.5",
+        "cflags": cflags_rel + ["-i include/ninja", "-opt nopeep", "-opt noschedule", "-pool off", "-inline off", "-fp_contract off"],
         "progress_category": "game",
         "objects": objects,
     }
@@ -295,6 +295,12 @@ config.libs = [
             Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
+    Rel(
+        "stg13D",
+        [
+            Object(NonMatching, "OBJECT/o_spring.c")
+        ]
+    )
 ]
 
 
