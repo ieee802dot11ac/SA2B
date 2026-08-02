@@ -245,6 +245,13 @@ cflags_rel = [
     *cflags_base,
     "-sdata 0",
     "-sdata2 0",
+    "-opt nopeep",
+    "-opt noschedule",
+    "-pool off",
+    "-inline off",
+    "-fp_contract off",
+    "-use_lmw_stmw off",
+    "-sym on"
 ]
 
 config.linker_version = "GC/1.3.2"
@@ -266,7 +273,7 @@ def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
         "mw_version": "GC/1.2.5",
-        "cflags": cflags_rel + ["-i include/ninja", "-opt nopeep", "-opt noschedule", "-pool off", "-inline off", "-fp_contract off"],
+        "cflags": cflags_rel,
         "progress_category": "game",
         "objects": objects,
     }
@@ -298,7 +305,7 @@ config.libs = [
     Rel(
         "stg13D",
         [
-            Object(NonMatching, "OBJECT/o_spring.c")
+            Object(Matching, "OBJECT/o_spring.c")
         ]
     )
 ]
