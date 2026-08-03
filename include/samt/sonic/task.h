@@ -88,9 +88,9 @@ typedef struct task
     u32              id;            /* id                                 [unused & unfinished] */
 
     union {
-        i8      b[4];               /* bytes                                                    */
-        i16     w[2];               /* words                                                    */
-        i32     l;                  /* long                                                     */
+        s8      b[4];               /* bytes                                                    */
+        s16     w[2];               /* words                                                    */
+        s32     l;                  /* long                                                     */
         f32     f;                  /* real                                                     */
         void*   ptr;                /* pointer                                                  */
     }

@@ -203,18 +203,18 @@ typedef struct sonicwk
 {
     playerwk        pw;             /* player work                                          */
 
-    i8              field_35C[4];
-    i16             flag;
-    i8              field_35C_[4];
-    i16             unks_1;
-    i16             SpindashCounter;
-    i32             field_36A;
-    i32             field_36E;
-    i32             field_372;
-    i16             field_376;
+    s8              field_35C[4];
+    s16             flag;
+    s8              field_35C_[4];
+    s16             unks_1;
+    s16             SpindashCounter;
+    s32             field_36A;
+    s32             field_36E;
+    s32             field_372;
+    s16             field_376;
     NJS_VECTOR      setpos;
-    i32             field_386;
-    i32             field_38A;
+    s32             field_386;
+    s32             field_38A;
     reformwk*       rw_head;
     NJS_TEXLIST*    tlist;          /* texlist                                                  */
     playerobj*      freeobj;        /* free object list                                         */

@@ -143,8 +143,8 @@ void    ALO_GrowTreeDisplayer(  task* tp );
 void    ALO_GrowTreeDestructor( task* tp );
 
 /** Internal functions **/
-void    CalcFruitPos(NJS_POINT3* pPos, TREE_WORK* pTree, i32 FruitNum);
-void    CalcFruitPosSub(NJS_POINT3* pPos, TREE_WORK* pTree, NJS_CNK_OBJECT* pObject, i32 FruitNum);
+void    CalcFruitPos(NJS_POINT3* pPos, TREE_WORK* pTree, s32 FruitNum);
+void    CalcFruitPosSub(NJS_POINT3* pPos, TREE_WORK* pTree, NJS_CNK_OBJECT* pObject, s32 FruitNum);
 
 EXTERN_END
 
@@ -157,8 +157,8 @@ EXTERN_END
 #   define ALO_GrowTreeExecutor_p       FUNC_PTR(void , __cdecl, (task*)                                        , 0x00546810)
 #   define ALO_GrowTreeDisplayer_p      FUNC_PTR(void , __cdecl, (task*)                                        , 0x00547E70)
 #   define ALO_GrowTreeDestructor_p     FUNC_PTR(void , __cdecl, (task*)                                        , 0x005481E0)
-#   define CalcFruitPos_p               FUNC_PTR(void , __cdecl, (NJS_POINT3*, TREE_WORK*, i32)                 , 0x00546670)
-#   define CalcFruitPosSub_p            FUNC_PTR(void , __cdecl, (NJS_POINT3*, TREE_WORK*, NJS_CNK_OBJECT*, i32), 0x00546530)
+#   define CalcFruitPos_p               FUNC_PTR(void , __cdecl, (NJS_POINT3*, TREE_WORK*, s32)                 , 0x00546670)
+#   define CalcFruitPosSub_p            FUNC_PTR(void , __cdecl, (NJS_POINT3*, TREE_WORK*, NJS_CNK_OBJECT*, s32), 0x00546530)
 
 #endif/*SAMT_INCL_FUNCPTRS*/
 

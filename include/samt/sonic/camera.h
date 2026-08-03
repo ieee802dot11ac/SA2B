@@ -163,9 +163,9 @@ camposwk;
 /****** Control Work ****************************************************************************/
 typedef struct _camcontwk
 {
-    i32         tgtmode;            /* targeting mode                                           */
+    s32         tgtmode;            /* targeting mode                                           */
     b32         colflag;            /* land collision flag                                      */
-    i32         timer;              /* timer                                                    */
+    s32         timer;              /* timer                                                    */
     NJS_POINT3  pos;                /* position                                                 */
     NJS_ANGLE3  ang;                /* angle                                                    */
     NJS_VECTOR  vec;                /* direction                                                */
@@ -179,18 +179,18 @@ typedef struct
 {
     NJS_POINT3  pos_curr;           /* last position                                            */
     NJS_POINT3  pos_next;           /* new position                                             */
-    i32         attrmask;           /* land attribute mask                                      */
+    s32         attrmask;           /* land attribute mask                                      */
     f32         dist_max;           /* max distance                                             */
     NJS_POINT3  pos_hit;            /* land hit position (?)                                    */
 
     f32 flt_2C[10];
     NJS_POINT3 pnt_54[2][5];
-    i8 gap_CC[58];
+    s8 gap_CC[58];
 
     NJS_POINT3 vec;
 
-    i8 gap_114[36];
-    i32 int_138;
+    s8 gap_114[36];
+    s32 int_138;
 }
 camcolwk;
 
@@ -207,11 +207,11 @@ camcoldata;
 /****** Set Camera Entry ************************************************************************/
 typedef struct _OBJ_CAMERAENTRY
 {
-    i32         mode;               /* camera mode                                              */
-    i32         adjust;             /* camera adjust mode                                       */
-    i32         priority;           /* priority level                                           */
+    s32         mode;               /* camera mode                                              */
+    s32         adjust;             /* camera adjust mode                                       */
+    s32         priority;           /* priority level                                           */
 
-    i32         coltype;            /* collision type                                           */
+    s32         coltype;            /* collision type                                           */
     NJS_POINT3  colpos;             /* collision position                                       */
     NJS_ANGLE3  colang;             /* collision angle                                          */
     NJS_POINT3  colscl;             /* collision scale                                          */
@@ -223,22 +223,22 @@ typedef struct _OBJ_CAMERAENTRY
     Angle       ang;                /* perspective angle                                        */
     Angle       ang_spd;            /* perspective angle change                                 */
 
-    i8 unk60[24];
+    s8 unk60[24];
     f32         distance;           /* distance from target                                     */
     f32         height;             /* height from ground (?)                                   */
-    i8 unk80[24];
+    s8 unk80[24];
 }
 OBJ_CAMERAENTRY;
 
 /****** Camera Param ****************************************************************************/
 typedef struct _OBJ_CAMERAPARAM
 {
-    i32              mode;          /* camera or adjust mode                                    */
-    i32              col;           /* collision type                                           */
+    s32              mode;          /* camera or adjust mode                                    */
+    s32              col;           /* collision type                                           */
     u32              timer;         /* timer                                                    */
     FN_CAMERA        fn;            /* camera or adjust function                                */
     OBJ_CAMERAENTRY* pEntry;        /* camera entry                                             */
-    i8               work[256];     /* any work data                                            */
+    s8               work[256];     /* any work data                                            */
 }
 OBJ_CAMERAPARAM, OBJ_ADJUSTPARAM;
 
@@ -252,19 +252,19 @@ typedef struct _CameraSystemWork
     b32         lr_flag;            /* free look flag                                           */
     b32         stop_flag;          /* player stop flag                                         */
 
-    i32         padding;            /* unknown or unused                                        */
+    s32         padding;            /* unknown or unused                                        */
     camcolwk    colwk;              /* land collision work                                      */
 
     NJS_VECTOR  shake_vec;          /* shake vector                                             */
     b32         shake_flag;         /* shake on flag                                            */
-    i32         shake_timer;        /* shake timer                                              */
+    s32         shake_timer;        /* shake timer                                              */
     f32         shake_inten;        /* shake intensity                                          */
 
     NJS_CAMERA  njcam;              /* ninja camera                                             */
 
     camposwk    campos[3];          /* position + position history                              */
 
-    i32             level;              /* current priority level                               */
+    s32             level;              /* current priority level                               */
     OBJ_CAMERAPARAM Camera[CAMLEV_NUM]; /* camera mode list                                     */
     OBJ_ADJUSTPARAM Adjust[CAMLEV_NUM]; /* camera adjust list                                   */
 }
@@ -301,8 +301,8 @@ OBJ_CAMERAADJUST;
 /****** Camera Info *****************************************************************************/
 #define camera_tp                   DATA_REF(task*           , 0x01A5A77C)
 #define camera_twp                  DATA_REF(taskwk*         , 0x01A5A784)
-#define camera_count                DATA_REF(i32             , 0x01DD946C)
-#define camera_num                  DATA_REF(i32             , 0x01DD92A0)
+#define camera_count                DATA_REF(s32             , 0x01DD946C)
+#define camera_num                  DATA_REF(s32             , 0x01DD92A0)
 #define camera_pos                  DATA_ARY(camposwk*       , 0x01DD92B0, [CAMERA_NUM])
 
 /********************************/
@@ -323,7 +323,7 @@ OBJ_CAMERAADJUST;
 *   Returns:
 *     Current camera priority level.
 */
-i32     GetCameraLevel( i32 pno );
+s32     GetCameraLevel( s32 pno );
 /*
 *   Description:
 *     Get the last active priority level of a player camera.
@@ -334,7 +334,7 @@ i32     GetCameraLevel( i32 pno );
 *   Returns:
 *     The last active priority level of camera.
 */
-i32     GetCameraLastLevel( i32 pno );
+s32     GetCameraLastLevel( s32 pno );
 /*
 *   Description:
 *     Get an active camera level by searching backwards from a given level.
@@ -346,7 +346,7 @@ i32     GetCameraLastLevel( i32 pno );
 *   Returns:
 *     Active camera level; or '-1' if given level is below '0'.
 */
-i32     GetCameraActiveLevel( i32 pno, i32 lev );
+s32     GetCameraActiveLevel( s32 pno, s32 lev );
 
 /************************************************************************************************/
 /*
@@ -363,7 +363,7 @@ i32     GetCameraActiveLevel( i32 pno, i32 lev );
 *   Returns:
 *     Perspective angle of camera.
 */
-Angle   GetCameraAngle( i32 pno );
+Angle   GetCameraAngle( s32 pno );
 
 /****** Set *************************************************************************************/
 /*
@@ -378,7 +378,7 @@ Angle   GetCameraAngle( i32 pno );
 *     - ang         : perspective angle
 *     - spd         : change speed                                                     [opt:0]
 */
-void    SetCameraAngle( i32 pno, Angle ang, Angle spd );
+void    SetCameraAngle( s32 pno, Angle ang, Angle spd );
 
 /************************************************************************************************/
 /*
@@ -396,7 +396,7 @@ void    SetCameraAngle( i32 pno, Angle ang, Angle spd );
 *   Returns:
 *     Camera mode at priority level.
 */
-i32     GetCameraMode( i32 pno, i32 lev );
+s32     GetCameraMode( s32 pno, s32 lev );
 
 /****** Set *************************************************************************************/
 /*
@@ -411,7 +411,7 @@ i32     GetCameraMode( i32 pno, i32 lev );
 *   Returns:
 *     Camera parameter entry of new mode; or 'nullptr' on failure.
 */
-OBJ_CAMERAPARAM* SetCameraMode( i32 pno, i32 lev, i32 mode );
+OBJ_CAMERAPARAM* SetCameraMode( s32 pno, s32 lev, s32 mode );
 /*
 *   Description:
 *     Set a new user camera mode at a set priority level.
@@ -424,7 +424,7 @@ OBJ_CAMERAPARAM* SetCameraMode( i32 pno, i32 lev, i32 mode );
 *   Returns:
 *     Camera parameter entry of new mode; or 'nullptr' on failure.
 */
-OBJ_CAMERAPARAM* SetCameraUserMode( i32 pno, i32 lev, void(*fnCamera)(CameraSystemWork*, OBJ_CAMERAPARAM*) );
+OBJ_CAMERAPARAM* SetCameraUserMode( s32 pno, s32 lev, void(*fnCamera)(CameraSystemWork*, OBJ_CAMERAPARAM*) );
 
 /****** Set Next ********************************************************************************/
 /*
@@ -438,7 +438,7 @@ OBJ_CAMERAPARAM* SetCameraUserMode( i32 pno, i32 lev, void(*fnCamera)(CameraSyst
 *   Returns:
 *     Camera parameter entry of new mode; or 'nullptr' on failure.
 */
-OBJ_CAMERAPARAM* SetCameraNextMode( i32 pno, i32 mode );
+OBJ_CAMERAPARAM* SetCameraNextMode( s32 pno, s32 mode );
 /*
 *   Description:
 *     Set a new user camera mode, and increment the priority level by 1.
@@ -450,7 +450,7 @@ OBJ_CAMERAPARAM* SetCameraNextMode( i32 pno, i32 mode );
 *   Returns:
 *     Camera parameter entry of new mode; or 'nullptr' on failure.
 */
-OBJ_CAMERAPARAM* SetCameraNextUserMode( i32 pno, void(*fnCamera)(CameraSystemWork*, OBJ_CAMERAPARAM*) );
+OBJ_CAMERAPARAM* SetCameraNextUserMode( s32 pno, void(*fnCamera)(CameraSystemWork*, OBJ_CAMERAPARAM*) );
 
 /****** Set Collision ***************************************************************************/
 /*
@@ -466,7 +466,7 @@ OBJ_CAMERAPARAM* SetCameraNextUserMode( i32 pno, void(*fnCamera)(CameraSystemWor
 *   Returns:
 *     Camera parameter entry of new mode; or 'nullptr' on failure.
 */
-OBJ_CAMERAPARAM* SetCameraModeAndCol( i32 pno, i32 lev, i32 mode, i32 col );
+OBJ_CAMERAPARAM* SetCameraModeAndCol( s32 pno, s32 lev, s32 mode, s32 col );
 
 /****** Release *********************************************************************************/
 /*
@@ -477,7 +477,7 @@ OBJ_CAMERAPARAM* SetCameraModeAndCol( i32 pno, i32 lev, i32 mode, i32 col );
 *     - pno         : player number
 *     - lev         : priority level
 */
-void    ReleaseCameraMode( i32 pno, i32 lev );
+void    ReleaseCameraMode( s32 pno, s32 lev );
 
 /************************************************************************************************/
 /*
@@ -495,7 +495,7 @@ void    ReleaseCameraMode( i32 pno, i32 lev );
 *   Returns:
 *     Camera adjust mode at priority level.
 */
-i32     GetAdjustMode( i32 pno, i32 lev );
+s32     GetAdjustMode( s32 pno, s32 lev );
 
 /****** Set *************************************************************************************/
 /*
@@ -510,7 +510,7 @@ i32     GetAdjustMode( i32 pno, i32 lev );
 *   Returns:
 *     'TRUE' on success; or 'FALSE' if level is higher than current camera priority level.
 */
-b32     SetAdjustMode( i32 pno, i32 lev, i32 adjust );
+b32     SetAdjustMode( s32 pno, s32 lev, s32 adjust );
 /*
 *   Description:
 *     Set a new user camera adjust mode over the current priority level.
@@ -523,7 +523,7 @@ b32     SetAdjustMode( i32 pno, i32 lev, i32 adjust );
 *   Returns:
 *     'TRUE' on success; or 'FALSE' if level is higher than current camera priority level.
 */
-b32     SetAdjustUserMode( i32 pno, i32 lev, void(*fnAdjust)(CameraSystemWork*, OBJ_ADJUSTPARAM*) );
+b32     SetAdjustUserMode( s32 pno, s32 lev, void(*fnAdjust)(CameraSystemWork*, OBJ_ADJUSTPARAM*) );
 
 /************************************************************************************************/
 /*
@@ -541,7 +541,7 @@ b32     SetAdjustUserMode( i32 pno, i32 lev, void(*fnAdjust)(CameraSystemWork*, 
 *   Returns:
 *     Camera collision mode.
 */
-i32     GetCameraCol( i32 pno, i32 lev );
+s32     GetCameraCol( s32 pno, s32 lev );
 
 /****** Set *************************************************************************************/
 /*
@@ -553,7 +553,7 @@ i32     GetCameraCol( i32 pno, i32 lev );
 *     - lev         : priority level
 *     - col         : collision mode
 */
-void    SetCameraCol( i32 pno, i32 lev, i32 col );
+void    SetCameraCol( s32 pno, s32 lev, s32 col );
 
 /************************************************************************************************/
 /*
@@ -571,7 +571,7 @@ void    SetCameraCol( i32 pno, i32 lev, i32 col );
 *   Returns:
 *     Camera entry; or 'nullptr' if none is set.
 */
-OBJ_CAMERAENTRY* GetCameraEntry( i32 pno, i32 lev );
+OBJ_CAMERAENTRY* GetCameraEntry( s32 pno, s32 lev );
 
 /****** Set *************************************************************************************/
 /*
@@ -583,7 +583,7 @@ OBJ_CAMERAENTRY* GetCameraEntry( i32 pno, i32 lev );
 *     - lev         : priority level
 *     - pEntry      : camera entry                                                [opt:nullptr]
 */
-void    SetCameraEntry( i32 pno, i32 lev, OBJ_CAMERAENTRY* pEntry );
+void    SetCameraEntry( s32 pno, s32 lev, OBJ_CAMERAENTRY* pEntry );
 
 /************************************************************************************************/
 /*
@@ -598,7 +598,7 @@ void    SetCameraEntry( i32 pno, i32 lev, OBJ_CAMERAENTRY* pEntry );
 *     - pno         : player number
 *     - v           : vector
 */
-void    SetCameraShakeVec( i32 pno, const NJS_VECTOR* v );
+void    SetCameraShakeVec( s32 pno, const NJS_VECTOR* v );
 /*
 *   Description:
 *     Set the camera shake effect, with intensity and timer.
@@ -608,7 +608,7 @@ void    SetCameraShakeVec( i32 pno, const NJS_VECTOR* v );
 *     - inten       : shake intensity
 *     - timer       : shake timer
 */
-void    SetCameraShake( i32 pno, f32 inten, i32 timer );
+void    SetCameraShake( s32 pno, f32 inten, s32 timer );
 
 /****** Stop ************************************************************************************/
 /*
@@ -621,7 +621,7 @@ void    SetCameraShake( i32 pno, f32 inten, i32 timer );
 *   Parameters:
 *     - pno         : player number
 */
-void    StopCameraShake( i32 pno );
+void    StopCameraShake( s32 pno );
 
 #ifdef SAMT_INCL_FUNCPTRS
 

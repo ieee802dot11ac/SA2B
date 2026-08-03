@@ -39,7 +39,7 @@ typedef struct
     u32                 point2[9];
     NJS_DIRECT_HEAD*    forDirectDisplay; /* direct compiled display object           [dc only] */
     KANBAN_BASE*        kanbanBase;       /* poster list                                        */
-    i32                 nbKanban;         /* poster number                                      */
+    s32                 nbKanban;         /* poster number                                      */
 }
 CART_COURSE_MODEL;
 

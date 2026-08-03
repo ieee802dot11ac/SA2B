@@ -47,7 +47,7 @@ TEX_PVMTABLE;
 *   Returns:
 *     '1' on success; or '-1' on failure.
 */
-i32     texLoadTexturePvmFile( const char* fname, NJS_TEXLIST* ptlo );
+s32     texLoadTexturePvmFile( const char* fname, NJS_TEXLIST* ptlo );
 
 /****** PVM Table *******************************************************************************/
 /*
@@ -116,7 +116,7 @@ void    texCopyTexture( NJS_TEXLIST* pTexDst, const NJS_TEXLIST* pTexSrc );
 *   Returns:
 *     '1' on success; or '-1' on failure.
 */
-i32     LoadPakMEM( const char* fname, NJS_TEXLIST* ptlo );
+s32     LoadPakMEM( const char* fname, NJS_TEXLIST* ptlo );
 /*
 *   Description:
 *     Load a PRS texture file into a texlist.
@@ -128,7 +128,7 @@ i32     LoadPakMEM( const char* fname, NJS_TEXLIST* ptlo );
 *   Returns:
 *     '1' on success; or '-1' on failure.
 */
-i32     LoadPrsMEM( const char* fname, NJS_TEXLIST* ptlo );
+s32     LoadPrsMEM( const char* fname, NJS_TEXLIST* ptlo );
 
 #ifdef SAMT_INCL_FUNCPTRS
 
@@ -136,7 +136,7 @@ i32     LoadPrsMEM( const char* fname, NJS_TEXLIST* ptlo );
 /*  Function Pointers           */
 /********************************/
 /****** Function Pointers ***********************************************************************/
-#define texLoadTexturePvmFile_p          FUNC_PTR(i32         , __fastcall, (const char*, NJS_TEXLIST*), 0x0044C350)
+#define texLoadTexturePvmFile_p          FUNC_PTR(s32         , __fastcall, (const char*, NJS_TEXLIST*), 0x0044C350)
 #define texCreateTexlist_p               FUNC_PTR(NJS_TEXLIST*, __fastcall, (const char*)              , 0x0044C510)
 
 /****** Usercall Pointers ***********************************************************************/

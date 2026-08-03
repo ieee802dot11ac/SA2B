@@ -43,7 +43,7 @@ MINIMALWK;
 /*  Functions           */
 /************************/
 /** Base creator **/
-task*   Minimal_Create(f32 posX, f32 posY, f32 posZ, i32 num, u32 flag);
+task*   Minimal_Create(f32 posX, f32 posY, f32 posZ, s32 num, u32 flag);
 
 /** Create random minimal **/
 task*   Minimal_Random(f32 posX, f32 posY, f32 posZ);
@@ -52,7 +52,7 @@ task*   Minimal_Random(f32 posX, f32 posY, f32 posZ);
 void    Minimal_Enemy(f32 posX, f32 posY, f32 posZ);
 
 /** Jump from object/box and follow player **/
-task*   Minimal_JumpOut(i32 num, f32 posX, f32 posY, f32 posZ);
+task*   Minimal_JumpOut(s32 num, f32 posX, f32 posY, f32 posZ);
 
 /*
 *   Internal functions
@@ -73,7 +73,7 @@ void    Minimal_Dest(task* tp);
 /*  Function Pointers           */
 /********************************/
 /****** Function Pointers ***********************************************************************/
-#define Minimal_Create_p            FUNC_PTR(task*, __cdecl, (f32, f32, f32, i32, u32), 0x0048AAD0)
+#define Minimal_Create_p            FUNC_PTR(task*, __cdecl, (f32, f32, f32, s32, u32), 0x0048AAD0)
 #define Minimal_Random_p            FUNC_PTR(task*, __cdecl, (f32, f32, f32)          , 0x0048AD10)
 #define Minimal_Enemy_p             FUNC_PTR(void , __cdecl, (f32, f32, f32)          , 0x0048ADA0)
 #define Minimal_Exec_p              FUNC_PTR(void , __cdecl, (task*)                  , 0x004898B0)

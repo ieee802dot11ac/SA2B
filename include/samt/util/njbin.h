@@ -54,7 +54,7 @@ mt_njbin* mtNinjaBinaryOpen( const c8* puFile );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinaryClose( mt_njbin* pNb );
+s32     mtNinjaBinaryClose( mt_njbin* pNb );
 
 /****** Open File *******************************************************************************/
 /*
@@ -102,7 +102,7 @@ mt_njbin* mtNinjaBinaryMem( const void* pMem, usize szMem );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinarySkip( mt_njbin* pNb );
+s32     mtNinjaBinarySkip( mt_njbin* pNb );
 /*
 *   Description:
 *     Check if the end of the binary file has been reached.
@@ -113,7 +113,7 @@ i32     mtNinjaBinarySkip( mt_njbin* pNb );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinaryEnd( const mt_njbin* pNb );
+s32     mtNinjaBinaryEnd( const mt_njbin* pNb );
 /*
 *   Description:
 *     Reset a Ninja binary back to its start.
@@ -124,7 +124,7 @@ i32     mtNinjaBinaryEnd( const mt_njbin* pNb );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinaryReset( mt_njbin* pNb );
+s32     mtNinjaBinaryReset( mt_njbin* pNb );
 
 /****** Read ************************************************************************************/
 /*
@@ -139,7 +139,7 @@ i32     mtNinjaBinaryReset( mt_njbin* pNb );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinaryChunk( mt_njbin* pNb, u32* pOutName, usize* pOutSize );
+s32     mtNinjaBinaryChunk( mt_njbin* pNb, u32* pOutName, usize* pOutSize );
 /*
 *   Description:
 *     Read the current binary chunk into a given buffer, then advance to the next chunk.
@@ -153,7 +153,7 @@ i32     mtNinjaBinaryChunk( mt_njbin* pNb, u32* pOutName, usize* pOutSize );
 *   Returns:
 *     Ninja binary return code.
 */
-i32     mtNinjaBinaryRead( mt_njbin* pNb, void* pDst, u32* pOutName, usize* pOutSize );
+s32     mtNinjaBinaryRead( mt_njbin* pNb, void* pDst, u32* pOutName, usize* pOutSize );
 /*
 *   Description:
 *     Allocate a buffer and read the current binary chunk into it, then advance to the next

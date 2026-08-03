@@ -262,7 +262,7 @@ enum
 /****** Killcolli *******************************************************************************/
 typedef struct 
 {
-    i32         flag;       /* collision flag                                                   */
+    s32         flag;       /* collision flag                                                   */
     NJS_OBJECT* object;     /* collision object                                                 */
 }
 PL_KILLCOLLI;
@@ -282,13 +282,13 @@ PL_ACTION;
 /****** Motion Work *****************************************************************************/
 typedef struct mtnwk
 {
-    i16         mtnmode;
+    s16         mtnmode;
     u16         reqaction;
     u16         action;
     u16         lastaction;
     u16         nextaction;
     u16         acttimer;
-    i16         flag;
+    s16         flag;
     f32         nframe;
     f32         last_nframe;
     f32         start_frame;
@@ -338,7 +338,7 @@ PL_LANDPOSI;
 /****** Player Param ****************************************************************************/
 typedef struct player_parameter
 {
-    i32     jump2_timer;
+    s32     jump2_timer;
     f32     pos_error;
     f32     lim_h_spd;
     f32     lim_v_spd;
@@ -377,21 +377,21 @@ player_parameter;
 typedef struct // To be moved
 {
     void*   texp;
-    i32     address_u;
-    i32     address_v;
-    i32     tes5;
-    i32     min_filter;
-    i32     mag_filter;
-    i32     bank;
-    i32     unk;
+    s32     address_u;
+    s32     address_v;
+    s32     tes5;
+    s32     min_filter;
+    s32     mag_filter;
+    s32     bank;
+    s32     unk;
 }
 TEXTURE_INFO;
 
 /****** Player Work *****************************************************************************/
 typedef struct lookwk
 {
-    i8          mode;               /* looking mode                                             */
-    i32         timer;              /* looking time                                             */
+    s8          mode;               /* looking mode                                             */
+    s32         timer;              /* looking time                                             */
     Angle3      ang;                /* look at angle                                            */
     NJS_POINT3  pos;                /* look at position or offset                               */
     NJS_VECTOR  vec;                /* look at vector, unused                                   */
@@ -411,28 +411,28 @@ stencilwk;
 
 typedef struct playerwk
 {
-    i8      player;                 // Player Number
-    i8      basechar;               // Base Character Number
-    i8      costume;                // Costume Number
-    i8      character;              // Character Number
+    s8      player;                 // Player Number
+    s8      basechar;               // Base Character Number
+    s8      costume;                // Costume Number
+    s8      character;              // Character Number
 
-    i8      action_list[8];
-    i8      action_num;
-    i8      action_sel;             // Currently selected action index (with Y)
-    i8      action_last;            // ? Set on pressing action
+    s8      action_list[8];
+    s8      action_num;
+    s8      action_sel;             // Currently selected action index (with Y)
+    s8      action_last;            // ? Set on pressing action
 
-    i16     item;                   // Powerups
-    i16     jumptimer;
-    i16     nocontimer;             // No Control Timer
-    i16     breathtimer;
-    i16     waittimer;
-    i16     confusetimer;
-    i16     flag;
-    i16     island_num;
-    i16     path_point;             // ? More research needed
-    i32     equipment;
+    s16     item;                   // Powerups
+    s16     jumptimer;
+    s16     nocontimer;             // No Control Timer
+    s16     breathtimer;
+    s16     waittimer;
+    s16     confusetimer;
+    s16     flag;
+    s16     island_num;
+    s16     path_point;             // ? More research needed
+    s32     equipment;
 
-    i32     unki_0;                 // ? Related to being grabbed
+    s32     unki_0;                 // ? Related to being grabbed
     Angle   lean;                   // Body lean angle
     f32     hpos;                   // 1D Position along a path
     f32     dotp;                   // Vertical dot product
@@ -458,8 +458,8 @@ typedef struct playerwk
     task*   ttp;                    // Target Task Pointer
     task*   mlotp;                  // Mobile Land Object Task Pointer 
     task*   sctp;                   // Stand Colli Task Pointer
-    i32     unki_3;                 // Seemingly unused
-    i32     unki_4;                 // ^
+    s32     unki_3;                 // Seemingly unused
+    s32     unki_4;                 // ^
 
     NJS_OBJECT*  lclop;
     PL_LANDPOSI* island_list;
@@ -510,15 +510,15 @@ playerwk;
 /****** Player Files ****************************************************************************/
 typedef struct playerobj
 {
-    i32             idx;            /* list index                                               */
+    s32             idx;            /* list index                                               */
     NJS_CNK_OBJECT* obj;            /* object                                                   */
 }
 playerobj;
 
 typedef struct playermot
 {
-    i16         idx;                /* list index                                               */
-    i16         num;                /* node number                                              */
+    s16         idx;                /* list index                                               */
+    s16         num;                /* node number                                              */
     NJS_MOTION* mot;                /* motion                                                   */
 }
 playermot;
@@ -577,7 +577,7 @@ extern task *playertp[8];
 *   Returns:
 *     Player work of player numher; or 'nullptr' if player does not exist.
 */
-playerwk* GetPlayerWorkPointer( i32 pno );
+playerwk* GetPlayerWorkPointer( s32 pno );
 
 /****** Disable/Hide ****************************************************************************/
 /*
@@ -587,7 +587,7 @@ playerwk* GetPlayerWorkPointer( i32 pno );
 *   Parameters:
 *     - pno         : player number
 */
-void    PlayerDisable( i32 pno );
+void    PlayerDisable( s32 pno );
 /*
 *   Description:
 *     Re-enable a player task by restoring their executor & displayer.
@@ -595,7 +595,7 @@ void    PlayerDisable( i32 pno );
 *   Parameters:
 *     - pno         : player number
 */
-void    PlayerEnable( i32 pno );
+void    PlayerEnable( s32 pno );
 
 /****** Set Pos *********************************************************************************/
 /*
@@ -606,7 +606,7 @@ void    PlayerEnable( i32 pno );
 *     - pno         : player number
 *     - x,y,z       : position
 */
-void    SetPositionP( i32 pno, f32 x, f32 y, f32 z );
+void    SetPositionP( s32 pno, f32 x, f32 y, f32 z );
 /*
 *   Description:
 *     Set player velocity.
@@ -615,7 +615,7 @@ void    SetPositionP( i32 pno, f32 x, f32 y, f32 z );
 *     - pno         : player number
 *     - x,y,z       : vector
 */
-void    SetVelocityP( i32 pno, f32 x, f32 y, f32 z );
+void    SetVelocityP( s32 pno, f32 x, f32 y, f32 z );
 /*
 *   Description:
 *     Set player acceleration.
@@ -624,7 +624,7 @@ void    SetVelocityP( i32 pno, f32 x, f32 y, f32 z );
 *     - pno         : player number
 *     - x,y,z       : vector
 */
-void    SetAccelerationP( i32 pno, f32 x, f32 y, f32 z );
+void    SetAccelerationP( s32 pno, f32 x, f32 y, f32 z );
 
 /****** Powerup *********************************************************************************/
 /*
@@ -634,7 +634,7 @@ void    SetAccelerationP( i32 pno, f32 x, f32 y, f32 z );
 *   Parameters:
 *     - pno         : player number
 */
-void    GetSpeedUpP( i32 pno );
+void    GetSpeedUpP( s32 pno );
 /*
 *   Description:
 *     Give a player the thunder barrier powerup
@@ -642,7 +642,7 @@ void    GetSpeedUpP( i32 pno );
 *   Parameters:
 *     - pno         : player number
 */
-void    GetThunderBarrierP( i32 pno );
+void    GetThunderBarrierP( s32 pno );
 /*
 *   Description:
 *     Give a player the damage barrier powerup
@@ -650,7 +650,7 @@ void    GetThunderBarrierP( i32 pno );
 *   Parameters:
 *     - pno         : player number
 */
-void    GetBarrierP( i32 pno );
+void    GetBarrierP( s32 pno );
 /*
 *   Description:
 *     Give a player the invincibility powerup
@@ -658,7 +658,7 @@ void    GetBarrierP( i32 pno );
 *   Parameters:
 *     - pno         : player number
 */
-void    GetInvincibleBodyForAMomentP( i32 pno );
+void    GetInvincibleBodyForAMomentP( s32 pno );
 
 /****** Holding *********************************************************************************/
 /*
@@ -669,7 +669,7 @@ void    GetInvincibleBodyForAMomentP( i32 pno );
 *     - pno         : player number
 *     - htp         : holding task
 */
-void    HoldTaskP( i32 pno, task* htp );
+void    HoldTaskP( s32 pno, task* htp );
 /*
 *   Description:
 *     Set player to drop currently held task.
@@ -677,7 +677,7 @@ void    HoldTaskP( i32 pno, task* htp );
 *   Parameters:
 *     - pno         : player number
 */
-void    StopHoldingTaskP( i32 pno );
+void    StopHoldingTaskP( s32 pno );
 
 /****** Player Looking **************************************************************************/
 /*
@@ -693,7 +693,7 @@ void    StopHoldingTaskP( i32 pno );
 *     - offset      : position offset
 *     - tm          : number of frames to look for
 */
-void    SetLookingTaskP( i32 pno, task* ttp, const NJS_POINT3* offset, i32 tm );
+void    SetLookingTaskP( s32 pno, task* ttp, const NJS_POINT3* offset, s32 tm );
 /*
 *   Description:
 *     Set a player to look at a set position.
@@ -703,7 +703,7 @@ void    SetLookingTaskP( i32 pno, task* ttp, const NJS_POINT3* offset, i32 tm );
 *     - point       : looking target point
 *     - tm          : number of frames to look for
 */
-void    SetLookingPointP( i32 pno, const NJS_POINT3* point, i32 tm );
+void    SetLookingPointP( s32 pno, const NJS_POINT3* point, s32 tm );
 /*
 *   Description:
 *     Set a player to look at a relative angle.
@@ -713,7 +713,7 @@ void    SetLookingPointP( i32 pno, const NJS_POINT3* point, i32 tm );
 *     - ang         : looking angle
 *     - tm          : number of frames to look for
 */
-void    SetLookingAngleP( i32 pno, const Angle ang[3], i32 tm );
+void    SetLookingAngleP( s32 pno, const Angle ang[3], s32 tm );
 /*
 *   Description:
 *     Stop looking for a player.
@@ -721,14 +721,14 @@ void    SetLookingAngleP( i32 pno, const Angle ang[3], i32 tm );
 *   Parameters:
 *     - pno         : player number
 */
-void    CancelLookingAtP( i32 pno );
+void    CancelLookingAtP( s32 pno );
 
 /****** Misc ************************************************************************************/
 /*
 *   Description:
 *     Get the current number of active players.
 */
-i32     CountCharacters( void );
+s32     CountCharacters( void );
 /*
 *   Description:
 *     Get the player position from this frame, or any previous frame up to 255.
@@ -742,7 +742,7 @@ i32     CountCharacters( void );
 *   Returns:
 *     'TRUE' if the player exists; or 'FALSE' if they do not.
 */
-b32     GetPlayerPosition( i32 pno, u8 frame, NJS_POINT3* pos, NJS_ANGLE3* ang );
+b32     GetPlayerPosition( s32 pno, u8 frame, NJS_POINT3* pos, NJS_ANGLE3* ang );
 /*
 *   Description:
 *     Get player number of task.
@@ -753,7 +753,7 @@ b32     GetPlayerPosition( i32 pno, u8 frame, NJS_POINT3* pos, NJS_ANGLE3* ang )
 *   Returns:
 *     Player number; or '-1' if task is not a player.
 */
-i32     GetTaskPlayerNumber( task* tp );
+s32     GetTaskPlayerNumber( task* tp );
 /*
 *   Description:
 *     Get player number of task.
@@ -769,7 +769,7 @@ b32     IsThisTaskPlayer( task* tp );
 *   Returns:
 *     Nearest player number to point.
 */
-i32     GetTheNearestPlayerNumber( const NJS_POINT3* pos );
+s32     GetTheNearestPlayerNumber( const NJS_POINT3* pos );
 /*
 *   Description:
 *     Get player number of rival player.
@@ -780,7 +780,7 @@ i32     GetTheNearestPlayerNumber( const NJS_POINT3* pos );
 *   Returns:
 *     Rival player number; or '-1' if no rival.
 */
-i32     GetRivalPlayerNumber( i32 pno );
+s32     GetRivalPlayerNumber( s32 pno );
 
 #ifdef SAMT_INCL_FUNCPTRS
 
@@ -788,7 +788,7 @@ i32     GetRivalPlayerNumber( i32 pno );
 /*  Function Pointers           */
 /********************************/
 /****** Function Pointers ***********************************************************************/
-#define CountCharacters_p                   FUNC_PTR(i32, __cdecl, (void), 0x0046DD60)
+#define CountCharacters_p                   FUNC_PTR(s32, __cdecl, (void), 0x0046DD60)
 
 /****** Usercall Pointers ***********************************************************************/
 #define SetVelocityP_p                      0x0046C020 /* ###(ECX,STK,STK,STK)                  */

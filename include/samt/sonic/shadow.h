@@ -49,8 +49,8 @@ shadowwk;
 
 typedef struct
 {
-    i32         findflag;
-    i32         objatt;
+    s32         findflag;
+    s32         objatt;
     Angle       angx;
     Angle       angz;
     f32         onpos;

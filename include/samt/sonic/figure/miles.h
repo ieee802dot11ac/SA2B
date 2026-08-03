@@ -31,11 +31,11 @@ typedef struct mileswk
 {
     playerwk        pw;             /* player work                                          */
 
-    i8              field_38A[16];
+    s8              field_38A[16];
     Angle           TailsAngX;
     Angle           TailsAngZ;
     Angle3          SomeAng;
-    i8              field_3AC[40];
+    s8              field_3AC[40];
     reformwk*       rw_rtail;
     reformwk*       rw_ltail;
     NJS_TEXLIST*    tlist;          /* texlist                                                  */

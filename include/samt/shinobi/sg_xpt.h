@@ -14,11 +14,11 @@ EXTERN_START
 /********************************/
 /****** Integer *********************************************************************************/
 typedef u8                          Uint8;  /* unsigned 1 byte integer                          */
-typedef i8                          Sint8;  /* signed 1 byte integer                            */
+typedef s8                          Sint8;  /* signed 1 byte integer                            */
 typedef u16                         Uint16; /* unsigned 2 byte integer                          */
-typedef i16                         Sint16; /* signed 2 byte integer                            */
+typedef s16                         Sint16; /* signed 2 byte integer                            */
 typedef u32                         Uint32; /* unsigned 4 byte integer                          */
-typedef i32                         Sint32; /* signed 4 byte integer                            */
+typedef s32                         Sint32; /* signed 4 byte integer                            */
 
 /****** Angles **********************************************************************************/
 typedef Sint32                      Angle;  /* hardware angle                                   */

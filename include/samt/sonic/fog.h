@@ -35,7 +35,7 @@ enum
 /****** Fog Data ********************************************************************/
 typedef struct
 {
-    i32       mode;             /* fog mode                                         */
+    s32       mode;             /* fog mode                                         */
     NJS_COLOR color;            /* fog color                                        */
     f32       far;              /* far plane                                        */
     f32       near;             /* near plane                                       */

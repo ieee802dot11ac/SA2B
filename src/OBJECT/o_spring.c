@@ -1,28 +1,25 @@
-
 #include "OBJECT/o_spring.h"
-#include "samt/sonic/c_colli.h"
+
+#include "CCL.h"
 #include "samt/sonic/player.h"
+#include "qFabsf.h"
 
 extern int spring_cnkdraw;
 
 extern Bool CheckRangeOut(task *t);
-extern task *CCL_IsHitPlayer();
 extern void GetPlayerRunningSpeed(Sint8, Float *);
 
 extern void SetInputP(Sint8, int, int);
 extern void SetSpringVelocityP(Uint8, Float, Float, Float);
 extern void SetVelocityYAndRotationAndNoconTimeP(Uint8, Float, Sint32*, Sint32);
 extern void fn_8002FB2C(Sint8, int, int, int); 
-extern void fn_13_390DC(Sint8, int); 
-
-inline float qFabsf(float f) {
-  Uint32 *_f = (Uint32 *)&f;
-  *_f &= 0x7FFFFFFF;
-  return f;
-}
+extern void fn_13_390DC(Sint8, int);
+extern void DeadOut(task *);
+extern void SE_Call(int, int, int, int);
+extern void ds_DrawModelClip(NJS_MODEL *);
 
 inline float fabsf(float f) { return __fabsf(f); }
-inline float sqrtf(float f) {}
+inline float sqrtf(float f);
 
 // ^ extern
 // v in this file
@@ -97,7 +94,7 @@ void ObjectSpringA(task *t) {
       twp->scl.z = 0.0f;
     }
     twp->btimer++;
-    if ((Uint8)twp->btimer > 2) {
+    if (twp->btimer > 2) {
       task *hitPlayer = CCL_IsHitPlayer(t);
       if (hitPlayer != NULL) {
         Uint8 i;
@@ -107,7 +104,7 @@ void ObjectSpringA(task *t) {
             twp->smode = i;
             twp->scl.z = 20.f;
             twp->scl.x = 270.f;
-            twp->mode = 2;
+            twp->mode = MODE_SPRING_2;
             twp->btimer = 0;
             break;
           }
@@ -116,10 +113,10 @@ void ObjectSpringA(task *t) {
     } else if (CCL_IsHitPlayer(t)) {
       twp->btimer = 0;
     }
-    if (twp->mode != 2) {
+    if (twp->mode != MODE_SPRING_2) {
       CCL_Entry(t);
     }
-    if ((Uint8)twp->btimer > 50) {
+    if (twp->btimer > 50) {
       twp->btimer = 50;
     }
   } break;
@@ -269,13 +266,13 @@ void DrawSpring(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  _rename_dsDrawModelClip(lbl_13_data_253774[0][3]); // model_bane_banebottom_banebottom
+  ds_DrawModelClip(lbl_13_data_253774[0][3]); // model_bane_banebottom_banebottom
   njTranslateEx(&lbl_13_data_2516C0.pos);
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  _rename_dsDrawModelClip(lbl_13_data_253774[1][3]); // model_bane_banebottom_spring
+  ds_DrawModelClip(lbl_13_data_253774[1][3]); // model_bane_banebottom_spring
   njTranslateEx(&lbl_13_data_2513F4.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f);
-  _rename_dsDrawModelClip(lbl_13_data_253774[2][3]); // model_bane_banebottom_banehead
+  ds_DrawModelClip(lbl_13_data_253774[2][3]); // model_bane_banebottom_banehead
   njPopMatrixEx();
 }
 
@@ -402,16 +399,16 @@ void DrawSpringB(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  _rename_dsDrawModelClip(lbl_13_data_253774[3][3]);  // model_bane_type_b_type_b_type_b
+  ds_DrawModelClip(lbl_13_data_253774[3][3]);  // model_bane_type_b_type_b_type_b
   njPushMatrixEx();
   njTranslateEx(&lbl_13_data_251D44.pos);
   njPushMatrixEx();
   njTranslateEx(&lbl_13_data_251A78.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f); // model_bane_type_b_type_b_banehead
-  _rename_dsDrawModelClip(lbl_13_data_253774[5][3]);
+  ds_DrawModelClip(lbl_13_data_253774[5][3]);
   njPopMatrixEx();
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  _rename_dsDrawModelClip(lbl_13_data_253774[4][3]); // model_bane_type_b_type_b_spring
+  ds_DrawModelClip(lbl_13_data_253774[4][3]); // model_bane_type_b_type_b_spring
   njPopMatrix(2);
 }
 

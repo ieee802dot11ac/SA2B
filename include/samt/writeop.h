@@ -60,7 +60,7 @@ void    mtOpWriteShortJump( void* pDst, const void* pTgt );
 *     - pDst        : address to write the retn instruction to
 *     - nbPop       : number of bytes to pop from the stack
 */
-void    mtOpWriteRetn( void* pDst, i16 nbPop );
+void    mtOpWriteRetn( void* pDst, s16 nbPop );
 /*
 *   Description:
 *     Write a NOP instruction recursively.

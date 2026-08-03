@@ -31,17 +31,17 @@ typedef struct knuckleswk
 {
     playerwk        pw;             /* player work                                          */
 
-    i8              walltimer;      // increments when scraping against walls when gliding
-    i8              colsomething;   // changes when punching into a colision
-    i8              field_35E[70];
-    i16             timer;          // increments with a player flag set
-    i16             jumptimer;      // increments while holding jump
-    i16             someAng2;
-    i16             someAng0;
-    i16             someAng1;
-    i16             texid;          // texture id for chaos0
-    i32             wing_actnum;    // wing action number for something
-    i8              field_3B4[4];
+    s8              walltimer;      // increments when scraping against walls when gliding
+    s8              colsomething;   // changes when punching into a colision
+    s8              field_35E[70];
+    s16             timer;          // increments with a player flag set
+    s16             jumptimer;      // increments while holding jump
+    s16             someAng2;
+    s16             someAng0;
+    s16             someAng1;
+    s16             texid;          // texture id for chaos0
+    s32             wing_actnum;    // wing action number for something
+    s8              field_3B4[4];
     f32             wing_frame;     // rouge wings shape frame
     Angle           sunglass_ang;   // sunglass/treasurescope angle
     NJS_POINT3      somePos;

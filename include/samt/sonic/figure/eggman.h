@@ -31,7 +31,7 @@ typedef struct eggmanwk
 {
     playerwk        pw;             /* player work                                              */
 
-    i16             timer;          /* timer, unused                                            */
+    s16             timer;          /* timer, unused                                            */
     NJS_TEXLIST*    tlist;          /* texlist                                                  */
     playerobj*      freeobj;        /* free object list                                         */
     playermot*      freemtn;        /* free motion list                                         */

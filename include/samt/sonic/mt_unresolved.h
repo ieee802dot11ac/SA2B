@@ -1486,7 +1486,7 @@ eAL_PST;
 /****** Unknown (Advertise?) ********************************************************************/
 typedef struct
 {
-    i32              type;
+    s32              type;
     NJS_TEXLIST*     ptexlist;
     NJS_CNK_OBJECT*  pobj;
     NJS_DIRECT_HEAD* pdirecthead;
@@ -1507,9 +1507,9 @@ typedef struct
     NJS_MOTION*     hideSelectMotion;
     NJS_MOTION*     hideDecideMotion;
     NJS_CNK_OBJECT* costume;
-    i32             hosi;
-    i32             instTop;
-    i32             window;
+    s32             hosi;
+    s32             instTop;
+    s32             window;
     f32             cursorSize;
 }
 CHARA_DISP_DATAS;
@@ -1517,14 +1517,14 @@ CHARA_DISP_DATAS;
 typedef struct
 {
     f32             bgFade;
-    i32             bgPos;
+    s32             bgPos;
     f32             iconFade;
     f32             motionFlame[15];
-    i32             motionType[15];
+    s32             motionType[15];
     f32             cameraFlame;
     NJS_MOTION*     currentCamera;
     f32             noSelectCharaScl[15];
-    i32             guruguruAngle;
+    s32             guruguruAngle;
 }
 BATTLEA;
 
@@ -1541,9 +1541,9 @@ PlistUv;
 
 typedef struct
 {
-    i32             texId;
+    s32             texId;
     u16*            texIdAddress;
-    i32             uvMax;
+    s32             uvMax;
     PlistUv*        uvData;
 }
 PlistTex;
@@ -1551,7 +1551,7 @@ PlistTex;
 typedef struct
 {
     NJS_CNK_OBJECT* objPointer;
-    i32             texMax;
+    s32             texMax;
     PlistTex**      texData;
 }
 PlistData;
@@ -1559,8 +1559,8 @@ PlistData;
 /****** Motion Table ****************************************************************************/
 typedef struct
 {
-    i16             m_this;
-    i16             node;
+    s16             m_this;
+    s16             node;
     NJS_MOTION*     ptr;
 }
 MML_MOTIONTABLE;
@@ -1570,7 +1570,7 @@ typedef struct
 {
     NJS_CNK_OBJECT* pobj;
     UVCHANGEINFO*   puvc;
-    i32             mode;
+    s32             mode;
 }
 UVCNKD;
 
@@ -1578,7 +1578,7 @@ UVCNKD;
 typedef struct
 {
     NJS_CNK_OBJECT* pobj;
-    i32             num;
+    s32             num;
 }
 LIGC;
 

@@ -15,8 +15,8 @@
         - This is due to lengths being internally signed, using 'isize' over 'usize'.
 *
 *   Disambiguations:
-*     - Size            : size of something in bytes                 (i32[5] == 20)
-*     - Length          : length of something in 'units'             (i32[5] ==  5)
+*     - Size            : size of something in bytes                 (s32[5] == 20)
+*     - Length          : length of something in 'units'             (s32[5] ==  5)
 *     - Code point      : a variably sized, actionable character     ('漢字' ==  2) ('nj' == 2)
 *     - Code unit       : a fixed sized chunk of a whole code point  ('漢字' ==  8) ('nj' == 2)
 */

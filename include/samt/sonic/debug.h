@@ -38,7 +38,7 @@ isize   ___OutputDebugString( const c7* str, ... );
 /*  Function Ptrs               */
 /********************************/
 /****** Standard ********************************************************************************/
-#define ___OutputDebugString_p      FUNC_PTR(i32, __cdecl, (const c7*, ...), 0x00426740)
+#define ___OutputDebugString_p      FUNC_PTR(s32, __cdecl, (const c7*, ...), 0x00426740)
 
 #endif/*SAMT_INCL_FUNCPTRS*/
 

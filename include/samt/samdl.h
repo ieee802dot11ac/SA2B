@@ -39,10 +39,10 @@ EXTERN_START
 /*  Constants                   */
 /********************************/
 /****** Structure Sizes *************************************************************************/
-#define SIZEOF_SAMDL                (sizeof(i32)*3) /* sizeof(mt_samdl)                         */
-#define SIZEOF_SALVL                (sizeof(i32)*3) /* sizeof(mt_salvl)                         */
-#define SIZEOF_SAANIM               (sizeof(i32)*4) /* sizeof(mt_saanim)                        */
-#define SIZEOF_SALABEL              (sizeof(i32)*4) /* sizeof(mt_salabel)                       */
+#define SIZEOF_SAMDL                (sizeof(s32)*3) /* sizeof(mt_samdl)                         */
+#define SIZEOF_SALVL                (sizeof(s32)*3) /* sizeof(mt_salvl)                         */
+#define SIZEOF_SAANIM               (sizeof(s32)*4) /* sizeof(mt_saanim)                        */
+#define SIZEOF_SALABEL              (sizeof(s32)*4) /* sizeof(mt_salabel)                       */
 
 /****** SAModel Flags ***************************************************************************/
 #define SAMDL_NOFLAG                (0)     /* no flags                                         */

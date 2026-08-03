@@ -18,60 +18,60 @@
 #endif
 
 /****** Core Errors *****************************************************************************/
-#ifndef SAMT_NO_COREERR
-#   if defined(__clang__)
+// #ifndef SAMT_NO_COREERR
+// #   if defined(__clang__)
 
-#       define MT_C_CLANG   1
-#       define MT_CNAME     "clang"
+// #       define MT_C_CLANG   1
+// #       define MT_CNAME     "clang"
 
-#       if !defined(__i386__)
-#           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
-#       endif
-#       if defined(__cplusplus) && (__cplusplus < 202002L)
-#           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
-#       endif
-#       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 202311L)
-#           error "SAMT is designed for C23 or later, please change the project's C standard target"
-#       endif
+// #       if !defined(__i386__)
+// #           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
+// #       endif
+// #       if defined(__cplusplus) && (__cplusplus < 202002L)
+// #           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
+// #       endif
+// #       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 202311L)
+// #           error "SAMT is designed for C23 or later, please change the project's C standard target"
+// #       endif
 
-#   elif defined(__GNUC__)
+// #   elif defined(__GNUC__)
 
-#       define MT_C_GCC     1
-#       define MT_CNAME     "gnuc"
+// #       define MT_C_GCC     1
+// #       define MT_CNAME     "gnuc"
 
-#       if !defined(__i386__)
-#           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
-#       endif
-#       if defined(__cplusplus) && (__cplusplus < 202002L)
-#           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
-#       endif
-#       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 202311L)
-#           error "SAMT is designed for C23 or later, please change the project's C standard target"
-#       endif
+// #       if !defined(__i386__)
+// #           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
+// #       endif
+// #       if defined(__cplusplus) && (__cplusplus < 202002L)
+// #           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
+// #       endif
+// #       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 202311L)
+// #           error "SAMT is designed for C23 or later, please change the project's C standard target"
+// #       endif
 
-#   elif defined(_MSC_VER)
+// #   elif defined(_MSC_VER)
 
-#       define MT_C_MSVC    1
-#       define MT_CNAME     "msvc"
+// #       define MT_C_MSVC    1
+// #       define MT_CNAME     "msvc"
 
-#       if !defined(_M_IX86)
-#           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
-#       endif
-#       if defined(_MSVC_TRADITIONAL) && (_MSVC_TRADITIONAL != 0)
-#           error "SAMT is designed for the standard conforming MSVC preprocessor, please enable either in your project's settings"
-#       endif
-#       if defined(_MSVC_LANG) && (_MSVC_LANG < 202002L)
-#           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
-#       endif
-#       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 201710L)
-#           error "SAMT for MSVC is designed for C17 or later, please change the project's C standard target"
-#       endif
+// #       if !defined(_M_IX86)
+// #           error "Mod is being built for a non-x86 platform, please change your platform target to x86"
+// #       endif
+// #       if defined(_MSVC_TRADITIONAL) && (_MSVC_TRADITIONAL != 0)
+// #           error "SAMT is designed for the standard conforming MSVC preprocessor, please enable either in your project's settings"
+// #       endif
+// #       if defined(_MSVC_LANG) && (_MSVC_LANG < 202002L)
+// #           error "SAMT is designed for C++20 or later, please change the project's C++ standard target"
+// #       endif
+// #       if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 201710L)
+// #           error "SAMT for MSVC is designed for C17 or later, please change the project's C standard target"
+// #       endif
 
-#   elif defined(__MWERKS__)
-#   else
-#       error "Unknown compiler! Support for this compiler should be explicitly supported before attempting to build!"
-#   endif/*__clang__, __GNUC__, _MSC_VER*/
-#endif/*SAMT_DONT_COREERR*/
+// #   elif defined(__MWERKS__)
+// #   else
+// #       error "Unknown compiler! Support for this compiler should be explicitly supported before attempting to build!"
+// #   endif/*__clang__, __GNUC__, _MSC_VER*/
+// #endif/*SAMT_DONT_COREERR*/
 
 /****** C++ Debug Fix ***************************************************************************/
 #ifndef SAMT_NO_DEBUGFIX
@@ -175,13 +175,13 @@ EXTERN_START
 */
 /****** Integer *********************************************************************************/
 typedef unsigned char       u8;     /* unsigned 1 byte integer                                  */
-typedef signed char         i8;     /* signed 1 byte integer                                    */
+typedef signed char         s8;     /* signed 1 byte integer                                    */
 typedef unsigned short      u16;    /* unsigned 2 byte integer                                  */
-typedef signed short        i16;    /* signed 2 byte integer                                    */
+typedef signed short        s16;    /* signed 2 byte integer                                    */
 typedef unsigned long       u32;    /* unsigned 4 byte integer                                  */
-typedef signed long         i32;    /* signed 4 byte integer                                    */
+typedef signed long         s32;    /* signed 4 byte integer                                    */
 typedef unsigned long long  u64;    /* unsigned 8 byte integer                                  */
-typedef signed long long    i64;    /* signed 8 byte integer                                    */
+typedef signed long long    s64;    /* signed 8 byte integer                                    */
 
 /****** Real Number *****************************************************************************/
 typedef float               f32;    /* 4 byte real number                                       */
@@ -211,12 +211,12 @@ typedef u8                  byte;   /* basic byte type                          
 
 /****** Pointer *********************************************************************************/
 typedef u32                 uintptr_t;
-typedef i32                 intptr_t;
+typedef s32                 intptr_t;
 typedef uintptr_t           pint;   /* pointer integer value                                    */
 typedef intptr_t            poff;   /* pointer offset value                                     */
 
 /****** Size ************************************************************************************/
-typedef i32                 isize;  /* size integer                                             */
+typedef s32                 isize;  /* size integer                                             */
 typedef u32                 usize;  /* unsigned size integer                                    */
 typedef u64                 lsize;  /* large size integer                                       */
 typedef uintptr_t           psize;  /* pointer address size integer                             */

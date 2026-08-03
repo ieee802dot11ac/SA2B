@@ -21,8 +21,8 @@ EXTERN_START
 /****** Reform Work *****************************************************************************/
 typedef struct reformwk
 {
-    i8              mode;           /* reform mode                                              */
-    i16             vnum;           /* vertex count in vlist                                    */
+    s8              mode;           /* reform mode                                              */
+    s16             vnum;           /* vertex count in vlist                                    */
     f32             inten;          /* reform intensity                                         */
     Angle           freq;           /* reform frequency                                         */
     Angle           phase;          /* reform phase                                             */

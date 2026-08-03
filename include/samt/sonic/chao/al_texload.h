@@ -60,7 +60,7 @@ LOADED_TEX_INFO;
 *   Returns:
 *     'TRUE' on success; or 'FALSE' on failure.
 */
-i32     AL_LoadTex( const c7* filename, NJS_TEXLIST* pTexlist, u16 lev );
+s32     AL_LoadTex( const c7* filename, NJS_TEXLIST* pTexlist, u16 lev );
 /*
 *   Description:
 *     Release all textures at the given level.

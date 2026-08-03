@@ -240,7 +240,7 @@ typedef struct
     Uint8  head;                    /* chunk type                                               */
 
     CNK_BA blend;                   /* blend mode                                               */
-    Uint16 size;                    /* chunk data size, in i16 steps                            */
+    Uint16 size;                    /* chunk data size, in s16 steps                            */
 
     // chunk data
     Sint16 d[];                     /* data                                                     */
@@ -322,7 +322,7 @@ typedef struct
         };
     };
 
-    Uint16 size;                    /* chunk data size, in i32 steps                            */
+    Uint16 size;                    /* chunk data size, in s32 steps                            */
 
     // chunk data
     Uint16 indexoffset;             /* vertex buffer offset                                     */
@@ -553,7 +553,7 @@ typedef struct
     Uint8  head;                    /* chunk type                                               */
 
     Uint8  flag;                    /* strip flags                                              */
-    Uint16 size;                    /* chunk data size, in i16 steps                            */
+    Uint16 size;                    /* chunk data size, in s16 steps                            */
 
     // chunk data
     Uint16 nbpoly  : 14;            /* poly/strip count                                         */
@@ -620,7 +620,7 @@ typedef struct
     Uint8  head;                    /* chunk type                                               */
 
     Uint8  flag;                    /* strip flags                                              */
-    Uint16 size;                    /* chunk data size, in i16 steps                            */
+    Uint16 size;                    /* chunk data size, in s16 steps                            */
 
     // chunk data
     Uint16 nbstrip  : 14;           /* strip count                                              */
