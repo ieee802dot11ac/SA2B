@@ -137,7 +137,7 @@ ALW_ENTRY_WORK;
 /*  Data                */
 /************************/
 /****** World State *****************************************************************************/
-#define ChaoWorldLoadFlag       DATA_REF(b32                        , 0x01A5AF0C)
+#define ChaoWorldLoadFlag       DATA_REF(BOOL                        , 0x01A5AF0C)
 
 /****** ALW Core ********************************************************************************/
 #define WorldMasterTask         DATA_REF(task*                      , 0x01A0F94C)
@@ -363,7 +363,7 @@ s32     ALW_RecieveCommand( task* tp );
 *     'TRUE' if she *does* have attention on another entry; or 'FALSE' if she is not an entry,
 *   has no attention, or her attention is on me.
 */
-b32     ALW_IsSheAttentionOtherOne( const task* pMyTask, const task* pHerTask );
+BOOL     ALW_IsSheAttentionOtherOne( const task* pMyTask, const task* pHerTask );
 
 /****** SAMT Additions **************************************************************************/
 /*

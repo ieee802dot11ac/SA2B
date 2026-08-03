@@ -44,7 +44,7 @@ typedef struct
     f32             texid_startoff;
     f32             texid_curr;
     f32             texid_speed;
-    b32             enabled;
+    BOOL             enabled;
     f32             addU;
     f32             addV;
 }

@@ -49,7 +49,7 @@ typedef struct
     FOG_DATA* pFogA;            /* fog data, a                                      */
     FOG_DATA* pFogB;            /* fog data, b                                      */
     f32       ratio;            /* ratio a~b                                        */
-    b32       lock;             /* fog logic lock                                   */
+    BOOL       lock;             /* fog logic lock                                   */
 }
 FOG_WORK;
 
@@ -107,7 +107,7 @@ void    FreeFogManager( void );
 *   Returns:
 *     '1' on success; or '0' on failure.
 */
-b32     LoadFogFile( const char* fname, FOG_DATA* pFog );
+BOOL     LoadFogFile( const char* fname, FOG_DATA* pFog );
 
 /****** Set Fog *********************************************************************/
 /*

@@ -33,10 +33,10 @@ enum
 /************************/
 EXTERN_START
 /** Check alignment **/
-b32     AL_IsHero(uint8_t type);
-b32     AL_IsHero2(task* pChaoTask);
-b32     AL_IsDark(uint8_t type);
-b32     AL_IsDark2(task* pChaoTask);
+BOOL     AL_IsHero(uint8_t type);
+BOOL     AL_IsHero2(task* pChaoTask);
+BOOL     AL_IsDark(uint8_t type);
+BOOL     AL_IsDark2(task* pChaoTask);
 
 /** Get Chao skill points adjusted by stage **/
 uint32_t AL_ParameterGetSkill(task* tp, uint16_t SkillKind);

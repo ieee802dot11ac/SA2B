@@ -94,7 +94,7 @@ typedef struct
     int32_t debugDisp;
     int32_t IsBusy;
     task* tp;
-    b32 IsOdekake;
+    BOOL IsOdekake;
     CHAO_PARAM_GC* pChaoParam;
     GBA_PORT_INFO PortInfo[4];
 }

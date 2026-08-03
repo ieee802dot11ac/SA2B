@@ -28,7 +28,7 @@ float       GetDisplayRatioY( void );
 /** Get Display Info **/
 float       GetDisplayAspectRatio( void );
 int         GetDisplayRefreshRate( void );
-b32         GetDisplayIsFullscreen( void );
+BOOL         GetDisplayIsFullscreen( void );
 
 EXTERN_END
 

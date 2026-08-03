@@ -90,12 +90,12 @@ EXTERN_START
 /** Global pad read set and check **/
 void    PadReadOn(        void );
 void    PadReadOff(       void );
-b32     CheckPadReadMode( void );
+BOOL     CheckPadReadMode( void );
 
 /** Player specific pad read set and check **/
 void    PadReadOnP(        uint8_t pno );
 void    PadReadOffP(       uint8_t pno );
-b32     CheckPadReadModeP( uint8_t pno );
+BOOL     CheckPadReadModeP( uint8_t pno );
 
 EXTERN_END
 

@@ -233,7 +233,7 @@ typedef struct chao_param_gc
     AL_EMOTION emotion;
     AL_KNOWLEDGE_BTL knowledge;
     AL_GENE gene;
-    b32     IsInitializedDX;
+    BOOL     IsInitializedDX;
     AL_PARTS partsDX;
     AL_RACE_PERSONAL_INFO_DX raceDX;
     AL_KNOWLEDGE_DX knowledgeDX;
@@ -252,7 +252,7 @@ CHAO_SAVE_INFO;
 /************************/
 #define pSelectedChaoSaveInfoList   DATA_REF(CHAO_SAVE_INFO*, 0x01A5CC00)
 #define pHoldingChaoSaveInfo        DATA_REF(CHAO_SAVE_INFO*, 0x01A5CA5C)
-#define HoldingFront                DATA_REF(b32       , 0x01A5CAB4)
+#define HoldingFront                DATA_REF(BOOL       , 0x01A5CAB4)
 
 #define ChaoSetPositionNeut         DATA_ARY(NJS_POINT3     , 0x01366260, [16])
 #define ChaoSetPositionHero         DATA_ARY(NJS_POINT3     , 0x01366320, [16])

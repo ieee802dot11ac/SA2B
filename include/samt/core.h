@@ -188,7 +188,7 @@ typedef float               f32;    /* 4 byte real number                       
 typedef double              f64;    /* 8 byte real number                                       */
 
 /****** Boolean *********************************************************************************/
-typedef int                 b32;    /* 4 byte boolean                                           */
+typedef int                 BOOL;    /* 4 byte boolean                                           */
 
 /************************************************************************************************/
 /*

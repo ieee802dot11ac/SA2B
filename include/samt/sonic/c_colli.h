@@ -183,7 +183,7 @@ void    CCL_ClearSearch( void );
 *   Returns:
 *     'TRUE' on success; or 'FALSE' on failure.
 */
-b32     CCL_Init( task* tp, CCL_INFO* info, s32 nbInfo, u8 id );
+BOOL     CCL_Init( task* tp, CCL_INFO* info, s32 nbInfo, u8 id );
 
 /****** Register ********************************************************************/
 /*
@@ -290,7 +290,7 @@ CCL_HIT_INFO* CCL_IsHitKindEx( task* tp, u8 kind );
 *   Returns:
 *     'TRUE' if Task has been pushed; or 'FALSE' if not.
 */
-b32     CCL_IsPushed( const task* tp );
+BOOL     CCL_IsPushed( const task* tp );
 
 /************************/
 /*  Function Ptrs       */

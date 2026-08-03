@@ -203,7 +203,7 @@ RACE_SAVE_INFO*   AL_GetRaceSaveInfo(void);
 
 /** Flag info **/
 void        AL_OnGardenFlag(uint32_t flag);
-b32        AL_CheckGardenFlag(uint32_t flag);
+BOOL        AL_CheckGardenFlag(uint32_t flag);
 
 /** New info **/
 ITEM_SAVE_INFO* AL_GetNewItemSaveInfo(int32_t category);
@@ -227,7 +227,7 @@ void    AL_PackageItemSaveInfo(int32_t category);
 void    AL_CreateGardenInfo( void );
 
 /** Internal functions **/
-b32     AL_CheckSaveDataCrc2(CHAO_GARDEN_INFO* info);
+BOOL     AL_CheckSaveDataCrc2(CHAO_GARDEN_INFO* info);
 
 EXTERN_END
 
@@ -241,7 +241,7 @@ EXTERN_END
 #   define AL_GetAnotherGardenInfo_p        FUNC_PTR(CHAO_GARDEN_INFO*, __cdecl   , (void)             , 0x0052E460)
 #   define AL_PackageAllSaveInfo_p          FUNC_PTR(void             , __cdecl   , (void)             , 0x0052F090)
 #   define AL_PackageItemSaveInfo_p         FUNC_PTR(void             , __cdecl   , (int32_t)          , 0x0052E710)
-#   define AL_CheckSaveDataCrc2_p           FUNC_PTR(b32              , __fastcall, (CHAO_GARDEN_INFO*), 0x0052F030)
+#   define AL_CheckSaveDataCrc2_p           FUNC_PTR(BOOL              , __fastcall, (CHAO_GARDEN_INFO*), 0x0052F030)
 #   define AL_SetObjectOnTheGarden_p        FUNC_PTR(void             , __cdecl   , (void)             , 0x0052EB70)
 #   define AL_CreateHoldingItem_p           FUNC_PTR(void             , __cdecl   , (void)             , 0x0052F2A0)
 #   define AL_CreateGardenInfo_p            FUNC_PTR(void             , __cdecl   , (void)             , 0x0052F110)

@@ -141,9 +141,9 @@ OBJ_LANDCOLL;
 #define LandTaskP               DATA_REF(task*         , 0x01945A04)
 
 /****** Land Flags ******************************************************************************/
-#define boolLandDisplay         DATA_REF(b32           , 0x0171CAA8)
-#define boolLandCollision       DATA_REF(b32           , 0x0171CAAC)
-#define boolLandGjmdl           DATA_REF(b32           , 0x01A5A2D8)
+#define boolLandDisplay         DATA_REF(BOOL           , 0x0171CAA8)
+#define boolLandCollision       DATA_REF(BOOL           , 0x0171CAAC)
+#define boolLandGjmdl           DATA_REF(BOOL           , 0x01A5A2D8)
 
 /****** Land Clip Range *************************************************************************/
 #define mleriRangeRad           DATA_REF(f32           , 0x0171CAA4)
@@ -187,7 +187,7 @@ OBJ_LANDCOLL;
 *   Returns:
 *     'TRUE' if the landtable was changed/set; or 'FALSE' on failure.
 */
-b32     LandChangeLandTable( OBJ_LANDTABLE* land );
+BOOL     LandChangeLandTable( OBJ_LANDTABLE* land );
 /*
 *   Description:
 *     Create/re-create land manager task and set active landtable structure of a specific
@@ -202,8 +202,8 @@ b32     LandChangeLandTable( OBJ_LANDTABLE* land );
 *   Returns:
 *     'TRUE' if the landtable was changed/set; or 'FALSE' on failure.
 */
-b32     LandChangeGinjaLandTable( OBJ_LANDTABLE* land );
-b32     LandChangeChunkLandTable( OBJ_LANDTABLE* land );
+BOOL     LandChangeGinjaLandTable( OBJ_LANDTABLE* land );
+BOOL     LandChangeChunkLandTable( OBJ_LANDTABLE* land );
 /*
 *   Description:
 *     Free the LandManager task, and by extension the active landtable.
@@ -233,7 +233,7 @@ void    ListGroundForCollision( f32 xPosition, f32 yPosition, f32 zPosition, f32
 *   Returns:
 *     'TRUE' if the landtable was changed/set; or 'FALSE' on failure.
 */
-b32     CL_ColPolCheckZxShadow( zxsdwstr* zssp, NJS_OBJECT* obp );
+BOOL     CL_ColPolCheckZxShadow( zxsdwstr* zssp, NJS_OBJECT* obp );
 
 #ifdef SAMT_INCL_FUNCPTRS
 

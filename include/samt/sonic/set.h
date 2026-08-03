@@ -134,8 +134,8 @@ OBJ_EDITTABLE* LoadSetFileEx(const char* pcFileName, size_t objnum);
 
 void    FreeSetFile( OBJ_EDITTABLE* pTable );
 
-b32     CreateSetObject( OBJ_ITEMTABLE* pItem, OBJ_EDITTABLE* pTable );
-b32     FreeSetObject( void );
+BOOL     CreateSetObject( OBJ_ITEMTABLE* pItem, OBJ_EDITTABLE* pTable );
+BOOL     FreeSetObject( void );
 
 /*
 *   Description:
@@ -157,7 +157,7 @@ void    ReviveSetObject( void );
 *   Returns:
 *     'FALSE' if the position *is* on screen; or 'TRUE' if not.
 */
-b32     CheckViewV( const NJS_POINT3* ft, f32 radius );
+BOOL     CheckViewV( const NJS_POINT3* ft, f32 radius );
 
 int32_t CheckRangeOut(task* tp);
 int32_t CheckRangeOutWithR(task* tp, float fRange);
@@ -166,7 +166,7 @@ void    SetBroken(   task* pTask );
 void    SetNoRevive( task* pTask );
 void    SetContinue( task* pTask );
 
-b32     CheckBroken( task* pTask );
+BOOL     CheckBroken( task* pTask );
 
 /*
 *   Description:
@@ -197,10 +197,10 @@ void    ObjectGenericExec(task* tp);
 /************************/
 #ifdef  SAMT_INCL_FUNCPTRS
 /** Function ptr **/
-#   define CreateSetObject_p            FUNC_PTR(b32 , __cdecl, (OBJ_ITEMTABLE*, OBJ_EDITTABLE*), 0x00487E40)
+#   define CreateSetObject_p            FUNC_PTR(BOOL , __cdecl, (OBJ_ITEMTABLE*, OBJ_EDITTABLE*), 0x00487E40)
 #   define ReviveSetObject_p            FUNC_PTR(void, __cdecl, (void)                          , 0x00488AD0)
 #   define ObjectGenericExec_p          FUNC_PTR(void, __cdecl, (task*)                         , 0x005B4250)
-#   define CheckViewV_p                 FUNC_PTR(b32 , __cdecl, (const NJS_POINT3*, f32)        , 0x007983F0)
+#   define CheckViewV_p                 FUNC_PTR(BOOL , __cdecl, (const NJS_POINT3*, f32)        , 0x007983F0)
 
 /** User-Function ptr **/
 #   define LoadSetFile_p                0x00488DD0

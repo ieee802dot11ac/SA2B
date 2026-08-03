@@ -28,7 +28,7 @@ EXTERN_START
 /*
 *   Param
 */
-void    chSetRareMaterial(int32_t jewel, int32_t color, b32 multi, b32 nontex, NJS_CNK_MODEL* pModel);
+void    chSetRareMaterial(int32_t jewel, int32_t color, BOOL multi, BOOL nontex, NJS_CNK_MODEL* pModel);
 void    chCnkSetOffsetAlpha(f32 alpha);
 
 /*

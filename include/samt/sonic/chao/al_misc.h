@@ -153,7 +153,7 @@ SAngle3, USAngle3;
 *   Returns:
 *     'true' if the task is on the screen; or 'false' if it is not.
 */
-b32     AL_IsOnScreen2( const task* tp, f32 radius, f32 OffsetY );
+BOOL     AL_IsOnScreen2( const task* tp, f32 radius, f32 OffsetY );
 /*
 *   Description:
 *     Calculate if a task is on the screen, with 3 parameters.
@@ -167,7 +167,7 @@ b32     AL_IsOnScreen2( const task* tp, f32 radius, f32 OffsetY );
 *   Returns:
 *     'true' if the task is on the screen; or 'false' if it is not.
 */
-b32     AL_IsOnScreen3( const task* tp, f32 radius, f32 HalfHeight, f32 OffsetY );
+BOOL     AL_IsOnScreen3( const task* tp, f32 radius, f32 HalfHeight, f32 OffsetY );
 
 /****** Set File ********************************************************************/
 /*

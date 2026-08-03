@@ -742,7 +742,7 @@ s32     CountCharacters( void );
 *   Returns:
 *     'TRUE' if the player exists; or 'FALSE' if they do not.
 */
-b32     GetPlayerPosition( s32 pno, u8 frame, NJS_POINT3* pos, NJS_ANGLE3* ang );
+BOOL     GetPlayerPosition( s32 pno, u8 frame, NJS_POINT3* pos, NJS_ANGLE3* ang );
 /*
 *   Description:
 *     Get player number of task.
@@ -758,7 +758,7 @@ s32     GetTaskPlayerNumber( task* tp );
 *   Description:
 *     Get player number of task.
 */
-b32     IsThisTaskPlayer( task* tp );
+BOOL     IsThisTaskPlayer( task* tp );
 /*
 *   Description:
 *     Get the nearest player number to a point.

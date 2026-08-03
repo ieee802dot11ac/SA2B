@@ -563,7 +563,7 @@ typedef struct chaowk
     int32_t        RememberNum;
     int32_t        pitch;
     f32            ClimbFirstPos;
-    b32            IsParamCopy;
+    BOOL            IsParamCopy;
     CHAO_PARAM_GC* pParamGC;
     TMP_PARAM      tmpParam;
     int32_t        Stamina;
@@ -622,7 +622,7 @@ EXTERN_START
 /** 'pParamGC' can be NULL, and a new paramGC will be generated
     'IsParamCopy' copies given 'pParamGC' info and doesn't add it to the ALW entry save info
     'pElement' can be NULL, moves it's info into Chao's paramGC **/
-task*   CreateChaoExtra(CHAO_PARAM_GC* pParamGC, b32 IsParamCopy, AL_SHAPE_ELEMENT* pElement, NJS_POINT3* pPos, Angle angy);
+task*   CreateChaoExtra(CHAO_PARAM_GC* pParamGC, BOOL IsParamCopy, AL_SHAPE_ELEMENT* pElement, NJS_POINT3* pPos, Angle angy);
 
 /** Task functions **/
 void    ChaoExecutor(task* tp);
@@ -636,7 +636,7 @@ EXTERN_END
 /************************/
 #ifdef  SAMT_INCL_FUNCPTRS
 /** Function ptrs **/
-#   define CreateChaoExtra_p        FUNC_PTR(task*, __cdecl, (CHAO_PARAM_GC*, b32, AL_SHAPE_ELEMENT*, NJS_POINT3*, Angle), 0x005501D0)
+#   define CreateChaoExtra_p        FUNC_PTR(task*, __cdecl, (CHAO_PARAM_GC*, BOOL, AL_SHAPE_ELEMENT*, NJS_POINT3*, Angle), 0x005501D0)
 #   define ChaoExecutor_p           FUNC_PTR(void , __cdecl, (task*)                                                     , 0x0054FE20)
 #   define ChaoDestructor_p         FUNC_PTR(void , __cdecl, (task*)                                                     , 0x0054FF30)
 #   define ChaoDisplayer_p          FUNC_PTR(void , __cdecl, (task*)                                                     , 0x0054FF80)

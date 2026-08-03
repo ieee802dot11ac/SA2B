@@ -84,8 +84,8 @@ void        MotionInit( MOTION_CTRL* pMtnCtrl, MOTION_TABLE* pTable );
 
 void        MotionControl( MOTION_CTRL* pMtnCtrl );
 
-b32         IsMotionEnd(  MOTION_CTRL* pMtnCtrl );
-b32         IsMotionStop( MOTION_CTRL* pMtnCtrl );
+BOOL         IsMotionEnd(  MOTION_CTRL* pMtnCtrl );
+BOOL         IsMotionStop( MOTION_CTRL* pMtnCtrl );
 
 void        SetMotionFrame( MOTION_CTRL* pMtnCtrl, f32 frame );
 void        SetMotionSpd(   MOTION_CTRL* pMtnCtrl, f32 spd   );

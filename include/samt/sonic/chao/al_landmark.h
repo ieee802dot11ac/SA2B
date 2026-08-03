@@ -65,7 +65,7 @@ EXTERN_START
 void    AL_InitLandMark(void);
 
 /** Put random position of a landmark, of kind 'attr,' into 'pPos' **/
-b32     AL_GetRandomAttrPos(eLANDMARK_ATTR attr, NJS_POINT3* pPos);
+BOOL     AL_GetRandomAttrPos(eLANDMARK_ATTR attr, NJS_POINT3* pPos);
 
 /** Get landmark attribute kind at position **/
 int32_t  AL_GetCurrLandAttr(const NJS_POINT3* pPos);

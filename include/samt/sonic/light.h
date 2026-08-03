@@ -194,7 +194,7 @@ void    SetLightAmbientGC( s32 n, f32 r, f32 g, f32 b );
 *     - n           : light index
 *     - sw          : light switch state                                               [ON/OFF]
 */
-void    SetLightSwitchGC( s32 n, b32 sw );
+void    SetLightSwitchGC( s32 n, BOOL sw );
 
 /****** Set Default Light Index *****************************************************************/
 /*

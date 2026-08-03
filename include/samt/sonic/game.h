@@ -193,7 +193,7 @@ void    RestartStageWithFadeOut( void );
 void    PauseEnable( void );
 void    PauseDisable( void );
 
-b32     ChkPause( void );
+BOOL     ChkPause( void );
 
 EXTERN_END
 

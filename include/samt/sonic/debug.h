@@ -13,7 +13,7 @@ EXTERN_START
 /*  Game Defs                   */
 /********************************/
 /****** Overscan ********************************************************************************/
-#define ShowOverscanGrid            DATA_REF(b32, 0x0174BA6C)
+#define ShowOverscanGrid            DATA_REF(BOOL, 0x0174BA6C)
 
 /********************************/
 /*  Prototypes                  */

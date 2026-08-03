@@ -43,7 +43,7 @@ ODEKAKE_WORK;
 /*  Data                */
 /************************/
 #define OdekakeTaskPointer      DATA_REF(task*, 0x01AED318)
-#define EnteringOdekake         DATA_REF(b32  , 0x01AED31C)
+#define EnteringOdekake         DATA_REF(BOOL  , 0x01AED31C)
 
 /** Crappy, half-baked, replacement case model by SOC **/
 #define pSOCOdekakeModel        DATA_REF(void*, 0x1AED320)

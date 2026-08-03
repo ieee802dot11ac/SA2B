@@ -164,7 +164,7 @@ camposwk;
 typedef struct _camcontwk
 {
     s32         tgtmode;            /* targeting mode                                           */
-    b32         colflag;            /* land collision flag                                      */
+    BOOL         colflag;            /* land collision flag                                      */
     s32         timer;              /* timer                                                    */
     NJS_POINT3  pos;                /* position                                                 */
     NJS_ANGLE3  ang;                /* angle                                                    */
@@ -249,14 +249,14 @@ typedef struct _CameraSystemWork
     Angle       ang_tgt;            /* target fov                                               */
     Angle       ang_spd;            /* fov change speed                                         */
 
-    b32         lr_flag;            /* free look flag                                           */
-    b32         stop_flag;          /* player stop flag                                         */
+    BOOL         lr_flag;            /* free look flag                                           */
+    BOOL         stop_flag;          /* player stop flag                                         */
 
     s32         padding;            /* unknown or unused                                        */
     camcolwk    colwk;              /* land collision work                                      */
 
     NJS_VECTOR  shake_vec;          /* shake vector                                             */
-    b32         shake_flag;         /* shake on flag                                            */
+    BOOL         shake_flag;         /* shake on flag                                            */
     s32         shake_timer;        /* shake timer                                              */
     f32         shake_inten;        /* shake intensity                                          */
 
@@ -275,7 +275,7 @@ typedef struct _OBJ_CAMERAMODE
 {
     c7*         name;               /* camera mode name                                         */
     FN_CAMERA   fnCamera;           /* camera function                                          */
-    b32         unkflag;            /* unknown flag                                             */
+    BOOL         unkflag;            /* unknown flag                                             */
 }
 OBJ_CAMERAMODE;
 
@@ -510,7 +510,7 @@ s32     GetAdjustMode( s32 pno, s32 lev );
 *   Returns:
 *     'TRUE' on success; or 'FALSE' if level is higher than current camera priority level.
 */
-b32     SetAdjustMode( s32 pno, s32 lev, s32 adjust );
+BOOL     SetAdjustMode( s32 pno, s32 lev, s32 adjust );
 /*
 *   Description:
 *     Set a new user camera adjust mode over the current priority level.
@@ -523,7 +523,7 @@ b32     SetAdjustMode( s32 pno, s32 lev, s32 adjust );
 *   Returns:
 *     'TRUE' on success; or 'FALSE' if level is higher than current camera priority level.
 */
-b32     SetAdjustUserMode( s32 pno, s32 lev, void(*fnAdjust)(CameraSystemWork*, OBJ_ADJUSTPARAM*) );
+BOOL     SetAdjustUserMode( s32 pno, s32 lev, void(*fnAdjust)(CameraSystemWork*, OBJ_ADJUSTPARAM*) );
 
 /************************************************************************************************/
 /*
