@@ -266,7 +266,7 @@ stg13D_63.c:
 	.rodata     start:0x00000CC8 end:0x00000CF0
 
 stg13D_64.c:
-	.text       start:0x0002FBE8 end:0x000309D4
+	.text       start:0x0002FAAC end:0x000309D4
 	.rodata     start:0x00000CF0 end:0x00000D20
 
 stg13D_65.c:
@@ -330,15 +330,15 @@ stg13D_79.c:
 	.rodata     start:0x000010F8 end:0x00001190
 
 stg13D_80.c:
-	.text       start:0x00041F80 end:0x00043A24
+	.text       start:0x00041F80 end:0x00043C30
 	.rodata     start:0x00001190 end:0x00001220
 
-stg13D_81.c:
+OBJECT/o_savepoint.c:
 	.text       start:0x00043C30 end:0x00044CC0
 	.rodata     start:0x00001220 end:0x00001258
 
 stg13D_82.c:
-	.text       start:0x00045324 end:0x000467D0
+	.text       start:0x00044CC0 end:0x000467D0
 	.rodata     start:0x00001258 end:0x000012A8
 
 stg13D_83.c:

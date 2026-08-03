@@ -9,13 +9,15 @@
 #ifndef H_SAMT_CORE
 #define H_SAMT_CORE
 
+#include "types.h"
+
 /********************************/
 /*  Core Init                   */
 /********************************/
 /****** Core Library ****************************************************************************/
-#ifndef SAMT_NO_AUTOLIB
-#   pragma comment(lib, "samt.lib")
-#endif
+// #ifndef SAMT_NO_AUTOLIB
+// #   pragma comment(lib, "samt.lib")
+// #endif
 
 /****** Core Errors *****************************************************************************/
 // #ifndef SAMT_NO_COREERR
@@ -174,21 +176,21 @@ EXTERN_START
 *   Short-Hand Types
 */
 /****** Integer *********************************************************************************/
-typedef unsigned char       u8;     /* unsigned 1 byte integer                                  */
-typedef signed char         s8;     /* signed 1 byte integer                                    */
-typedef unsigned short      u16;    /* unsigned 2 byte integer                                  */
-typedef signed short        s16;    /* signed 2 byte integer                                    */
-typedef unsigned long       u32;    /* unsigned 4 byte integer                                  */
-typedef signed long         s32;    /* signed 4 byte integer                                    */
-typedef unsigned long long  u64;    /* unsigned 8 byte integer                                  */
-typedef signed long long    s64;    /* signed 8 byte integer                                    */
+// typedef unsigned char       u8;     /* unsigned 1 byte integer                                  */
+// typedef signed char         s8;     /* signed 1 byte integer                                    */
+// typedef unsigned short      u16;    /* unsigned 2 byte integer                                  */
+// typedef signed short        s16;    /* signed 2 byte integer                                    */
+// typedef unsigned long       u32;    /* unsigned 4 byte integer                                  */
+// typedef signed long         s32;    /* signed 4 byte integer                                    */
+// typedef unsigned long long  u64;    /* unsigned 8 byte integer                                  */
+// typedef signed long long    s64;    /* signed 8 byte integer                                    */
 
-/****** Real Number *****************************************************************************/
-typedef float               f32;    /* 4 byte real number                                       */
-typedef double              f64;    /* 8 byte real number                                       */
+// /****** Real Number *****************************************************************************/
+// typedef float               f32;    /* 4 byte real number                                       */
+// typedef double              f64;    /* 8 byte real number                                       */
 
-/****** Boolean *********************************************************************************/
-typedef int                 BOOL;    /* 4 byte boolean                                           */
+// /****** Boolean *********************************************************************************/
+// typedef int                 BOOL;    /* 4 byte boolean                                           */
 
 /************************************************************************************************/
 /*
@@ -210,8 +212,8 @@ typedef u32                 c32;    /* UTF-32 code point                        
 typedef u8                  byte;   /* basic byte type                                          */
 
 /****** Pointer *********************************************************************************/
-typedef u32                 uintptr_t;
-typedef s32                 intptr_t;
+// typedef u32                 uintptr_t;
+// typedef s32                 intptr_t;
 typedef uintptr_t           pint;   /* pointer integer value                                    */
 typedef intptr_t            poff;   /* pointer offset value                                     */
 

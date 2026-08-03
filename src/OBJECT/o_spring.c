@@ -4,7 +4,6 @@
 #include "samt/sonic/player.h"
 #include "qFabsf.h"
 
-extern int spring_cnkdraw;
 
 extern Bool CheckRangeOut(task *t);
 extern void GetPlayerRunningSpeed(Sint8, Float *);
@@ -24,6 +23,7 @@ inline float sqrtf(float f);
 // ^ extern
 // v in this file
 
+extern int spring_cnkdraw;
 extern NJS_TEXLIST lbl_13_data_2510DC;
 extern NJS_OBJECT  lbl_13_data_2513F4;
 extern NJS_OBJECT  lbl_13_data_2516C0;
@@ -67,7 +67,7 @@ void ObjectSpringA(task *t) {
     } else {
       t->disp = DrawSpringGC;
     }
-    CCL_Init(t, lbl_13_data_253714, 1, ARRAY_COUNT(lbl_13_data_253714));
+    CCL_Init(t, lbl_13_data_253714, 1, ARYLEN(lbl_13_data_253714));
     twp->cwp->flag |= 0x40;
     twp->scl.x = 180.f;
     twp->scl.z = 0.0f;
@@ -291,7 +291,7 @@ void ObjectSpringB(task *t) {
     } else {
       t->disp = DrawSpringBGC;
     }
-    CCL_Init(t, lbl_13_data_253744, 1, ARRAY_COUNT(lbl_13_data_253744));
+    CCL_Init(t, lbl_13_data_253744, 1, ARYLEN(lbl_13_data_253744));
     twp->cwp->flag |= 0x40;
     GetV3(t) = 180.f;
     twp->scl.z = 0.0f;
