@@ -23,6 +23,14 @@ inline float sqrtf(float f);
 // ^ extern
 // v in this file
 
+static void DrawSpring(task *task);
+static void DrawSpringGC(task *task);
+static void DrawSpringB(task *task);
+static void DrawSpringBGC(task *task);
+static void SpringDie(task *task);
+static void SpringBDie(task *task);
+static void VacumePlayer(task*, Uint8 flag);
+
 extern int spring_cnkdraw;
 extern NJS_TEXLIST lbl_13_data_2510DC;
 extern NJS_OBJECT  lbl_13_data_2513F4;
@@ -37,22 +45,53 @@ extern GJS_MODEL   lbl_13_data_252A70;
  
 extern GJS_OBJECT  lbl_13_data_2532F4;
 extern GJS_MODEL   lbl_13_data_2536F0;
-extern CCL_INFO    lbl_13_data_253714[4];
-extern CCL_INFO    lbl_13_data_253744[4];
+extern CCL_INFO    spr_colli_info[1];
+extern CCL_INFO    spr_colli_info_b[1];
 extern NJS_MODEL*  lbl_13_data_253774[][4];
 
 enum {
-  MODE_SPRING_0,
-  MODE_SPRING_1,
-  MODE_SPRING_2,
-  MODE_SPRING_3,
+  SPR_INIT  = 0x0,
+  SPR_NOR   = 0x1,
+  SPR_TOUCH = 0x2,
+  SPR_DONE  = 0x3,
+};
+
+enum {
+  TYPE_A = 0x0,
+  TYPE_B = 0x1,
+};
+
+enum {
+  SPRING_H_MODE_NORMAL = 0x0,
+  SPRING_H_MODE_SPRING = 0x1,
+  SPRING_H_MODE_END    = 0x2,
+};
+
+struct spring_h_taskwk // sizeof=0x40
+{
+  /* 0x00*/ Sint8 mode;
+  /* 0x01*/ Sint8 smode;
+  /* 0x02*/ Uint8 id;
+  /* 0x03*/ Uint8 btimer;
+  /* 0x04*/ Sint16 flag;
+  /* 0x06*/ Sint16 spring_timer;
+  /* 0x08*/ Float k;
+  /* 0x0C*/ Sint32 wave_ang;
+  /* 0x10*/ Sint32 se_count;
+  /* 0x14*/ Angle3 ang;
+  /* 0x20*/ NJS_POINT3 pos;
+  /* 0x2C*/ Float x_scl;
+  /* 0x30*/ Float y_spd;
+  /* 0x34*/ Float spring;
+  /* 0x38*/ colliwk *cwp;
+  /* 0x3C*/ struct eventwk *ewp;
 };
 
 #define GetV1(task) (*(Float *)&task->awp)
 #define GetV2(task) (*(Float *)&task->mwp)
 #define GetV3(task) (*(Float *)&task->fwp)
 
-void ObjectSpringA(task *t) {
+void ObjectSpring(task *t) {
   taskwk *twp = t->twp;
   if (CheckRangeOut(t)) {
     return;
@@ -60,22 +99,22 @@ void ObjectSpringA(task *t) {
 
   switch (twp->mode) {
 
-  case MODE_SPRING_0: {
-    t->dest = ObjectSpringDestruct;
+  case SPR_INIT: {
+    t->dest = SpringDie;
     if (spring_cnkdraw) {
       t->disp = DrawSpring;
     } else {
       t->disp = DrawSpringGC;
     }
-    CCL_Init(t, lbl_13_data_253714, 1, ARYLEN(lbl_13_data_253714));
+    CCL_Init(t, spr_colli_info, ARYLEN(spr_colli_info), 4);
     twp->cwp->flag |= 0x40;
     twp->scl.x = 180.f;
     twp->scl.z = 0.0f;
     GetV1(t) = 0.5f;
-    twp->mode = MODE_SPRING_1;
+    twp->mode = SPR_NOR;
   } break;
 
-  case MODE_SPRING_1: {
+  case SPR_NOR: {
     if (twp->wtimer != 0) {
       twp->wtimer--;
     }
@@ -104,7 +143,7 @@ void ObjectSpringA(task *t) {
             twp->smode = i;
             twp->scl.z = 20.f;
             twp->scl.x = 270.f;
-            twp->mode = MODE_SPRING_2;
+            twp->mode = SPR_TOUCH;
             twp->btimer = 0;
             break;
           }
@@ -113,7 +152,7 @@ void ObjectSpringA(task *t) {
     } else if (CCL_IsHitPlayer(t)) {
       twp->btimer = 0;
     }
-    if (twp->mode != MODE_SPRING_2) {
+    if (twp->mode != SPR_TOUCH) {
       CCL_Entry(t);
     }
     if (twp->btimer > 50) {
@@ -121,19 +160,19 @@ void ObjectSpringA(task *t) {
     }
   } break;
 
-  case MODE_SPRING_2: {
+  case SPR_TOUCH: {
     SE_Call(0x1000, 0, 0, 0);
     twp->btimer = 0;
-    VacumePlayer_0(t, 0);
+    VacumePlayer(t, TYPE_A);
   } break;
   
-  case MODE_SPRING_3: {
+  case SPR_DONE: {
     DeadOut(t);
   } break;
   } // end switch
 }
 
-void VacumePlayer_0(task *t, Uint8 flag) {
+static void VacumePlayer(task *t, Uint8 flag) {
   Float stack_pad[2];
   Sint8 smode_;
   taskwk *twp = t->twp;
@@ -172,7 +211,7 @@ void VacumePlayer_0(task *t, Uint8 flag) {
           player->pos.z += 2.0f * (diffZ / distance);
           SetInputP(smode_, 15, 0);
         }
-        if (flag == 0) {
+        if (flag == TYPE_A) {
           SetSpringVelocityP(smode_, outPoint.x, outPoint.y, outPoint.z);
         } else {
           player->pos.x = offset.x;
@@ -184,9 +223,9 @@ void VacumePlayer_0(task *t, Uint8 flag) {
           SetVelocityYAndRotationAndNoconTimeP(smode_, twp->scl.y + 5.0f,
                                                &twp->ang.x, (Sint32)twp->scl.x);
         }
-        twp->mode = MODE_SPRING_1;
+        twp->mode = SPR_NOR;
       } else {
-        if (flag == 0) {
+        if (flag == TYPE_A) {
           SetSpringVelocityP(smode_, outPoint.x, outPoint.y, outPoint.z);
         } else {
           player->pos.x = offset.x;
@@ -198,7 +237,7 @@ void VacumePlayer_0(task *t, Uint8 flag) {
           SetVelocityYAndRotationAndNoconTimeP(smode_, twp->scl.y + 5.0f,
                                                &twp->ang.x, (Sint32)twp->scl.x);
         }
-        twp->mode = MODE_SPRING_1;
+        twp->mode = SPR_NOR;
       }
     } else {
       if ((playerpwp[twp->smode]->item & 0x4000) == 0) {
@@ -207,7 +246,7 @@ void VacumePlayer_0(task *t, Uint8 flag) {
         SetInputP(smode_, 15, 0);
       }
 
-      if (flag == 0) {
+      if (flag == TYPE_A) {
         SetSpringVelocityP(smode_, outPoint.x, outPoint.y, outPoint.z);
       } else {
         if (twp->scl.x <= 0.f) {
@@ -216,7 +255,7 @@ void VacumePlayer_0(task *t, Uint8 flag) {
         SetVelocityYAndRotationAndNoconTimeP(smode_, twp->scl.y + 5.0f,
                                              &twp->ang.x, (Sint32)twp->scl.x);
       }
-      twp->mode = MODE_SPRING_1;
+      twp->mode = SPR_NOR;
     }
     GetV2(t) = 0.1f;
     fn_8002FB2C(smode_, 4, 15, 0);
@@ -224,13 +263,13 @@ void VacumePlayer_0(task *t, Uint8 flag) {
   }
 }
 
-void ObjectSpringDestruct(task *t) {
+static void SpringDie(task *t) {
   t->mwp = NULL;
   t->fwp = NULL;
   t->awp = NULL;
 }
 
-void DrawSpringGC(task *t) {
+static void DrawSpringGC(task *t) {
   taskwk *twp = t->twp;
   GJS_MODEL* model;
   njSetTexture(&lbl_13_data_2510DC);
@@ -254,7 +293,7 @@ void DrawSpringGC(task *t) {
   njPopMatrixEx();
 }
 
-void DrawSpring(task *t) {
+static void DrawSpring(task *t) {
   taskwk *twp = t->twp;
   njSetTexture(&lbl_13_data_2510DC);
   njPushMatrixEx();
@@ -284,23 +323,23 @@ void ObjectSpringB(task *t) {
 
   switch (twp->mode) {
 
-  case MODE_SPRING_0: {
-    t->dest = ObjectSpringBDestruct;
+  case SPR_INIT: {
+    t->dest = SpringBDie;
     if (spring_cnkdraw) {
       t->disp = DrawSpringB;
     } else {
       t->disp = DrawSpringBGC;
     }
-    CCL_Init(t, lbl_13_data_253744, 1, ARYLEN(lbl_13_data_253744));
+    CCL_Init(t, spr_colli_info_b, ARYLEN(spr_colli_info_b), 4);
     twp->cwp->flag |= 0x40;
     GetV3(t) = 180.f;
     twp->scl.z = 0.0f;
     GetV1(t) = 0.5f;
     twp->btimer = 0;
-    twp->mode = MODE_SPRING_1;
+    twp->mode = SPR_NOR;
   } break;
 
-  case MODE_SPRING_1: {
+  case SPR_NOR: {
     if (twp->wtimer != 0) {
       twp->wtimer--;
     }
@@ -346,13 +385,13 @@ void ObjectSpringB(task *t) {
     }
   } break;
 
-  case MODE_SPRING_2: {
+  case SPR_TOUCH: {
     twp->btimer = 0;
-    VacumePlayer_0(t, 1);
+    VacumePlayer(t, 1);
     SE_Call(0x1000, 0, 0, 0);
   } break;
   
-  case MODE_SPRING_3: {
+  case SPR_DONE: {
     DeadOut(t);
   } break;
   } // end switch
@@ -386,7 +425,7 @@ void DrawSpringBGC(task *t) {
   njPopMatrix(2);
 }
 
-void DrawSpringB(task *t) {
+static void DrawSpringB(task *t) {
   float STACK_PAD[4];
   taskwk *twp = t->twp;
   njSetTexture(&lbl_13_data_2510DC);
@@ -412,7 +451,7 @@ void DrawSpringB(task *t) {
   njPopMatrix(2);
 }
 
-void ObjectSpringBDestruct(task *t) {
+static void SpringBDie(task *t) {
   t->mwp = NULL;
   t->fwp = NULL;
   t->awp = NULL;
