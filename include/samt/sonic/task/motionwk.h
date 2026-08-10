@@ -20,13 +20,13 @@ EXTERN_START
 /********************************/
 /****** Work Macro ******************************************************************************/
 #define MOTIONWK struct { \
-    NJS_VECTOR  spd;                /* speed                                                    */ \
-    NJS_VECTOR  acc;                /* acceleration                                             */ \
-    NJS_ANGLE3  ang_aim;            /* angle aim                                                */ \
-    NJS_ANGLE3  ang_spd;            /* angle speed                                              */ \
-    f32         force;              /* force                                                    */ \
-    f32         accel;              /* forward acceleration                                     */ \
-    f32         frict;              /* friction                                                 */ \
+    NJS_VECTOR  spd;                /* 0x00 speed                                                    */ \
+    NJS_VECTOR  acc;                /* 0x0C acceleration                                             */ \
+    NJS_ANGLE3  ang_aim;            /* 0x18 angle aim                                                */ \
+    NJS_ANGLE3  ang_spd;            /* 0x24 angle speed                                              */ \
+    f32         force;              /* 0x30 force                                                    */ \
+    f32         accel;              /* 0x34 forward acceleration                                     */ \
+    f32         frict;              /* 0x38 friction                                                 */ \
                           \
     union {               \
         s8      b[4];               /* bytes                                                    */ \
@@ -35,7 +35,7 @@ EXTERN_START
         f32     f;                  /* real                                                     */ \
         void*   ptr;                /* pointer                                                  */ \
     }                     \
-    work;                           /* inline work                                              */ \
+    work;                           /* 0x3C inline work                                              */ \
 }
 
 /****** Work ************************************************************************************/

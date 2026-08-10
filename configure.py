@@ -291,6 +291,9 @@ def MatchingFor(*versions):
 
 config.warn_missing_config = True
 config.warn_missing_source = False
+
+SPRING_C = Object(Matching, "OBJECT/o_spring.c")
+
 config.libs = [
     {
         "lib": "Runtime.PPCEABI.H",
@@ -305,7 +308,9 @@ config.libs = [
     Rel(
         "stg13D",
         [
-            Object(Matching, "OBJECT/o_spring.c")
+            Object(NonMatching, "stg13_cityescape/o_ce_board.c"),
+            Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
+            SPRING_C,
         ]
     )
 ]

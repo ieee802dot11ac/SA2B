@@ -63,29 +63,29 @@ tasklevel;
 /****** Task ************************************************************************************/
 typedef struct task
 {
-    struct task*    next;           /* next                                                     */
-    struct task*    last;           /* last                                                     */
-    struct task*    ptp;            /* parent                                                   */
-    struct task*    ctp;            /* child                                                    */
+    struct task*    next;           /* 0x0 next                                                     */
+    struct task*    last;           /* 0x4 last                                                     */
+    struct task*    ptp;            /* 0x8 parent                                                   */
+    struct task*    ctp;            /* 0xC child                                                    */
 
-    task_exec       exec;           /* executor                                                 */
-    task_exec       disp;           /* displayer                                          [1st] */
-    task_exec       dest;           /* destructor                                               */
-    task_exec       disp_dely;      /* delayed displayer                                  [3rd] */
-    task_exec       disp_sort;      /* sorted displayer                                   [2nd] */
-    task_exec       disp_late;      /* late displayer                                     [4th] */
-    task_exec       disp_last;      /* last displayer                                     [5th] */
-    task_exec       disp_shad;      /* shadow displayer                                         */
+    task_exec       exec;           /* 0x10 executor                                                 */
+    task_exec       disp;           /* 0x14 displayer                                          [1st] */
+    task_exec       dest;           /* 0x18 destructor                                               */
+    task_exec       disp_dely;      /* 0x1C delayed displayer                                  [3rd] */
+    task_exec       disp_sort;      /* 0x20 sorted displayer                                   [2nd] */
+    task_exec       disp_late;      /* 0x24 late displayer                                     [4th] */
+    task_exec       disp_last;      /* 0x28 last displayer                                     [5th] */
+    task_exec       disp_shad;      /* 0x2C shadow displayer                                         */
 
-    OBJ_CONDITION*  ocp;            /* object/set data                                          */
+    OBJ_CONDITION*  ocp;            /* 0x30 object/set data                                          */
 
-    struct taskwk*   twp;           /* task work                                                */
-    struct motionwk* mwp;           /* motion work                                              */
-    struct forcewk*  fwp;           /* force work                                  [array of 2] */
-    struct anywk*    awp;           /* any work                                                 */
+    struct taskwk*   twp;           /* 0x34 task work                                                */
+    struct motionwk* mwp;           /* 0x38 motion work                                              */
+    struct forcewk*  fwp;           /* 0x3C force work                                  [array of 2] */
+    struct anywk*    awp;           /* 0x40 any work                                                 */
 
-    char*            name;          /* name                                                     */
-    u32              id;            /* id                                 [unused & unfinished] */
+    char*            name;          /* 0x44 name                                                     */
+    u32              id;            /* 0x48 id                                 [unused & unfinished] */
 
     union {
         s8      b[4];               /* bytes                                                    */
@@ -94,7 +94,7 @@ typedef struct task
         f32     f;                  /* real                                                     */
         void*   ptr;                /* pointer                                                  */
     }
-    work;                           /* inline work                                              */
+    work;                           /* 0x4C inline work                                              */
 }
 task;
 

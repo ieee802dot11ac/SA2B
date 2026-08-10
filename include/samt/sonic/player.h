@@ -284,7 +284,7 @@ typedef struct mtnwk
 {
     s16         mtnmode;
     u16         reqaction;
-    u16         action;
+    s16         action;
     u16         lastaction;
     u16         nextaction;
     u16         acttimer;
@@ -411,31 +411,31 @@ stencilwk;
 
 typedef struct playerwk
 {
-    s8      player;                 // Player Number
-    s8      basechar;               // Base Character Number
-    s8      costume;                // Costume Number
-    s8      character;              // Character Number
+    s8      player;                 // 0x00 Player Number
+    s8      basechar;               // 0x01 Base Character Number
+    s8      costume;                // 0x02 Costume Number
+    s8      character;              // 0x03 Character Number
 
-    s8      action_list[8];
-    s8      action_num;
-    s8      action_sel;             // Currently selected action index (with Y)
-    s8      action_last;            // ? Set on pressing action
+    s8      action_list[8];         // 0x04 
+    s8      action_num;             // 0x05 
+    s8      action_sel;             // 0x06 Currently selected action index (with Y)
+    s8      action_last;            // 0x07 ? Set on pressing action
 
-    s16     item;                   // Powerups
-    s16     jumptimer;
-    s16     nocontimer;             // No Control Timer
-    s16     breathtimer;
-    s16     waittimer;
-    s16     confusetimer;
-    s16     flag;
-    s16     island_num;
-    s16     path_point;             // ? More research needed
-    s32     equipment;
+    s16     item;                   // 0x08 Powerups
+    s16     jumptimer;              // 0x0A 
+    s16     nocontimer;             // 0x0C No Control Timer
+    s16     breathtimer;            // 0x0E 
+    s16     waittimer;              // 0x10 
+    s16     confusetimer;           // 0x12 
+    s16     flag;                   // 0x14
+    s16     island_num;             // 0x16
+    s16     path_point;             // 0x18 ? More research needed
+    s32     equipment;              // 0x1C
 
-    s32     unki_0;                 // ? Related to being grabbed
-    Angle   lean;                   // Body lean angle
-    f32     hpos;                   // 1D Position along a path
-    f32     dotp;                   // Vertical dot product
+    s32     unki_0;                 // 0x20 ? Related to being grabbed
+    Angle   lean;                   // 0x24 Body lean angle
+    f32     hpos;                   // 0x30 1D Position along a path
+    f32     dotp;                   // 0x34 Vertical dot product
     f32     unkf_1;                 // ? Animation speed related
     f32     unkf_2;                 // ? Seemingly random
     f32     unkf_3;                 // ? Changing at all breaks game
@@ -807,6 +807,19 @@ s32     GetRivalPlayerNumber( s32 pno );
 #define StopHoldingTaskP_inl_p              0x0046E5E0 /* ###(EAX,EDX)                          */
 
 #endif/*SAMT_INCL_FUNCPTRS*/
+
+extern void SetInputP(Uint8 pno, Sint8 mode, Sint32 unk);
+extern void SetSpringVelocityP(Uint8 pno, Float x, Float y, Float z);
+extern void SetVelocityYAndRotationAndNoconTimeP(Uint8 pno, Float y, Sint32 *ang, Sint32 tm);
+extern Sint32 GetPlayerRunningSpeed(Sint8 pno, Float *v);
+
+typedef struct {
+  u8 pad[0x1e];
+  /* 0x1e */ s8 TWO_PLAYER;
+  artificial_padding(0x1e, 0xf0, s8);
+} lbl_801CC168_t;
+
+extern lbl_801CC168_t lbl_801CC168;
 
 EXTERN_END
 

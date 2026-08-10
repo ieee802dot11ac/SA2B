@@ -5,14 +5,27 @@ class prs_reader:
     @dataclass
     class literal:
         v: int
+        def run(self, b:bytearray) -> bool:
+            b.append(self.v)
+            return True
 
     @dataclass
     class lookback:
         offset: int
         count: int
+        def run(self, b:bytearray) -> bool:
+            if (self.offset==0):
+                return False
+            if len(b) < self.offset:
+                raise RuntimeError("read out of bounds")
+            offs = -self.offset
+            for _ in range(self.count):
+                b.append(b[offs])
+            return True
     
     def __init__(self, b: bytes) -> None:
-        self.buff = memoryview(b)
+        self.buff = b
+        self.buff_ind = 0
         self.cmds = 0
         self.rem = 0
 
@@ -26,22 +39,23 @@ class prs_reader:
         return ret
     
     def read_u8(self) -> int:
-        ret = self.buff[0]
-        self.buff = self.buff[1:]
+        ret = self.buff[self.buff_ind]
+        self.buff_ind += 1
         return ret
 
-    def read_u16(self) -> int:
-        ret = int.from_bytes(self.buff[0:2], "little", signed=True)
-        self.buff = self.buff[2:]
+    def read_s16(self) -> int:
+        ret = int.from_bytes(self.buff[self.buff_ind : self.buff_ind+2], "little", signed=True)
+        self.buff_ind += 2
         return ret
 
     def read_command(self):
         if self.read_bit():
             return self.literal(self.read_u8())
-        elif self.read_bit():
-            offset = self.read_u16()
+
+        if self.read_bit():
+            offset = self.read_s16()
             if offset == 0:
-                return
+                return None
             size = offset & 0x7
             offset >>= 3
             if size == 0:
@@ -51,9 +65,9 @@ class prs_reader:
             offset |= -0x2000
             return self.lookback(-offset, size)
         else:
-            flag = self.read_bit()
-            bit = self.read_bit()
-            size = ((flag << 1) | bit) + 2
+            bit_1 = self.read_bit()
+            bit_0 = self.read_bit()
+            size = ((bit_1 << 1) | bit_0) + 2
             offset = self.read_u8() | -0x100
             return self.lookback(-offset, size)
 
@@ -61,21 +75,12 @@ class prs_reader:
 def decompress_prs(b: bytes) -> bytes:
     r = prs_reader(b)
     out_bytes = bytearray()
-    while True:
+    run = True
+    while run:
         cmd = r.read_command()
-        # print(cmd)
-        if isinstance(cmd, prs_reader.literal):
-            out_bytes.append(cmd.v)
-        elif isinstance(cmd, prs_reader.lookback):
-            if (cmd.offset == 0):
-                break
-            if len(out_bytes) < cmd.offset:
-                raise RuntimeError("read out of bounds")
-            offs = -cmd.offset
-            for _ in range(cmd.count):
-                out_bytes.append(out_bytes[offs])
-        else:
+        if not cmd:
             break
+        run = cmd.run(out_bytes)
     return bytes(out_bytes)
 
 def main():

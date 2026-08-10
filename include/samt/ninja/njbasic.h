@@ -202,7 +202,7 @@ typedef struct njobj
     Uint32          evalflags;  /* evalation flags                                  */
     NJS_MODEL*      model;      /* model data pointer                               */
     NJS_VECTOR      pos;        /* translation                                      */
-    Angle           ang[3];     /* rotation or im part of quat                      */
+    NJS_ANGLE3      ang;     /* rotation or im part of quat                      */
     Float           scl[3];     /* scaling                                          */
     struct njobj*   child;      /* child object                                     */
     struct njobj*   sibling;    /* sibling object                                   */

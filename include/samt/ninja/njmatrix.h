@@ -609,7 +609,7 @@ void    njTranslateEx2( const Float pos[3] );
 *     - ang         : list of 3 angles
 *     - lv          : use light wave rotation order (ZXY)
 */
-void    njRotateEx( const Angle* ang, Sint32 lv );
+void    njRotateEx( const NJS_ANGLE3* ang, Sint32 lv );
 /*
 *   Description:
 *     Scale the current matrix in 3D space using a vector.

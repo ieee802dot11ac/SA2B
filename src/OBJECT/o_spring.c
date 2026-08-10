@@ -2,18 +2,15 @@
 
 #include "CCL.h"
 #include "samt/sonic/player.h"
+#include "set.h"
 #include "qFabsf.h"
 
 
-extern Bool CheckRangeOut(task *t);
-extern void GetPlayerRunningSpeed(Sint8, Float *);
+// extern Bool CheckRangeOut(task *t);
 
-extern void SetInputP(Sint8, int, int);
-extern void SetSpringVelocityP(Uint8, Float, Float, Float);
-extern void SetVelocityYAndRotationAndNoconTimeP(Uint8, Float, Sint32*, Sint32);
 extern void fn_8002FB2C(Sint8, int, int, int); 
 extern void fn_13_390DC(Sint8, int);
-extern void DeadOut(task *);
+// extern void DeadOut(task *);
 extern void SE_Call(int, int, int, int);
 extern void ds_DrawModelClip(NJS_MODEL *);
 

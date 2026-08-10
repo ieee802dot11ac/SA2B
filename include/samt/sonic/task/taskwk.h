@@ -26,16 +26,16 @@ typedef struct colliwk              colliwk; /* collision work                  
 /********************************/
 /****** Work Macro ******************************************************************************/
 #define TASKWK struct { \
-    s8          mode;               /* task mode                                                */ \
-    s8          smode;              /* task secondary mode                                      */ \
-    u8          id;                 /* task id                                                  */ \
-    u8          btimer;             /* byte timer                                               */ \
-    s16         flag;               /* task flags                                               */ \
-    u16         wtimer;             /* word timer                                               */ \
-    Angle3      ang;                /* task angle                                               */ \
-    NJS_POINT3  pos;                /* task position                                            */ \
-    NJS_VECTOR  scl;                /* task scale                                               */ \
-    colliwk*    cwp;                /* collision work pointer                                   */ \
+    s8          mode;               /* 0x00 task mode                                                */ \
+    s8          smode;              /* 0x01 task secondary mode                                      */ \
+    u8          id;                 /* 0x02 task id                                                  */ \
+    u8          btimer;             /* 0x03 byte timer                                               */ \
+    s16         flag;               /* 0x04 task flags                                               */ \
+    u16         wtimer;             /* 0x06 word timer                                               */ \
+    Angle3      ang;                /* 0x08 task angle                                               */ \
+    NJS_POINT3  pos;                /* 0x14 task position                                            */ \
+    NJS_VECTOR  scl;                /* 0x20 task scale                                               */ \
+    colliwk*    cwp;                /* 0x24 collision work pointer                                   */ \
 }
 
 /****** Work ************************************************************************************/
