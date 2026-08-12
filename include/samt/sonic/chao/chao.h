@@ -35,7 +35,7 @@ typedef struct al_group_object_list     AL_GROUP_OBJECT_LIST;
 /************************/
 /*  Typedefs            */
 /************************/
-typedef int32_t(__cdecl* BHV_FUNC)(task*);
+typedef int32_t (*BHV_FUNC)(task *);
 
 /************************/
 /*  Enums               */

@@ -42,7 +42,10 @@ ChaoMain_11.c:
 ChaoMain_12.c:
 	.text       start:0x00005964 end:0x000059D8
 
-ChaoMain_13.c:
+chao/al_control.c:
+	.text       start:0x00005A3C end:0x00005BAC
+
+chao/al_crc32.c:
 	.text       start:0x00005BAC end:0x00005D10
 
 ChaoMain_14.c:
@@ -60,8 +63,8 @@ ChaoMain_17.c:
 ChaoMain_18.c:
 	.text       start:0x0000B5DC end:0x0000C1AC
 
-ChaoMain_19.c:
-	.text       start:0x0000C480 end:0x0000DF08
+chao/al_garden_info.c:
+	.text       start:0x0000C1FC end:0x0000DFD8
 
 ChaoMain_20.c:
 	.text       start:0x0000DFD8 end:0x0000E148

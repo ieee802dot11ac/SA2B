@@ -27,6 +27,13 @@ typedef u32 size_t;
 typedef s32 ptrdiff_t;
 typedef u32 uintptr_t;
 typedef s32 intptr_t;
+
+typedef u8 uint8_t;
+typedef s8 int8_t;
+typedef s16 int16_t;
+typedef u16 uint16_t;
+typedef s32 int32_t;
+typedef u32 uint32_t;
 #endif
 
 // Volatile types

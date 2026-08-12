@@ -248,6 +248,7 @@ cflags_rel = [
     "-opt nopeep",
     "-opt noschedule",
     "-pool off",
+    # "-inline deferred",
     "-inline off",
     "-fp_contract off",
     "-use_lmw_stmw off",
