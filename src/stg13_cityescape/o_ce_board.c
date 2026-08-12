@@ -28,10 +28,13 @@ typedef struct {
   int _0;
   int _4;
 } lbl_801E5D28_arr;
-struct {
+
+typedef struct {
   u8 pad[4];
   lbl_801E5D28_arr _4[300];
-} lbl_801E5D28;
+} lbl_801E5D28_t;
+
+extern lbl_801E5D28_t lbl_801E5D28;
 
 typedef struct{
     u32 _0;
@@ -41,6 +44,11 @@ typedef struct{
 } fn_8011E19C_p2;
 
 void fn_8011E19C(NJS_OBJECT *, fn_8011E19C_p2 *, Float);
+
+extern NJS_OBJECT lbl_13_data_1063DC;
+
+extern void fn_13_1863C(void*, float, float, void*, void*, void*);
+extern void fn_13_18AE8(int, NJS_VECTOR*, float, void*);
 
 // ^ extern
 // v in this file
@@ -129,14 +137,14 @@ void o_ce_board_4() { njGetMatrix(&lbl_13_bss_0); }
 void ObjectBoardDisp(task *tp) {
   taskwk *twp = tp->twp;
   motionwk *mwp = tp->mwp;
+  NJS_OBJECT *sp34;
+  NJS_TEXLIST *sp30;
+  NJS_OBJECT *sp2C;
   playerwk *p_pwp = playerpwp[twp->smode];
   taskwk *p_twp = playertwp[twp->smode];
   if (p_twp) {
-    NJS_OBJECT *sp34;
-    NJS_TEXLIST *sp30;
-    NJS_OBJECT *sp2C;
     u32 r27;
-    o_ce_board_1(twp->smode, &sp30, &sp34, &sp2C);
+    o_ce_board_1((s32)twp->smode, &sp30, &sp34, &sp2C);
     r27 = p_pwp->m.action;
     fn_8011C3A0(o_ce_board_4);
     njSetTexture(sp30);
@@ -151,18 +159,20 @@ void ObjectBoardDisp(task *tp) {
       njGetMatrix(&lbl_13_bss_0);
     } else {
       int r26 = mwp->ang_aim.x + 24;
-      r27 = lbl_801E5D28._4[r27+0x18]._0;
-      if (r27) {
+      int offset = r27 + 24;
+      u32 r27_2 = lbl_801E5D28._4[offset]._0;
+      if (r27_2) {
         njTranslateEx(&twp->pos);
         njRotateZ(NULL, twp->ang.z);
         njRotateX(NULL, twp->ang.x);
         njRotateY(NULL, twp->ang.y);
         if (p_pwp->m.mtnmode != 2) {
-          fn_8011E214(sp34, r27, p_pwp->m.nframe);
+          fn_8011E214(sp34, r27_2, p_pwp->m.nframe);
         } else if (r26 >= 0x91 && r26 <= 0xa8) {
           fn_8011E19C_p2 sp14;
+          int a[2];
           sp14._0 = lbl_801E5D28._4[r26]._0;
-          sp14._4 = r27;
+          sp14._4 = r27_2;
           sp14._8 = *(f32 *)&mwp->ang_aim.y;
           sp14._C = 0.0f;
           fn_8011E19C(sp34, &sp14, p_pwp->m.nframe);
@@ -182,7 +192,58 @@ void ObjectBoardDisp(task *tp) {
   }
 }
 
-void ObjectBoardDispShad(task *tp) {}
+void ObjectBoardDispShad(task *tp) {
+  taskwk *twp = tp->twp;
+  motionwk *mwp = tp->mwp;
+  NJS_OBJECT *sp34;
+  NJS_TEXLIST *sp30;
+  NJS_OBJECT *sp2C;
+  playerwk *p_pwp = playerpwp[twp->smode];
+  taskwk *p_twp = playertwp[twp->smode];
+  u32 r27;
+  int r26, offset;
+  u32 r27_2;
+  fn_8011E19C_p2 sp14;
+  if (p_twp) {
+    o_ce_board_1((s32)twp->smode, &sp30, &sp34, &sp2C);
+    r27 = p_pwp->m.action;
+    fn_13_1863C(tp->work.ptr, 1.8f, 0.0f, &twp->pos, 0, 0);
+    njSetTexture(sp30);
+    njPushMatrixEx();
+    if (twp->mode != 1) {
+      njTranslateEx(&twp->pos);
+      njRotateZ(NULL, twp->ang.z);
+      njRotateX(NULL, twp->ang.x);
+      njRotateY(NULL, twp->ang.y);
+      fn_8011DF44(&lbl_13_data_1063DC);
+    } else {
+      r26 = mwp->ang_aim.x + 24;
+      offset = r27 + 24;
+      r27_2 = lbl_801E5D28._4[offset]._0;
+      if (r27_2) {
+        njTranslateEx(&twp->pos);
+        njRotateZ(NULL, twp->ang.z);
+        njRotateX(NULL, twp->ang.x);
+        njRotateY(NULL, twp->ang.y);
+        if (p_pwp->m.mtnmode != 2) {
+          fn_8011E214(&lbl_13_data_1063DC, r27_2, p_pwp->m.nframe);
+        } else if (r26 >= 0x91 && r26 <= 0xa8) {
+          int a[2];
+          sp14._0 = lbl_801E5D28._4[r26]._0;
+          sp14._4 = r27_2;
+          sp14._8 = *(f32 *)&mwp->ang_aim.y;
+          sp14._C = 0.0f;
+          fn_8011E19C(&lbl_13_data_1063DC, &sp14, p_pwp->m.nframe);
+        } else {
+          fn_8011DF44(&lbl_13_data_1063DC);
+        }
+      }
+    }
+    njPopMatrixEx();
+    fn_13_18978(tp->work.ptr);
+    fn_13_18AE8(2, &twp->pos, 90.f, tp->work.ptr);
+  }
+}
 
 void ObjectBoardDest(task *tp) {
     fn_13_18AA8(tp->work.ptr);

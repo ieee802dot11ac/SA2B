@@ -4,4 +4,409 @@ Sections:
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
 	.data       type:data align:8
-	.bss        type:bss align:32
+	.bss        type:bss align:8
+
+ChaoMain_0.c:
+	.text       start:0x00000000 end:0x000000F8
+
+ChaoMain_1.c:
+	.text       start:0x00000468 end:0x00000554
+
+ChaoMain_2.c:
+	.text       start:0x00000AA0 end:0x00001B0C
+
+ChaoMain_3.c:
+	.text       start:0x00001B7C end:0x0000255C
+
+ChaoMain_4.c:
+	.text       start:0x0000265C end:0x00003384
+
+ChaoMain_6.c:
+	.text       start:0x00003500 end:0x0000392C
+
+ChaoMain_7.c:
+	.text       start:0x0000394C end:0x000039A8
+
+ChaoMain_8.c:
+	.text       start:0x000039A8 end:0x000046BC
+
+ChaoMain_9.c:
+	.text       start:0x000047A8 end:0x0000480C
+
+ChaoMain_10.c:
+	.text       start:0x0000480C end:0x00005774
+
+ChaoMain_11.c:
+	.text       start:0x00005774 end:0x00005844
+
+ChaoMain_12.c:
+	.text       start:0x00005964 end:0x000059D8
+
+ChaoMain_13.c:
+	.text       start:0x00005BAC end:0x00005D10
+
+ChaoMain_14.c:
+	.text       start:0x00005EE4 end:0x00007B30
+
+ChaoMain_15.c:
+	.text       start:0x00007B30 end:0x00008EFC
+
+ChaoMain_16.c:
+	.text       start:0x00008F20 end:0x0000A788
+
+ChaoMain_17.c:
+	.text       start:0x0000AA1C end:0x0000B324
+
+ChaoMain_18.c:
+	.text       start:0x0000B5DC end:0x0000C1AC
+
+ChaoMain_19.c:
+	.text       start:0x0000C480 end:0x0000DF08
+
+ChaoMain_20.c:
+	.text       start:0x0000DFD8 end:0x0000E148
+
+ChaoMain_21.c:
+	.text       start:0x0000E950 end:0x0000EC5C
+
+ChaoMain_22.c:
+	.text       start:0x0000ED10 end:0x0000ED68
+
+ChaoMain_23.c:
+	.text       start:0x0000F628 end:0x0000FA58
+
+ChaoMain_24.c:
+	.text       start:0x0000FEC8 end:0x0000FF60
+
+ChaoMain_25.c:
+	.text       start:0x0001002C end:0x00012744
+
+ChaoMain_26.c:
+	.text       start:0x000127A0 end:0x000129F4
+
+ChaoMain_27.c:
+	.text       start:0x00012A98 end:0x00012B08
+
+ChaoMain_28.c:
+	.text       start:0x00012B8C end:0x00014C48
+
+ChaoMain_29.c:
+	.text       start:0x00015060 end:0x00015968
+
+ChaoMain_30.c:
+	.text       start:0x000159AC end:0x00015C94
+
+ChaoMain_31.c:
+	.text       start:0x00015CA8 end:0x00015D0C
+
+ChaoMain_32.c:
+	.text       start:0x00015E44 end:0x000160D8
+
+ChaoMain_33.c:
+	.text       start:0x000169B4 end:0x00016C64
+
+ChaoMain_34.c:
+	.text       start:0x00016DD4 end:0x00017964
+
+ChaoMain_35.c:
+	.text       start:0x00017BF4 end:0x00017C9C
+
+ChaoMain_36.c:
+	.text       start:0x00017CF4 end:0x00018674
+
+ChaoMain_37.c:
+	.text       start:0x00018674 end:0x000188FC
+
+ChaoMain_38.c:
+	.text       start:0x000188FC end:0x00018A1C
+
+ChaoMain_39.c:
+	.text       start:0x00018A38 end:0x00018B50
+
+ChaoMain_40.c:
+	.text       start:0x00018C5C end:0x00018CE4
+
+ChaoMain_41.c:
+	.text       start:0x00018CE4 end:0x00019C70
+
+ChaoMain_42.c:
+	.text       start:0x00019C70 end:0x0001AE88
+
+ChaoMain_43.c:
+	.text       start:0x0001AEEC end:0x0001B174
+
+ChaoMain_44.c:
+	.text       start:0x0001B214 end:0x0001B2C0
+
+ChaoMain_45.c:
+	.text       start:0x0001B618 end:0x0001C424
+
+ChaoMain_46.c:
+	.text       start:0x0001CCD0 end:0x0001CD20
+
+ChaoMain_47.c:
+	.text       start:0x0001CE28 end:0x0001D578
+
+ChaoMain_48.c:
+	.text       start:0x0001D58C end:0x0001D658
+
+ChaoMain_49.c:
+	.text       start:0x0001D778 end:0x0001E324
+
+ChaoMain_50.c:
+	.text       start:0x0001E378 end:0x0001E3E0
+
+ChaoMain_51.c:
+	.text       start:0x0001E5BC end:0x0001ED28
+
+ChaoMain_52.c:
+	.text       start:0x0001ED2C end:0x0001EDA4
+
+ChaoMain_53.c:
+	.text       start:0x0001EDF4 end:0x0001F0D0
+
+ChaoMain_54.c:
+	.text       start:0x0001F1FC end:0x0001FA10
+
+ChaoMain_55.c:
+	.text       start:0x0001FA10 end:0x0001FC0C
+
+ChaoMain_56.c:
+	.text       start:0x0001FCC0 end:0x0001FCF4
+
+chao/al_world.c:
+	.text       start:0x00029344 end:0x00029FB8
+
+ChaoMain_58.c:
+	.text       start:0x00029FB8 end:0x0002ABD4
+
+ChaoMain_59.c:
+	.text       start:0x0002AD10 end:0x0002B1A8
+
+ChaoMain_60.c:
+	.text       start:0x0002B1B4 end:0x0002BCA8
+
+chao/alo_growtree.c:
+	.text       start:0x0002BE40 end:0x0002E228
+
+ChaoMain_62.c:
+	.text       start:0x0002E3A4 end:0x0002ECC0
+
+ChaoMain_63.c:
+	.text       start:0x0002ED98 end:0x0002FDD8
+
+ChaoMain_64.c:
+	.text       start:0x0002FDD8 end:0x00030864
+
+ChaoMain_65.c:
+	.text       start:0x00030864 end:0x000308DC
+
+ChaoMain_66.c:
+	.text       start:0x000308DC end:0x00031050
+
+ChaoMain_67.c:
+	.text       start:0x00031104 end:0x000313AC
+
+ChaoMain_68.c:
+	.text       start:0x0003148C end:0x00031CC8
+
+ChaoMain_69.c:
+	.text       start:0x00031CC8 end:0x00032964
+
+ChaoMain_70.c:
+	.text       start:0x00032964 end:0x000332C4
+
+ChaoMain_71.c:
+	.text       start:0x00033388 end:0x00033E24
+
+ChaoMain_72.c:
+	.text       start:0x00033FA8 end:0x000340C0
+
+ChaoMain_73.c:
+	.text       start:0x000340C0 end:0x0003485C
+
+ChaoMain_74.c:
+	.text       start:0x00034CC4 end:0x000355E8
+
+ChaoMain_75.c:
+	.text       start:0x000355E8 end:0x000362EC
+
+ChaoMain_76.c:
+	.text       start:0x000362EC end:0x000371C8
+
+ChaoMain_77.c:
+	.text       start:0x000373CC end:0x00038224
+
+ChaoMain_78.c:
+	.text       start:0x00038408 end:0x00038BE0
+
+ChaoMain_79.c:
+	.text       start:0x00038BE0 end:0x00038EB8
+
+ChaoMain_80.c:
+	.text       start:0x00038EB8 end:0x00039A10
+
+ChaoMain_81.c:
+	.text       start:0x00039A10 end:0x0003AABC
+
+ChaoMain_82.c:
+	.text       start:0x0003AABC end:0x0003ADE0
+
+ChaoMain_83.c:
+	.text       start:0x0003AE44 end:0x0003B764
+
+ChaoMain_84.c:
+	.text       start:0x0003B8DC end:0x0003CDDC
+
+ChaoMain_85.c:
+	.text       start:0x0003CDDC end:0x0003DDE8
+
+ChaoMain_86.c:
+	.text       start:0x0003DFEC end:0x0003FBD0
+
+ChaoMain_87.c:
+	.text       start:0x0003FCA4 end:0x00040130
+
+ChaoMain_88.c:
+	.text       start:0x00040130 end:0x00040A68
+
+ChaoMain_89.c:
+	.text       start:0x00040A68 end:0x00040B94
+
+ChaoMain_90.c:
+	.text       start:0x00040CD4 end:0x00040DFC
+
+ChaoMain_91.c:
+	.text       start:0x00040FFC end:0x00041478
+
+ChaoMain_92.c:
+	.text       start:0x00041478 end:0x00041A7C
+
+ChaoMain_93.c:
+	.text       start:0x00041AA0 end:0x00041BA4
+
+ChaoMain_94.c:
+	.text       start:0x00041BA4 end:0x0004213C
+
+ChaoMain_95.c:
+	.text       start:0x00042308 end:0x00042770
+
+ChaoMain_96.c:
+	.text       start:0x00042770 end:0x000436D4
+
+ChaoMain_97.c:
+	.text       start:0x000438CC end:0x00045468
+
+ChaoMain_98.c:
+	.text       start:0x00045468 end:0x00046D74
+
+ChaoMain_99.c:
+	.text       start:0x00046D74 end:0x00047830
+
+ChaoMain_100.c:
+	.text       start:0x00047830 end:0x00047A50
+
+ChaoMain_101.c:
+	.text       start:0x00047A50 end:0x00048AEC
+
+ChaoMain_102.c:
+	.text       start:0x00048AEC end:0x00048BC4
+
+ChaoMain_103.c:
+	.text       start:0x00048BC4 end:0x00048CF0
+
+ChaoMain_104.c:
+	.text       start:0x00048CF0 end:0x0004A16C
+
+ChaoMain_105.c:
+	.text       start:0x0004A16C end:0x0004B5C0
+
+ChaoMain_106.c:
+	.text       start:0x0004B6AC end:0x0004BE88
+
+ChaoMain_107.c:
+	.text       start:0x0004BE88 end:0x0004CB00
+
+ChaoMain_108.c:
+	.text       start:0x0004CB00 end:0x0004CB4C
+
+ChaoMain_109.c:
+	.text       start:0x0004CB4C end:0x0004D794
+
+ChaoMain_110.c:
+	.text       start:0x0004D848 end:0x0004DF98
+
+ChaoMain_111.c:
+	.text       start:0x0004DF98 end:0x0004E0EC
+
+ChaoMain_112.c:
+	.text       start:0x0004E10C end:0x0004E270
+
+ChaoMain_113.c:
+	.text       start:0x0004E394 end:0x0004E460
+
+ChaoMain_114.c:
+	.text       start:0x0004E48C end:0x0004EA68
+
+ChaoMain_115.c:
+	.text       start:0x0004EA68 end:0x0004EB4C
+
+ChaoMain_116.c:
+	.text       start:0x0004EB78 end:0x0004F400
+
+ChaoMain_117.c:
+	.text       start:0x0004F400 end:0x00050498
+
+ChaoMain_118.c:
+	.text       start:0x00050500 end:0x00051A9C
+
+ChaoMain_119.c:
+	.text       start:0x00052278 end:0x00052318
+
+ChaoMain_120.c:
+	.text       start:0x00052480 end:0x00052778
+
+ChaoMain_121.c:
+	.text       start:0x0005287C end:0x00052B24
+
+ChaoMain_122.c:
+	.text       start:0x00054464 end:0x00055B20
+
+ChaoMain_123.c:
+	.text       start:0x00055B20 end:0x00056B64
+
+ChaoMain_124.c:
+	.text       start:0x00056B64 end:0x00056C40
+
+ChaoMain_125.c:
+	.text       start:0x00056C40 end:0x00056F64
+
+ChaoMain_126.c:
+	.text       start:0x00056F88 end:0x000570C8
+
+ChaoMain_127.c:
+	.text       start:0x00057108 end:0x00057170
+
+ChaoMain_128.c:
+	.text       start:0x000572B8 end:0x00058300
+
+ChaoMain_129.c:
+	.text       start:0x0005836C end:0x000584F8
+
+ChaoMain_130.c:
+	.text       start:0x000585C8 end:0x000588D4
+
+ChaoMain_131.c:
+	.text       start:0x000588D4 end:0x00058938
+
+ChaoMain_132.c:
+	.text       start:0x00058BC8 end:0x00058D90
+
+ChaoMain_133.c:
+	.text       start:0x00058E60 end:0x0005901C
+
+ChaoMain_134.c:
+	.text       start:0x0005901C end:0x00059304
+
+ChaoMain_135.c:
+	.text       start:0x00059318 end:0x00059890

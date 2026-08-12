@@ -201,7 +201,28 @@ Sections:
 
 
 if __name__ == "__main__":
-    for folder in [x for x in (Path("./config") / "GSNE8P").iterdir() if x.is_dir()]:
+    files = [
+        "ChaoMain",
+        "ChaoStgDark",
+        "ChaoStgEntrance",
+        "ChaoStgHero",
+        "ChaoStgKarate",
+        "ChaoStgKinder",
+        "ChaoStgLobby",
+        "ChaoStgLobby000",
+        "ChaoStgLobby00K",
+        "ChaoStgLobby0DK",
+        "ChaoStgLobbyH0K",
+        "ChaoStgLobbyHDK",
+        "ChaoStgNeut",
+        "ChaoStgOdekake",
+        "ChaoStgRace",
+        "ChaoStgRaceDark",
+        "ChaoStgRaceHero",
+        "ChaoStgRaceNeut",
+        "ChaoStgStadium",
+    ]
+    for folder in map(lambda x: Path("./config") / "GSNE8P" / x, files):
         print(folder)
         rel_name = folder.parts[-1]
         if rel_name in ["stg54D", "stg56D"]:
@@ -209,5 +230,7 @@ if __name__ == "__main__":
 
         in_path = folder
         out_file = folder / "splits.txt"
-
-        extract(in_path, out_file)
+        try:
+            extract(in_path, out_file)
+        except Exception as e:
+            print(e)

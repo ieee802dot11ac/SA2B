@@ -5,3 +5,35 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:32
 	.bss        type:bss align:8
+
+ChaoStgDark_0.c:
+	.text       start:0x00000078 end:0x00000468
+	.rodata     start:0x00000000 end:0x00000010
+
+ChaoStgDark_1.c:
+	.text       start:0x000004E4 end:0x000007E0
+	.rodata     start:0x00000010 end:0x00000058
+
+ChaoStgDark_2.c:
+	.text       start:0x00000868 end:0x000009A8
+
+ChaoStgDark_3.c:
+	.text       start:0x000009BC end:0x00000A3C
+
+ChaoStgDark_4.c:
+	.text       start:0x00000A3C end:0x00000ABC
+
+ChaoStgDark_5.c:
+	.text       start:0x00000ABC end:0x00000B3C
+
+ChaoStgDark_6.c:
+	.text       start:0x00000B3C end:0x00000BC0
+	.rodata     start:0x000000E8 end:0x00000118
+
+ChaoStgDark_7.c:
+	.text       start:0x00000BC0 end:0x00000C44
+	.rodata     start:0x00000118 end:0x00000148
+
+ChaoStgDark_8.c:
+	.text       start:0x00000DC0 end:0x00000E40
+	.rodata     start:0x00000148 end:0x00000178

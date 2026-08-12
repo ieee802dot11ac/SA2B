@@ -5,3 +5,75 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+
+ChaoStgKarate_0.c:
+	.text       start:0x0000030C end:0x000005FC
+	.rodata     start:0x00000000 end:0x00000010
+
+ChaoStgKarate_1.c:
+	.text       start:0x000005FC end:0x00003E3C
+	.rodata     start:0x00000010 end:0x00000230
+
+ChaoStgKarate_2.c:
+	.text       start:0x00003E3C end:0x00004D7C
+	.rodata     start:0x00000230 end:0x00000268
+
+ChaoStgKarate_3.c:
+	.text       start:0x00005020 end:0x000053D8
+	.rodata     start:0x00000268 end:0x00000278
+
+ChaoStgKarate_4.c:
+	.text       start:0x00005974 end:0x00005D48
+	.rodata     start:0x00000278 end:0x00000298
+
+ChaoStgKarate_5.c:
+	.text       start:0x00006318 end:0x0000A184
+	.rodata     start:0x00000298 end:0x00000380
+
+ChaoStgKarate_6.c:
+	.text       start:0x0000A438 end:0x0000B420
+	.rodata     start:0x00000380 end:0x000003B8
+
+ChaoStgKarate_7.c:
+	.text       start:0x0000B55C end:0x0000B620
+	.rodata     start:0x000003B8 end:0x000003D0
+
+ChaoStgKarate_8.c:
+	.text       start:0x0000BDBC end:0x00012454
+	.rodata     start:0x000003D0 end:0x000004E0
+
+ChaoStgKarate_9.c:
+	.text       start:0x0001245C end:0x000129D8
+	.rodata     start:0x000004E0 end:0x00000508
+
+ChaoStgKarate_10.c:
+	.text       start:0x00012AA8 end:0x000130EC
+	.rodata     start:0x00000508 end:0x000005E0
+
+ChaoStgKarate_11.c:
+	.text       start:0x000130EC end:0x000134B8
+	.rodata     start:0x000005E0 end:0x000005E8
+
+ChaoStgKarate_12.c:
+	.text       start:0x000134B8 end:0x00013598
+	.rodata     start:0x000005E8 end:0x000005F0
+
+ChaoStgKarate_13.c:
+	.text       start:0x00013C6C end:0x00013D9C
+	.rodata     start:0x000005F0 end:0x000005F8
+
+ChaoStgKarate_14.c:
+	.text       start:0x00013E90 end:0x000144C8
+	.rodata     start:0x000005F8 end:0x00000620
+
+ChaoStgKarate_15.c:
+	.text       start:0x00014584 end:0x00014784
+	.rodata     start:0x00000620 end:0x00000640
+
+ChaoStgKarate_16.c:
+	.text       start:0x00014840 end:0x00014B4C
+	.rodata     start:0x00000640 end:0x00000668
+
+ChaoStgKarate_17.c:
+	.text       start:0x00014B4C end:0x00014BB0
+	.rodata     start:0x00000668 end:0x0000066C

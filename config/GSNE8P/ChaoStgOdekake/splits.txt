@@ -5,3 +5,71 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:8
 	.bss        type:bss align:8
+
+ChaoStgOdekake_0.c:
+	.text       start:0x00000000 end:0x0000109C
+	.rodata     start:0x00000000 end:0x00000080
+
+ChaoStgOdekake_1.c:
+	.text       start:0x000011E8 end:0x00001964
+	.rodata     start:0x00000080 end:0x000000E0
+
+ChaoStgOdekake_2.c:
+	.text       start:0x00001A08 end:0x00001FDC
+	.rodata     start:0x000000E0 end:0x00000110
+
+ChaoStgOdekake_3.c:
+	.text       start:0x00001FDC end:0x000024E8
+	.rodata     start:0x00000110 end:0x00000148
+
+ChaoStgOdekake_4.c:
+	.text       start:0x000025A4 end:0x00002CB4
+	.rodata     start:0x00000148 end:0x00000180
+
+ChaoStgOdekake_5.c:
+	.text       start:0x00002D7C end:0x00003050
+	.rodata     start:0x00000180 end:0x00000198
+
+ChaoStgOdekake_6.c:
+	.text       start:0x00003178 end:0x0000397C
+	.rodata     start:0x00000198 end:0x000001D8
+
+ChaoStgOdekake_7.c:
+	.text       start:0x00003E60 end:0x00004808
+	.rodata     start:0x000001D8 end:0x00000228
+
+ChaoStgOdekake_8.c:
+	.text       start:0x000048F0 end:0x00005664
+	.rodata     start:0x00000228 end:0x00000298
+
+ChaoStgOdekake_9.c:
+	.text       start:0x00005798 end:0x00005CAC
+	.rodata     start:0x00000298 end:0x000002C0
+
+ChaoStgOdekake_10.c:
+	.text       start:0x00005CAC end:0x00006218
+	.rodata     start:0x000002C0 end:0x000002E8
+
+ChaoStgOdekake_11.c:
+	.text       start:0x00006218 end:0x00006DC0
+	.rodata     start:0x000002E8 end:0x00000338
+
+ChaoStgOdekake_12.c:
+	.text       start:0x00006DC0 end:0x000073F8
+	.rodata     start:0x00000338 end:0x00000370
+
+ChaoStgOdekake_13.c:
+	.text       start:0x00007480 end:0x00007DDC
+	.rodata     start:0x00000370 end:0x000003B8
+
+ChaoStgOdekake_14.c:
+	.text       start:0x00007DDC end:0x00008B3C
+	.rodata     start:0x000003B8 end:0x00000428
+
+ChaoStgOdekake_15.c:
+	.text       start:0x00008EF4 end:0x00009158
+	.rodata     start:0x00000428 end:0x00000440
+
+ChaoStgOdekake_16.c:
+	.text       start:0x00009158 end:0x000094D0
+	.rodata     start:0x00000440 end:0x0000045C

@@ -5,3 +5,117 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:32
 	.bss        type:bss align:32
+
+ChaoStgRace_0.c:
+	.text       start:0x00000698 end:0x00001FA0
+	.rodata     start:0x00000000 end:0x000000B8
+
+ChaoStgRace_1.c:
+	.text       start:0x00001FA0 end:0x000027C0
+	.rodata     start:0x000000B8 end:0x00000168
+
+ChaoStgRace_2.c:
+	.text       start:0x00002810 end:0x00002E34
+	.rodata     start:0x00000168 end:0x00000180
+
+ChaoStgRace_3.c:
+	.text       start:0x00002E8C end:0x000030F0
+
+ChaoStgRace_4.c:
+	.text       start:0x00003180 end:0x000032B8
+	.rodata     start:0x00000180 end:0x000001B0
+
+ChaoStgRace_5.c:
+	.text       start:0x00003354 end:0x00003B34
+	.rodata     start:0x000001C8 end:0x00000260
+
+ChaoStgRace_6.c:
+	.text       start:0x00003B34 end:0x00004048
+
+ChaoStgRace_7.c:
+	.text       start:0x0000404C end:0x000040E4
+	.rodata     start:0x00000260 end:0x00000290
+
+ChaoStgRace_8.c:
+	.text       start:0x000040E4 end:0x00004F40
+	.rodata     start:0x000002B0 end:0x00000360
+
+ChaoStgRace_9.c:
+	.text       start:0x00004FDC end:0x0000579C
+	.rodata     start:0x00000360 end:0x000003D8
+
+ChaoStgRace_10.c:
+	.text       start:0x000057DC end:0x000058DC
+	.rodata     start:0x000003D8 end:0x000003E0
+
+ChaoStgRace_11.c:
+	.text       start:0x00005A3C end:0x00005CB0
+	.rodata     start:0x000003E0 end:0x000003F0
+
+ChaoStgRace_12.c:
+	.text       start:0x00005CB0 end:0x00005DAC
+	.rodata     start:0x000003F0 end:0x000003F8
+
+ChaoStgRace_13.c:
+	.text       start:0x000063B0 end:0x00006E88
+	.rodata     start:0x000003F8 end:0x000004C0
+
+ChaoStgRace_14.c:
+	.text       start:0x00006E88 end:0x0000AF44
+	.rodata     start:0x000004C0 end:0x00000BC8
+
+ChaoStgRace_15.c:
+	.text       start:0x0000AFA4 end:0x0000C0D8
+	.rodata     start:0x00000BC8 end:0x00000C10
+
+ChaoStgRace_16.c:
+	.text       start:0x0000C250 end:0x0000C344
+	.rodata     start:0x00000C10 end:0x00000C18
+
+ChaoStgRace_17.c:
+	.text       start:0x0000C3BC end:0x0000DAA0
+	.rodata     start:0x00000C18 end:0x00000CE0
+
+ChaoStgRace_18.c:
+	.text       start:0x0000DB6C end:0x0000DF08
+	.rodata     start:0x00000CE0 end:0x00000CF8
+
+ChaoStgRace_19.c:
+	.text       start:0x0000E560 end:0x0000E708
+	.rodata     start:0x00000CF8 end:0x00000D08
+
+ChaoStgRace_20.c:
+	.text       start:0x0000E708 end:0x0000E924
+	.rodata     start:0x00000D08 end:0x00000D10
+
+ChaoStgRace_21.c:
+	.text       start:0x0000E924 end:0x0000EBA0
+	.rodata     start:0x00000D10 end:0x00000D18
+
+ChaoStgRace_22.c:
+	.text       start:0x0000EBA0 end:0x0000F4B8
+	.rodata     start:0x00000D18 end:0x00000D50
+
+ChaoStgRace_23.c:
+	.text       start:0x0000F4B8 end:0x00010260
+	.rodata     start:0x00000D50 end:0x00000D80
+
+ChaoStgRace_24.c:
+	.text       start:0x00010828 end:0x00010958
+	.rodata     start:0x00000D80 end:0x00000D88
+
+ChaoStgRace_25.c:
+	.text       start:0x00010A4C end:0x00011084
+	.rodata     start:0x00000D88 end:0x00000DB0
+
+ChaoStgRace_26.c:
+	.text       start:0x00011140 end:0x00011340
+	.rodata     start:0x00000DB0 end:0x00000DD0
+
+ChaoStgRace_27.c:
+	.text       start:0x000113FC end:0x00011708
+	.rodata     start:0x00000DD0 end:0x00000DF8
+
+ChaoStgRace_28.c:
+	.text       start:0x00011708 end:0x0001176C
+	.rodata     start:0x00000DF8 end:0x00000DFC

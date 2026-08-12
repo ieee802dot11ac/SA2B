@@ -5,3 +5,39 @@ Sections:
 	.rodata     type:rodata align:8
 	.data       type:data align:32
 	.bss        type:bss align:8
+
+ChaoStgEntrance_0.c:
+	.text       start:0x00000064 end:0x00000394
+	.rodata     start:0x00000000 end:0x00000028
+
+ChaoStgEntrance_1.c:
+	.text       start:0x00000448 end:0x00002758
+	.rodata     start:0x00000028 end:0x00000050
+
+ChaoStgEntrance_2.c:
+	.text       start:0x00002A18 end:0x00002C38
+	.rodata     start:0x00000050 end:0x00000058
+
+ChaoStgEntrance_3.c:
+	.text       start:0x00002DDC end:0x0000DE84
+	.rodata     start:0x00000058 end:0x00001B50
+
+ChaoStgEntrance_4.c:
+	.text       start:0x0000DF98 end:0x0000E788
+	.rodata     start:0x00001B50 end:0x00001B90
+
+ChaoStgEntrance_5.c:
+	.text       start:0x0000E788 end:0x0000EDBC
+	.rodata     start:0x00001B90 end:0x00001BD8
+
+ChaoStgEntrance_6.c:
+	.text       start:0x0000EE40 end:0x0000F4CC
+	.rodata     start:0x00001BD8 end:0x00001C20
+
+ChaoStgEntrance_7.c:
+	.text       start:0x0000F4CC end:0x0000F5BC
+	.rodata     start:0x00001C20 end:0x00001C28
+
+ChaoStgEntrance_8.c:
+	.text       start:0x0000F68C end:0x0000F748
+	.rodata     start:0x00001C28 end:0x00001C30

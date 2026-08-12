@@ -308,10 +308,14 @@ config.libs = [
     Rel(
         "stg13D",
         [
-            Object(NonMatching, "stg13_cityescape/o_ce_board.c"),
+            Object(Matching, "stg13_cityescape/o_ce_board.c"),
             Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
             SPRING_C,
         ]
+    ),
+    Rel(
+        "ChaoMain",
+        []
     )
 ]
 

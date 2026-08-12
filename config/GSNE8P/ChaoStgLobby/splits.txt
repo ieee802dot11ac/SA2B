@@ -4,3 +4,39 @@ Sections:
 	.dtors      type:rodata align:4
 	.rodata     type:rodata align:8
 	.data       type:data align:32
+
+ChaoStgLobby_0.c:
+	.text       start:0x0000014C end:0x000001DC
+	.rodata     start:0x00000000 end:0x00000018
+
+ChaoStgLobby_1.c:
+	.text       start:0x000001DC end:0x0000028C
+	.rodata     start:0x00000018 end:0x00000030
+
+ChaoStgLobby_2.c:
+	.text       start:0x0000028C end:0x000002E4
+	.rodata     start:0x00000030 end:0x00000040
+
+ChaoStgLobby_3.c:
+	.text       start:0x0000058C end:0x00000C7C
+	.rodata     start:0x00000040 end:0x00000068
+
+ChaoStgLobby_4.c:
+	.text       start:0x00000D50 end:0x000011A0
+	.rodata     start:0x00000068 end:0x00000088
+
+ChaoStgLobby_5.c:
+	.text       start:0x000012C8 end:0x00001528
+	.rodata     start:0x00000088 end:0x00000098
+
+ChaoStgLobby_6.c:
+	.text       start:0x0000164C end:0x00001738
+	.rodata     start:0x00000098 end:0x000000A8
+
+ChaoStgLobby_7.c:
+	.text       start:0x00001850 end:0x00001924
+	.rodata     start:0x000000A8 end:0x000000B8
+
+ChaoStgLobby_8.c:
+	.text       start:0x000019E0 end:0x00001A44
+	.rodata     start:0x000000B8 end:0x000000BC
