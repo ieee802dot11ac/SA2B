@@ -4,18 +4,32 @@
 #include "samt/sonic/player.h"
 #include "set.h"
 #include "qFabsf.h"
-
-
-// extern Bool CheckRangeOut(task *t);
+#include "fabsf.h"
 
 extern void fn_8002FB2C(Sint8, int, int, int); 
 extern void fn_13_390DC(Sint8, int);
-// extern void DeadOut(task *);
 extern void SE_Call(int, int, int, int);
 extern void ds_DrawModelClip(NJS_MODEL *);
 
-inline float fabsf(float f) { return __fabsf(f); }
 inline float sqrtf(float f);
+
+extern NJS_TEXLIST _rename_spring_TexList;
+extern NJS_OBJECT  _rename_SpringObj1;
+extern NJS_OBJECT  _rename_SpringObj2;
+extern NJS_OBJECT  _rename_SpringObj3;
+extern NJS_OBJECT  _rename_SpringObj4;
+ 
+extern GJS_OBJECT  _rename_SpringGjObj1;
+extern GJS_OBJECT  _rename_SpringGjObj2;
+extern GJS_OBJECT  _rename_SpringGjObj3;
+extern GJS_MODEL   _rename_SpringGjModel1;
+ 
+extern GJS_OBJECT  _rename_SpringGjObj4;
+extern GJS_MODEL   _rename_SpringGjModel2;
+
+extern CCL_INFO    spr_colli_info[1];
+extern CCL_INFO    spr_colli_info_b[1];
+extern NJS_MODEL*  _rename_SpringObjArr[][4];
 
 // ^ extern
 // v in this file
@@ -28,23 +42,7 @@ static void SpringDie(task *task);
 static void SpringBDie(task *task);
 static void VacumePlayer(task*, Uint8 flag);
 
-extern int spring_cnkdraw;
-extern NJS_TEXLIST lbl_13_data_2510DC;
-extern NJS_OBJECT  lbl_13_data_2513F4;
-extern NJS_OBJECT  lbl_13_data_2516C0;
-extern NJS_OBJECT  lbl_13_data_251D44;
-extern NJS_OBJECT  lbl_13_data_251A78;
- 
-extern GJS_OBJECT  lbl_13_data_252F44;
-extern GJS_OBJECT  lbl_13_data_2521A4;
-extern GJS_OBJECT  lbl_13_data_252554;
-extern GJS_MODEL   lbl_13_data_252A70;
- 
-extern GJS_OBJECT  lbl_13_data_2532F4;
-extern GJS_MODEL   lbl_13_data_2536F0;
-extern CCL_INFO    spr_colli_info[1];
-extern CCL_INFO    spr_colli_info_b[1];
-extern NJS_MODEL*  lbl_13_data_253774[][4];
+static BOOL spring_cnkdraw = FALSE;
 
 enum {
   SPR_INIT  = 0x0,
@@ -269,7 +267,7 @@ static void SpringDie(task *t) {
 static void DrawSpringGC(task *t) {
   taskwk *twp = t->twp;
   GJS_MODEL* model;
-  njSetTexture(&lbl_13_data_2510DC);
+  njSetTexture(&_rename_spring_TexList);
   njPushMatrixEx();
   njTranslateEx(&twp->pos);
   njRotateZ(NULL, twp->ang.z);
@@ -279,20 +277,22 @@ static void DrawSpringGC(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  model = &lbl_13_data_252A70;
+  model = &_rename_SpringGjModel1;
   gjDrawModel(model);
-  njTranslateEx(&lbl_13_data_252554.pos);
+  
+  njTranslateEx(&_rename_SpringGjObj3.pos);
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  gjDrawModel(lbl_13_data_252554.model);
-  njTranslateEx(&lbl_13_data_2521A4.pos);
+  gjDrawModel(_rename_SpringGjObj3.model);
+
+  njTranslateEx(&_rename_SpringGjObj2.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f);
-  gjDrawModel(lbl_13_data_2521A4.model);
+  gjDrawModel(_rename_SpringGjObj2.model);
   njPopMatrixEx();
 }
 
 static void DrawSpring(task *t) {
   taskwk *twp = t->twp;
-  njSetTexture(&lbl_13_data_2510DC);
+  njSetTexture(&_rename_spring_TexList);
   njPushMatrixEx();
   njTranslateEx(&twp->pos);
   njRotateZ(NULL, twp->ang.z);
@@ -302,13 +302,13 @@ static void DrawSpring(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  ds_DrawModelClip(lbl_13_data_253774[0][3]); // model_bane_banebottom_banebottom
-  njTranslateEx(&lbl_13_data_2516C0.pos);
+  ds_DrawModelClip(_rename_SpringObjArr[0][3]); // model_bane_banebottom_banebottom
+  njTranslateEx(&_rename_SpringObj2.pos);
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  ds_DrawModelClip(lbl_13_data_253774[1][3]); // model_bane_banebottom_spring
-  njTranslateEx(&lbl_13_data_2513F4.pos);
+  ds_DrawModelClip(_rename_SpringObjArr[1][3]); // model_bane_banebottom_spring
+  njTranslateEx(&_rename_SpringObj1.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f);
-  ds_DrawModelClip(lbl_13_data_253774[2][3]); // model_bane_banebottom_banehead
+  ds_DrawModelClip(_rename_SpringObjArr[2][3]); // model_bane_banebottom_banehead
   njPopMatrixEx();
 }
 
@@ -399,7 +399,7 @@ void DrawSpringBGC(task *t) {
   NJS_POINT3 STACK_PAD;
   taskwk *twp = t->twp;
   GJS_MODEL* model;
-  njSetTexture(&lbl_13_data_2510DC);
+  njSetTexture(&_rename_spring_TexList);
   njPushMatrixEx();
   njTranslateEx(&twp->pos);
   njRotateZ(NULL, twp->ang.z);
@@ -409,23 +409,23 @@ void DrawSpringBGC(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  gjDrawModel(&lbl_13_data_2536F0);
+  gjDrawModel(&_rename_SpringGjModel2);
   njPushMatrixEx();
-  njTranslateEx(&lbl_13_data_2532F4.pos);
+  njTranslateEx(&_rename_SpringGjObj4.pos);
   njPushMatrixEx();
-  njTranslateEx(&lbl_13_data_252F44.pos);
+  njTranslateEx(&_rename_SpringGjObj1.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f);
-  gjDrawModel(lbl_13_data_252F44.model);
+  gjDrawModel(_rename_SpringGjObj1.model);
   njPopMatrixEx();
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  gjDrawModel(lbl_13_data_2532F4.model);
+  gjDrawModel(_rename_SpringGjObj4.model);
   njPopMatrix(2);
 }
 
 static void DrawSpringB(task *t) {
   float STACK_PAD[4];
   taskwk *twp = t->twp;
-  njSetTexture(&lbl_13_data_2510DC);
+  njSetTexture(&_rename_spring_TexList);
   njPushMatrixEx();
   njTranslateEx(&twp->pos);
   njRotateZ(NULL, twp->ang.z);
@@ -435,16 +435,16 @@ static void DrawSpringB(task *t) {
     Float f = 1.f / (Float)twp->wtimer;
     njScale(NULL, f, f, f);
   }
-  ds_DrawModelClip(lbl_13_data_253774[3][3]);  // model_bane_type_b_type_b_type_b
+  ds_DrawModelClip(_rename_SpringObjArr[3][3]);  // model_bane_type_b_type_b_type_b
   njPushMatrixEx();
-  njTranslateEx(&lbl_13_data_251D44.pos);
+  njTranslateEx(&_rename_SpringObj3.pos);
   njPushMatrixEx();
-  njTranslateEx(&lbl_13_data_251A78.pos);
+  njTranslateEx(&_rename_SpringObj4.pos);
   njTranslate(NULL, 0.0f, 4.f * GetV2(t), 0.0f); // model_bane_type_b_type_b_banehead
-  ds_DrawModelClip(lbl_13_data_253774[5][3]);
+  ds_DrawModelClip(_rename_SpringObjArr[5][3]);
   njPopMatrixEx();
   njScale(NULL, 0.98f, 1.0f + GetV2(t), 0.98f);
-  ds_DrawModelClip(lbl_13_data_253774[4][3]); // model_bane_type_b_type_b_spring
+  ds_DrawModelClip(_rename_SpringObjArr[4][3]); // model_bane_type_b_type_b_spring
   njPopMatrix(2);
 }
 
@@ -453,7 +453,3 @@ static void SpringBDie(task *t) {
   t->fwp = NULL;
   t->awp = NULL;
 }
-
-#undef GetV1
-#undef GetV2
-#undef GetV3
