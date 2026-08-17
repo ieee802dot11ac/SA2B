@@ -247,6 +247,6 @@ void ObjectBoardDispShad(task *tp) {
 
 void ObjectBoardDest(task *tp) {
     fn_13_18AA8(tp->work.ptr);
-    Free(tp->work.ptr);
+    syFree(tp->work.ptr);
     tp->work.ptr = NULL;
 }
