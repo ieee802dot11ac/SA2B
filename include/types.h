@@ -59,7 +59,7 @@ typedef int BOOL;
 #define TRUE (1)
 #undef FALSE
 #define FALSE (0)
-#ifndef _cplusplus
+#ifndef __cplusplus
 enum { false, true };
 #endif
 
