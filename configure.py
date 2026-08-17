@@ -503,8 +503,10 @@ config.libs = [
     Rel(
         "stg13D",
         [
+            Object(Matching, "stg13_cityescape/o_ce_adx_chg.c"),
             Object(Matching, "stg13_cityescape/o_ce_board.c"),
             Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
+            Object(NonMatching, "stg13_cityescape/o_ce_sobj.c"),
             SPRING_C,
         ]
     ),
