@@ -42,7 +42,10 @@ ChaoMain_11.c:
 ChaoMain_12.c:
 	.text       start:0x00005964 end:0x000059D8
 
-ChaoMain_13.c:
+chao/al_control.c:
+	.text       start:0x00005A3C end:0x00005BAC
+
+chao/al_crc32.c:
 	.text       start:0x00005BAC end:0x00005D10
 
 ChaoMain_14.c:
@@ -60,8 +63,8 @@ ChaoMain_17.c:
 ChaoMain_18.c:
 	.text       start:0x0000B5DC end:0x0000C1AC
 
-ChaoMain_19.c:
-	.text       start:0x0000C480 end:0x0000DF08
+chao/al_garden_info.c:
+	.text       start:0x0000C1FC end:0x0000DFD8
 
 ChaoMain_20.c:
 	.text       start:0x0000DFD8 end:0x0000E148
@@ -79,13 +82,10 @@ ChaoMain_24.c:
 	.text       start:0x0000FEC8 end:0x0000FF60
 
 ChaoMain_25.c:
-	.text       start:0x0001002C end:0x00012744
+	.text       start:0x0001002C end:0x000127A0
 
 ChaoMain_26.c:
-	.text       start:0x000127A0 end:0x000129F4
-
-ChaoMain_27.c:
-	.text       start:0x00012A98 end:0x00012B08
+	.text       start:0x000127A0 end:0x00012B08
 
 ChaoMain_28.c:
 	.text       start:0x00012B8C end:0x00014C48
@@ -177,14 +177,14 @@ ChaoMain_56.c:
 chao/al_world.c:
 	.text       start:0x00029344 end:0x00029FB8
 
-ChaoMain_58.c:
-	.text       start:0x00029FB8 end:0x0002ABD4
+chao/alo_chaosdrive.c:
+	.text       start:0x00029FB8 end:0x0002AC90
 
 ChaoMain_59.c:
 	.text       start:0x0002AD10 end:0x0002B1A8
 
-ChaoMain_60.c:
-	.text       start:0x0002B1B4 end:0x0002BCA8
+chao/alo_fruit.c:
+	.text       start:0x0002B1A8 end:0x0002BE40
 
 chao/alo_growtree.c:
 	.text       start:0x0002BE40 end:0x0002E228
@@ -405,8 +405,8 @@ ChaoMain_132.c:
 ChaoMain_133.c:
 	.text       start:0x00058E60 end:0x0005901C
 
-ChaoMain_134.c:
-	.text       start:0x0005901C end:0x00059304
+ef_waterripple.c:
+	.text       start:0x0005901C end:0x00059318
 
 ChaoMain_135.c:
 	.text       start:0x00059318 end:0x00059890

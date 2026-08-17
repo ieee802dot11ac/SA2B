@@ -54,6 +54,10 @@ extern void fn_13_18AE8(int, NJS_VECTOR*, float, void*);
 // v in this file
 
 NJS_MATRIX lbl_13_bss_0;
+static void ObjectBoardExec(task *);
+static void ObjectBoardDest(task *);
+static void ObjectBoardDisp(task *);
+static void ObjectBoardDispShad(task *);
 
 static void o_ce_board_1(Sint32 s, NJS_TEXLIST **r4, NJS_OBJECT **r5,
                   NJS_OBJECT **r6) {
