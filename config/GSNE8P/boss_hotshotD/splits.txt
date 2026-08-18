@@ -226,9 +226,10 @@ boss_hotshotD_55.c:
 	.text       start:0x0002EF30 end:0x0002F108
 	.rodata     start:0x000010F0 end:0x000010F8
 
-boss_hotshotD_56.c:
-	.text       start:0x0002F2F4 end:0x00030404
+OBJECT/o_spring.c:
+	.text       start:0x0002F2F4 end:0x00030418
 	.rodata     start:0x000010F8 end:0x00001158
+	.bss        start:0x00000C58 end:0x00000C60
 
 boss_hotshotD_57.c:
 	.text       start:0x00030418 end:0x0003176C

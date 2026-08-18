@@ -7,7 +7,7 @@
 #include "fabsf.h"
 
 extern void fn_8002FB2C(Sint8, int, int, int); 
-extern void fn_13_390DC(Sint8, int);
+extern void _rename_SetRelLocal(Sint8, int);
 extern void SE_Call(int, int, int, int);
 extern void ds_DrawModelClip(NJS_MODEL *);
 
@@ -254,7 +254,7 @@ static void VacumePlayer(task *t, Uint8 flag) {
     }
     GetV2(t) = 0.1f;
     fn_8002FB2C(smode_, 4, 15, 0);
-    fn_13_390DC(smode_, 1);
+    _rename_SetRelLocal(smode_, 1);
   }
 }
 
