@@ -122,13 +122,9 @@ boss_hotshotD_28.c:
 	.text       start:0x00013064 end:0x000144C0
 	.rodata     start:0x00000A10 end:0x00000A58
 
-boss_hotshotD_29.c:
-	.text       start:0x000144C0 end:0x000147B4
-	.rodata     start:0x00000A58 end:0x00000A70
-
-boss_hotshotD_30.c:
-	.text       start:0x000147B4 end:0x00014874
-	.rodata     start:0x00000A70 end:0x00000A78
+OBJECT/o_chaopipe.c:
+	.text       start:0x000144C0 end:0x00014874
+	.rodata     start:0x00000A58 end:0x00000A78
 
 boss_hotshotD_31.c:
 	.text       start:0x00014874 end:0x0001536C
