@@ -206,13 +206,9 @@ stg07D_49.c:
 	.text       start:0x0001C480 end:0x0001CF40
 	.rodata     start:0x000009A0 end:0x000009F0
 
-stg07D_50.c:
-	.text       start:0x0001CF40 end:0x0001D234
-	.rodata     start:0x000009F0 end:0x00000A08
-
-stg07D_51.c:
-	.text       start:0x0001D234 end:0x0001D2F4
-	.rodata     start:0x00000A08 end:0x00000A10
+OBJECT/o_chaopipe.c:
+	.text       start:0x0001CF40 end:0x0001D2F4
+	.rodata     start:0x000009F0 end:0x00000A10
 
 stg07D_52.c:
 	.text       start:0x0001D2F4 end:0x0001DB78

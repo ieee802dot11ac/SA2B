@@ -10,7 +10,7 @@ extern void fn_80011FB0(const char *);
 extern BOOL fn_8001CC18(s32);
 extern s32 fn_8001CD40(void);
 extern void _rename_PlayAdxFile(const char *); // some "play track" func
-extern BOOL fn_800398D8(NJS_VECTOR *, f32);
+extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, f32);
 
 // ^ extern
 // v in this file
@@ -50,7 +50,7 @@ void ObjectCeAdxChgDest(task *tp) {
 void ObjectCeAdxChgExec(task *tp) {
   taskwk *twp = tp->twp;
   if (!CheckRangeOut(tp)) {
-    if (fn_800398D8(&twp->pos, twp->scl.x) &&
+    if (_rename_EitherPlayerWithinSphere(&twp->pos, twp->scl.x) &&
         (twp->mode == 0 || twp->mode == 2 || twp->mode == 4)) {
       twp->mode = 1;
       fn_80011DF4();

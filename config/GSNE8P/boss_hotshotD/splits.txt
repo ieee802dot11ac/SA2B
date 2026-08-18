@@ -122,13 +122,9 @@ boss_hotshotD_28.c:
 	.text       start:0x00013064 end:0x000144C0
 	.rodata     start:0x00000A10 end:0x00000A58
 
-boss_hotshotD_29.c:
-	.text       start:0x000144C0 end:0x000147B4
-	.rodata     start:0x00000A58 end:0x00000A70
-
-boss_hotshotD_30.c:
-	.text       start:0x000147B4 end:0x00014874
-	.rodata     start:0x00000A70 end:0x00000A78
+OBJECT/o_chaopipe.c:
+	.text       start:0x000144C0 end:0x00014874
+	.rodata     start:0x00000A58 end:0x00000A78
 
 boss_hotshotD_31.c:
 	.text       start:0x00014874 end:0x0001536C
@@ -230,9 +226,10 @@ boss_hotshotD_55.c:
 	.text       start:0x0002EF30 end:0x0002F108
 	.rodata     start:0x000010F0 end:0x000010F8
 
-boss_hotshotD_56.c:
-	.text       start:0x0002F2F4 end:0x00030404
+OBJECT/o_spring.c:
+	.text       start:0x0002F2F4 end:0x00030418
 	.rodata     start:0x000010F8 end:0x00001158
+	.bss        start:0x00000C58 end:0x00000C60
 
 boss_hotshotD_57.c:
 	.text       start:0x00030418 end:0x0003176C

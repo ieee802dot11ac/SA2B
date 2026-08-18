@@ -299,6 +299,7 @@ def MatchingFor(*versions):
 config.warn_missing_config = True
 config.warn_missing_source = False
 
+CHAOPIPE_C = Object(Matching, "OBJECT/o_chaopipe.c")
 SPRING_C = Object(Matching, "OBJECT/o_spring.c")
 
 config.libs = [
@@ -507,6 +508,7 @@ config.libs = [
             Object(Matching, "stg13_cityescape/o_ce_board.c"),
             Object(Matching, "stg13_cityescape/o_ce_board_col.c"),
             Object(NonMatching, "stg13_cityescape/o_ce_sobj.c"),
+            CHAOPIPE_C,
             SPRING_C,
         ]
     ),
