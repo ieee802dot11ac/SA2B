@@ -11,8 +11,8 @@ extern BOOL _rename_CheckFlag0x20(task *tp);
 extern void _rename_SetFlag0x20(task *tp);
 extern void fn_800260FC(u32, float, float, float);
 extern void fn_8011E158(NJS_MODEL *);
-extern s32 fn_80038108(s32); // get player character?
-extern s32 fn_800398D8(NJS_VECTOR *, float);
+extern s32 _rename_GetPlayerCharacter(s32);
+extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, float);
 extern void fn_8006539C(task *tp, u8 smode);
 
 extern CCL_INFO pipe_colli_info[1];
@@ -54,17 +54,16 @@ static void ObjectChaoPipeExec(task *tp) {
   if (!CheckRangeOut(tp)) {
     if (tp->ocp && !_rename_CheckFlag0x20(tp)) {
       float scalar;
-      s32 pos_scalar_result;
-      if (fn_80038108(0) == PLNO_EGG_WALKER ||
-          fn_80038108(0) == PLNO_TAILS_WALKER) {
+      s32 distance;
+      if (_rename_GetPlayerCharacter(0) == PLNO_EGG_WALKER ||
+          _rename_GetPlayerCharacter(0) == PLNO_TAILS_WALKER) {
         scalar = 25.0f;
       } else {
         scalar = 13.0f;
       }
-      pos_scalar_result =
-          fn_800398D8(&twp->pos, scalar); // probably some distance thing
-      if (twp->wtimer == 0 && pos_scalar_result != 0 &&
-          playertwp[pos_scalar_result - 1]->mode == 42) {
+      distance = _rename_EitherPlayerWithinSphere(&twp->pos, scalar);
+      if (twp->wtimer == 0 && distance != 0 &&
+          playertwp[distance - 1]->mode == 42) {
         twp->wtimer = 300;
         GetF1(tp) = 0.0f;
         GetF2(tp) = 0.08f;
@@ -90,8 +89,8 @@ static void ObjectChaoPipeExec(task *tp) {
           }
           twp->wtimer--;
         } else {
-          if (pos_scalar_result != 0) {
-            playerpwp[pos_scalar_result - 1]->action_sel = 42;
+          if (distance != 0) {
+            playerpwp[distance - 1]->action_sel = 42;
           }
         }
       }

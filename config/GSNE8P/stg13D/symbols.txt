@@ -1,7 +1,7 @@
-ObjectCeAdxChg = .text:0x00000000; // type:function size:0x68
-ObjectCeAdxChgDest = .text:0x00000068; // type:function size:0xA8
-ObjectCeAdxChgExec = .text:0x00000110; // type:function size:0xF4
-ObjectCeAdxChgDisp = .text:0x00000204; // type:function size:0x4
+ObjectCeAdxChg = .text:0x00000000; // type:function size:0x68 scope:global
+ObjectCeAdxChgDest = .text:0x00000068; // type:function size:0xA8 scope:local
+ObjectCeAdxChgExec = .text:0x00000110; // type:function size:0xF4 scope:local
+ObjectCeAdxChgDisp = .text:0x00000204; // type:function size:0x4 scope:local
 o_ce_board_1 = .text:0x00000208; // type:function size:0x120
 ObjectBoard = .text:0x00000328; // type:function size:0x8C
 ObjectBoardExec = .text:0x000003B4; // type:function size:0x13C
