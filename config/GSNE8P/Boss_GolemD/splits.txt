@@ -278,9 +278,10 @@ Boss_GolemD_67.c:
 	.text       start:0x00037D48 end:0x00037F20
 	.rodata     start:0x00001748 end:0x00001750
 
-Boss_GolemD_68.c:
-	.text       start:0x0003810C end:0x0003921C
+OBJECT/o_spring.c:
+	.text       start:0x0003810C end:0x00039230
 	.rodata     start:0x00001750 end:0x000017B0
+	.bss        start:0x00001268 end:0x00001270
 
 Boss_GolemD_69.c:
 	.text       start:0x00039230 end:0x0003AE44

@@ -262,9 +262,10 @@ Boss_GolemED_63.c:
 	.text       start:0x00037250 end:0x00037428
 	.rodata     start:0x000016A0 end:0x000016A8
 
-Boss_GolemED_64.c:
-	.text       start:0x00037614 end:0x00038724
+OBJECT/o_spring.c:
+	.text       start:0x00037614 end:0x00038738
 	.rodata     start:0x000016A8 end:0x00001708
+	.bss        start:0x00000F68 end:0x00000F70
 
 Boss_GolemED_65.c:
 	.text       start:0x00038738 end:0x0003A4F0
