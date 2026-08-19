@@ -136,7 +136,7 @@ void ObjectBoardExec(task *tp) {
     }
 }
 
-void o_ce_board_4() { njGetMatrix(&lbl_13_bss_0); }
+static void o_ce_board_4() { njGetMatrix(&lbl_13_bss_0); }
 
 void ObjectBoardDisp(task *tp) {
   taskwk *twp = tp->twp;

@@ -14,6 +14,9 @@ extern s32 _rename_EitherPlayerWithinSphere(NJS_VECTOR *, f32);
 
 // ^ extern
 // v in this file
+static void ObjectCeAdxChgDest(task *tp);
+static void ObjectCeAdxChgExec(task *tp);
+static void ObjectCeAdxChgDisp(task *tp);
 
 void ObjectCeAdxChg(task *tp) {
   if (!CheckRangeOut(tp) && _rename_GetStageNum() != STAGE_SHORTCITY_2P) {

@@ -72,7 +72,6 @@ static void ObjectChaoPipeExec(task *tp) {
         if (twp->wtimer != 0) {
           if (twp->wtimer == 270) {
             NJS_POINT3 point;
-            u32 some_math;
             njPushMatrixEx();
             njUnitMatrix(NULL);
             njTranslateV(NULL, &twp->pos);
@@ -81,8 +80,7 @@ static void ObjectChaoPipeExec(task *tp) {
             njRotateY(NULL, twp->ang.y);
             njCalcPoint(NULL, &pipe_src_point, &point);
             njPopMatrix(1);
-            some_math = twp->scl.x;
-            fn_800260FC(some_math % 3, point.x, point.y, point.z);
+            fn_800260FC((u32)(twp->scl.x) % 3, point.x, point.y, point.z);
             fn_8006539C(tp, 1);
             SE_Call(0x100a, NULL, 0, 0);
             _rename_SetFlag0x20(tp);

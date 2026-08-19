@@ -6,9 +6,9 @@
 // v in this file
 
 
-void ObjectBoardColDest(task *tp) { return; }
+static void ObjectBoardColDest(task *tp) { return; }
 
-void ObjectBoardColExec(task *tp) {
+static void ObjectBoardColExec(task *tp) {
   int PAD_STACK[4];
   taskwk *twp = tp->twp;
   if (!CheckRangeOut(tp)) {
