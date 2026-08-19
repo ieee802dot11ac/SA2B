@@ -326,9 +326,10 @@ stg08D_79.c:
 	.text       start:0x0003C1DC end:0x0003C514
 	.rodata     start:0x00001158 end:0x00001180
 
-stg08D_80.c:
-	.text       start:0x0003C580 end:0x0003D690
+OBJECT/o_spring.c:
+	.text       start:0x0003C580 end:0x0003D6A4
 	.rodata     start:0x00001180 end:0x000011E0
+	.bss        start:0x00005458 end:0x00005460
 
 stg08D_81.c:
 	.text       start:0x0003D6A4 end:0x0003E9F8

@@ -270,9 +270,10 @@ stg36D_65.c:
 	.text       start:0x00044D74 end:0x000450AC
 	.rodata     start:0x000013E0 end:0x00001408
 
-stg36D_66.c:
-	.text       start:0x00045118 end:0x00046228
+OBJECT/o_spring.c:
+	.text       start:0x00045118 end:0x0004623C
 	.rodata     start:0x00001408 end:0x00001468
+	.bss        start:0x00000B70 end:0x00000B78
 
 stg36D_67.c:
 	.text       start:0x0004623C end:0x00047774

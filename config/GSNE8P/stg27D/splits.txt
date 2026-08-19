@@ -322,9 +322,10 @@ stg27D_78.c:
 	.text       start:0x0003DAE8 end:0x0003DE20
 	.rodata     start:0x00001238 end:0x00001260
 
-stg27D_79.c:
-	.text       start:0x0003DE8C end:0x0003EF9C
+OBJECT/o_spring.c:
+	.text       start:0x0003DE8C end:0x0003EFB0
 	.rodata     start:0x00001260 end:0x000012C0
+	.bss        start:0x00001000 end:0x00001008
 
 stg27D_80.c:
 	.text       start:0x0003EFB0 end:0x00040160

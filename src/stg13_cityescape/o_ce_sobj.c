@@ -15,6 +15,8 @@ extern NJS_POINT3 lbl_13_data_141294;
 
 // ^ extern
 // v in this file
+static void ObjectCesobjDest(task *tp);
+static void ObjectCesobjExec(task *tp);
 
 void ObjectCesobj(task *tp) {
   taskwk *twp = tp->twp;
@@ -39,7 +41,7 @@ void ObjectCesobj(task *tp) {
   }
 }
 
-void ObjectCesobjDest(task *tp) {
+static void ObjectCesobjDest(task *tp) {
   taskwk *twp = tp->twp;
   if (tp->work.ptr) {
     syFree(tp->work.ptr);
@@ -53,7 +55,7 @@ void ObjectCesobjDest(task *tp) {
   }
 }
 
-void ObjectCesobjExec(task *tp) {
+static void ObjectCesobjExec(task *tp) {
   taskwk *twp = tp->twp;
   if (!CheckRangeOut(tp)) {
     // if

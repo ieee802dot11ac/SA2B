@@ -330,9 +330,10 @@ stg51D_80.c:
 	.text       start:0x0003C060 end:0x0003C398
 	.rodata     start:0x000011C8 end:0x000011F0
 
-stg51D_81.c:
-	.text       start:0x0003C404 end:0x0003D514
+OBJECT/o_spring.c:
+	.text       start:0x0003C404 end:0x0003D528
 	.rodata     start:0x000011F0 end:0x00001250
+	.bss        start:0x00000DE8 end:0x00000DF0
 
 stg51D_82.c:
 	.text       start:0x0003D528 end:0x0003E87C

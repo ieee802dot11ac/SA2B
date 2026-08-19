@@ -394,9 +394,10 @@ stg59D_96.c:
 	.text       start:0x00046E28 end:0x000477CC
 	.rodata     start:0x000014D0 end:0x00001510
 
-stg59D_97.c:
-	.text       start:0x000479B8 end:0x00048AC8
+OBJECT/o_spring.c:
+	.text       start:0x000479B8 end:0x00048ADC
 	.rodata     start:0x00001510 end:0x00001570
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg59D_98.c:
 	.text       start:0x00048ADC end:0x0004ABDC

@@ -298,9 +298,10 @@ stg31D_72.c:
 	.text       start:0x000367F8 end:0x00036B30
 	.rodata     start:0x00000FA0 end:0x00000FC8
 
-stg31D_73.c:
-	.text       start:0x00036B9C end:0x00037CAC
+OBJECT/o_spring.c:
+	.text       start:0x00036B9C end:0x00037CC0
 	.rodata     start:0x00000FC8 end:0x00001028
+	.bss        start:0x00000B58 end:0x00000B60
 
 stg31D_74.c:
 	.text       start:0x00037CC0 end:0x00038E70

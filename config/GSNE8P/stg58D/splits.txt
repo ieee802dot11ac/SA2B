@@ -330,9 +330,10 @@ stg58D_80.c:
 	.text       start:0x00041210 end:0x000419F0
 	.rodata     start:0x00001370 end:0x000013A8
 
-stg58D_81.c:
-	.text       start:0x000419F0 end:0x00042B00
+OBJECT/o_spring.c:
+	.text       start:0x000419F0 end:0x00042B14
 	.rodata     start:0x000013A8 end:0x00001408
+	.bss        start:0x00000E18 end:0x00000E20
 
 stg58D_82.c:
 	.text       start:0x00042B14 end:0x000441B0

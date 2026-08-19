@@ -338,9 +338,10 @@ stg22D_82.c:
 	.text       start:0x0003DEBC end:0x0003E6F4
 	.rodata     start:0x00001288 end:0x000012C0
 
-stg22D_83.c:
-	.text       start:0x0003E8E0 end:0x0003F9F0
+OBJECT/o_spring.c:
+	.text       start:0x0003E8E0 end:0x0003FA04
 	.rodata     start:0x000012C0 end:0x00001320
+	.bss        start:0x00000D50 end:0x00000D58
 
 stg22D_84.c:
 	.text       start:0x0003FA04 end:0x00040D58

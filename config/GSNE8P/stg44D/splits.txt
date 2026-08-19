@@ -362,9 +362,10 @@ stg44D_88.c:
 	.text       start:0x0003FE74 end:0x000401AC
 	.rodata     start:0x00001270 end:0x00001298
 
-stg44D_89.c:
-	.text       start:0x00040218 end:0x00041328
+OBJECT/o_spring.c:
+	.text       start:0x00040218 end:0x0004133C
 	.rodata     start:0x00001298 end:0x000012F8
+	.bss        start:0x000011B0 end:0x000011B8
 
 stg44D_90.c:
 	.text       start:0x0004133C end:0x00042690

@@ -314,9 +314,10 @@ stg38D_76.c:
 	.text       start:0x0003F9D8 end:0x0003FD10
 	.rodata     start:0x00001308 end:0x00001330
 
-stg38D_77.c:
-	.text       start:0x0003FD7C end:0x00040E8C
+OBJECT/o_spring.c:
+	.text       start:0x0003FD7C end:0x00040EA0
 	.rodata     start:0x00001330 end:0x00001390
+	.bss        start:0x00000FF0 end:0x00000FF8
 
 stg38D_78.c:
 	.text       start:0x00040EA0 end:0x00042C58

@@ -250,9 +250,10 @@ boss_bigfootD_60.c:
 	.text       start:0x000369B4 end:0x00036B8C
 	.rodata     start:0x00001220 end:0x00001228
 
-boss_bigfootD_61.c:
-	.text       start:0x00036D78 end:0x00037E88
+OBJECT/o_spring.c:
+	.text       start:0x00036D78 end:0x00037E9C
 	.rodata     start:0x00001228 end:0x00001288
+	.bss        start:0x00000C68 end:0x00000C70
 
 boss_bigfootD_62.c:
 	.text       start:0x00037E9C end:0x000391F0

@@ -406,9 +406,10 @@ stg25D_99.c:
 	.text       start:0x00046E10 end:0x000477B4
 	.rodata     start:0x000014D0 end:0x00001510
 
-stg25D_100.c:
-	.text       start:0x000479A0 end:0x00048AB0
+OBJECT/o_spring.c:
+	.text       start:0x000479A0 end:0x00048AC4
 	.rodata     start:0x00001510 end:0x00001570
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg25D_101.c:
 	.text       start:0x00048AC4 end:0x0004ABC4

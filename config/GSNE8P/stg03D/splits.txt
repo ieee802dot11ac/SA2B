@@ -350,9 +350,10 @@ stg03D_86.c:
 	.text       start:0x00040758 end:0x00040A90
 	.rodata     start:0x00001378 end:0x000013A0
 
-stg03D_87.c:
-	.text       start:0x00040AFC end:0x00041C0C
+OBJECT/o_spring.c:
+	.text       start:0x00040AFC end:0x00041C20
 	.rodata     start:0x000013A0 end:0x00001400
+	.bss        start:0x00000DA0 end:0x00000DA8
 
 stg03D_88.c:
 	.text       start:0x00041C20 end:0x00042F74

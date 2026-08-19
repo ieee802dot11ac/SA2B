@@ -326,9 +326,10 @@ stg04D_79.c:
 	.text       start:0x00039ECC end:0x0003A204
 	.rodata     start:0x00001100 end:0x00001128
 
-stg04D_80.c:
-	.text       start:0x0003A270 end:0x0003B380
+OBJECT/o_spring.c:
+	.text       start:0x0003A270 end:0x0003B394
 	.rodata     start:0x00001128 end:0x00001188
+	.bss        start:0x00000D70 end:0x00000D78
 
 stg04D_81.c:
 	.text       start:0x0003B394 end:0x0003C6E8

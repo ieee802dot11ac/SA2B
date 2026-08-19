@@ -394,9 +394,10 @@ stg28D_96.c:
 	.text       start:0x0003DEDC end:0x0003E714
 	.rodata     start:0x00001360 end:0x00001398
 
-stg28D_97.c:
-	.text       start:0x0003E900 end:0x0003FA10
+OBJECT/o_spring.c:
+	.text       start:0x0003E900 end:0x0003FA24
 	.rodata     start:0x00001398 end:0x000013F8
+	.bss        start:0x00000720 end:0x00000728
 
 stg28D_98.c:
 	.text       start:0x0003FA24 end:0x00041100
