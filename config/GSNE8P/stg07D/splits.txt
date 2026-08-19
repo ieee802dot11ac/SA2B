@@ -342,9 +342,10 @@ stg07D_84.c:
 	.text       start:0x0003FF50 end:0x00040730
 	.rodata     start:0x000012C8 end:0x00001300
 
-stg07D_85.c:
-	.text       start:0x00040730 end:0x00041840
+OBJECT/o_spring.c:
+	.text       start:0x00040730 end:0x00041854
 	.rodata     start:0x00001300 end:0x00001360
+	.bss        start:0x00000F88 end:0x00000F90
 
 stg07D_86.c:
 	.text       start:0x00041854 end:0x00043468

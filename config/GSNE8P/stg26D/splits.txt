@@ -378,9 +378,10 @@ stg26D_92.c:
 	.text       start:0x000425A4 end:0x00042F48
 	.rodata     start:0x000012F8 end:0x00001338
 
-stg26D_93.c:
-	.text       start:0x00043134 end:0x00044244
+OBJECT/o_spring.c:
+	.text       start:0x00043134 end:0x00044258
 	.rodata     start:0x00001338 end:0x00001398
+	.bss        start:0x000010A8 end:0x000010B0
 
 stg26D_94.c:
 	.text       start:0x00044258 end:0x00046010

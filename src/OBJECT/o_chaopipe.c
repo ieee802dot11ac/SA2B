@@ -44,8 +44,8 @@ void ObjectChaoPipe(task *tp) {
 }
 
 static void ObjectChaoPipeDest(task *tp) {
-  tp->mwp = 0;
-  tp->fwp = 0;
+  tp->mwp = NULL;
+  tp->fwp = NULL;
 }
 
 static void ObjectChaoPipeExec(task *tp) {
@@ -68,29 +68,25 @@ static void ObjectChaoPipeExec(task *tp) {
         GetF1(tp) = 0.0f;
         GetF2(tp) = 0.08f;
 
-      } else {
-        if (twp->wtimer != 0) {
-          if (twp->wtimer == 270) {
-            NJS_POINT3 point;
-            njPushMatrixEx();
-            njUnitMatrix(NULL);
-            njTranslateV(NULL, &twp->pos);
-            njRotateZ(NULL, twp->ang.z);
-            njRotateX(NULL, twp->ang.x);
-            njRotateY(NULL, twp->ang.y);
-            njCalcPoint(NULL, &pipe_src_point, &point);
-            njPopMatrix(1);
-            fn_800260FC((u32)(twp->scl.x) % 3, point.x, point.y, point.z);
-            fn_8006539C(tp, 1);
-            SE_Call(0x100a, NULL, 0, 0);
-            _rename_SetFlag0x20(tp);
-          }
-          twp->wtimer--;
-        } else {
-          if (distance != 0) {
-            playerpwp[distance - 1]->action_sel = 42;
-          }
+      } else if (twp->wtimer != 0) {
+        if (twp->wtimer == 270) {
+          NJS_POINT3 point;
+          njPushMatrixEx();
+          njUnitMatrix(NULL);
+          njTranslateV(NULL, &twp->pos);
+          njRotateZ(NULL, twp->ang.z);
+          njRotateX(NULL, twp->ang.x);
+          njRotateY(NULL, twp->ang.y);
+          njCalcPoint(NULL, &pipe_src_point, &point);
+          njPopMatrix(1);
+          fn_800260FC((u32)(twp->scl.x) % 3, point.x, point.y, point.z);
+          fn_8006539C(tp, 1);
+          SE_Call(0x100a, NULL, 0, 0);
+          _rename_SetFlag0x20(tp);
         }
+        twp->wtimer--;
+      } else if (distance != 0) {
+        playerpwp[distance - 1]->action_sel = 42;
       }
     }
     CCL_Entry(tp);

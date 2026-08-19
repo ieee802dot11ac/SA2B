@@ -338,9 +338,10 @@ stg52D_82.c:
 	.text       start:0x00046BB4 end:0x00046EEC
 	.rodata     start:0x000012C8 end:0x000012F0
 
-stg52D_83.c:
-	.text       start:0x00046F58 end:0x00048068
+OBJECT/o_spring.c:
+	.text       start:0x00046F58 end:0x0004807C
 	.rodata     start:0x000012F0 end:0x00001350
+	.bss        start:0x00000DE0 end:0x00000DE8
 
 stg52D_84.c:
 	.text       start:0x0004807C end:0x000493D0

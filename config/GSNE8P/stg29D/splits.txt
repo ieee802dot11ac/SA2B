@@ -214,9 +214,10 @@ stg29D_51.c:
 	.text       start:0x0002669C end:0x000269D4
 	.rodata     start:0x00000BC8 end:0x00000BF0
 
-stg29D_52.c:
-	.text       start:0x00026A40 end:0x00027B50
+OBJECT/o_spring.c:
+	.text       start:0x00026A40 end:0x00027B64
 	.rodata     start:0x00000BF0 end:0x00000C50
+	.bss        start:0x00000D20 end:0x00000D28
 
 stg29D_53.c:
 	.text       start:0x00027B64 end:0x00028D14

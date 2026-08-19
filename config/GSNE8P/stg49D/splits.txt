@@ -346,9 +346,10 @@ stg49D_84.c:
 	.text       start:0x000400D4 end:0x000408B4
 	.rodata     start:0x000012C8 end:0x00001300
 
-stg49D_85.c:
-	.text       start:0x000408B4 end:0x000419C4
+OBJECT/o_spring.c:
+	.text       start:0x000408B4 end:0x000419D8
 	.rodata     start:0x00001300 end:0x00001360
+	.bss        start:0x00000D78 end:0x00000D80
 
 stg49D_86.c:
 	.text       start:0x000419D8 end:0x000435EC

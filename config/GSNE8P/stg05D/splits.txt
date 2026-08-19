@@ -318,9 +318,10 @@ stg05D_77.c:
 	.text       start:0x0003BB14 end:0x0003BE4C
 	.rodata     start:0x000010F0 end:0x00001118
 
-stg05D_78.c:
-	.text       start:0x0003BEB8 end:0x0003CFC8
+OBJECT/o_spring.c:
+	.text       start:0x0003BEB8 end:0x0003CFDC
 	.rodata     start:0x00001118 end:0x00001178
+	.bss        start:0x00000D68 end:0x00000D70
 
 stg05D_79.c:
 	.text       start:0x0003CFDC end:0x0003ED94

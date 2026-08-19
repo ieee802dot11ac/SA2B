@@ -23,7 +23,8 @@ def compare_funcs_line_by_line(control_lines:list[str], test_lines:list[str], ne
 
 
 def Get_symbols_to_update(control_file:Path, test_file:Path):
-    assert(control_file.exists() and test_file.exists())
+    assert(control_file.exists()), f"{control_file}"
+    assert(test_file.exists()), f"{test_file}"
     control_lines = control_file.read_text().split("\n")
     test_lines = test_file.read_text().split("\n")
 
@@ -192,16 +193,124 @@ def update_symbols(control_file:Path, control_symbols:Path, test_file:Path, test
     test_symbols.write_text("\n".join(symbol_file_lines))
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("control_file")
-    parser.add_argument("control_symbol_file")
-    parser.add_argument("test_file")
-    parser.add_argument("test_symbol_file")
-    args = parser.parse_args()
 
-    update_symbols(Path(args.control_file), Path(args.control_symbol_file), Path(args.test_file), Path(args.test_symbol_file))
+# def main():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("control_file")
+#     parser.add_argument("control_symbol_file")
+#     parser.add_argument("test_file")
+#     parser.add_argument("test_symbol_file")
+#     args = parser.parse_args()
+
+#     update_symbols(Path(args.control_file), Path(args.control_symbol_file), Path(args.test_file), Path(args.test_symbol_file))
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+rels_to_update = [
+    # "advertiseD",
+    # "boss_bigbogyD",
+    # "boss_bigfootD",
+    # "boss_fdogD",
+    # "Boss_GolemD",
+    # "Boss_GolemED",
+    # "boss_hotshotD",
+    # "boss_last1D",
+    # "Boss_Last2D",
+    # "CartD",
+    # "ChaoMain",
+    # "ChaoMotionsD",
+    # "ChaoStgDark",
+    # "ChaoStgEntrance",
+    # "ChaoStgHero",
+    # "ChaoStgKarate",
+    # "ChaoStgKinder",
+    # "ChaoStgLobby",
+    # "ChaoStgLobby000",
+    # "ChaoStgLobby00K",
+    # "ChaoStgLobby0DK",
+    # "ChaoStgLobbyH0K",
+    # "ChaoStgLobbyHDK",
+    # "ChaoStgNeut",
+    # "ChaoStgOdekake",
+    # "ChaoStgRace",
+    # "ChaoStgRaceDark",
+    # "ChaoStgRaceHero",
+    # "ChaoStgRaceNeut",
+    # "ChaoStgStadium",
+    # "EmblemGetD",
+    # "EndingD",
+    # "eventD",
+    # "mcwarnD",
+    # "otherprintD",
+    # "stg00D",
+    # "stg03D",
+    # "stg04D",
+    # "stg05D",
+    # "stg06D",
+    # "stg07D",
+    # "stg08D",
+    # "stg09D",
+    # "stg10D",
+    # "stg11D",
+    # "stg12D",
+    # "stg13D",
+    # "stg14D",
+    # "stg15D",
+    # "stg16D",
+    # "stg17D",
+    # "stg18D",
+    # "stg19D",
+    # "stg20D",
+    # "stg21D",
+    # "stg22D",
+    # "stg23D",
+    # "stg24D",
+    # "stg25D",
+    # "stg26D",
+    # "stg27D",
+    # "stg28D",
+    # "stg29D",
+    # "stg30D",
+    # "stg31D",
+    # "stg32D",
+    # "stg33D",
+    # "stg34D",
+    # "stg35D",
+    # "stg36D",
+    # "stg37D",
+    # "stg38D",
+    # "stg39D",
+    # "stg40D",
+    # "stg41D",
+    # "stg42D",
+    # "stg43D",
+    # "stg44D",
+    # "stg45D",
+    # "stg46D",
+    # "stg47D",
+    # "stg48D",
+    # "stg49D",
+    # "stg50D",
+    # "stg51D",
+    # "stg52D",
+    # "stg53D",
+    # "stg54D",
+    # "stg55D",
+    # "stg56D",
+    # "stg57D",
+    # "stg58D",
+    # "stg59D",
+    # "titleD",
+]
+
+control_rel = "stg13D"
+obj_to_link = "OBJECT/o_spring"
+
+control_asm_path = Path(f"./build/GSNE8P/{control_rel}/asm/{obj_to_link}.s")
+control_symbol_path = Path(f"./config/GSNE8P/{control_rel}/symbols.txt")
+
+for rel in rels_to_update:
+    target_asm = Path(f"./build/GSNE8P/{rel}/asm/{obj_to_link}.s")
+    target_symbols = Path(f"./config/GSNE8P/{rel}/symbols.txt")
+    update_symbols(control_asm_path, control_symbol_path, target_asm, target_symbols)

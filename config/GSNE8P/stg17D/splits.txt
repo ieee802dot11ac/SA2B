@@ -318,9 +318,10 @@ stg17D_77.c:
 	.text       start:0x0004469C end:0x000449D4
 	.rodata     start:0x000012E8 end:0x00001310
 
-stg17D_78.c:
-	.text       start:0x00044A40 end:0x00045B50
+OBJECT/o_spring.c:
+	.text       start:0x00044A40 end:0x00045B64
 	.rodata     start:0x00001310 end:0x00001370
+	.bss        start:0x00000DA0 end:0x00000DA8
 
 stg17D_79.c:
 	.text       start:0x00045B64 end:0x00047200

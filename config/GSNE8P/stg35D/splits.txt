@@ -282,9 +282,10 @@ stg35D_68.c:
 	.text       start:0x00045020 end:0x00045358
 	.rodata     start:0x00001410 end:0x00001438
 
-stg35D_69.c:
-	.text       start:0x000453C4 end:0x000464D4
+OBJECT/o_spring.c:
+	.text       start:0x000453C4 end:0x000464E8
 	.rodata     start:0x00001438 end:0x00001498
+	.bss        start:0x00000B78 end:0x00000B80
 
 stg35D_70.c:
 	.text       start:0x000464E8 end:0x00047A20

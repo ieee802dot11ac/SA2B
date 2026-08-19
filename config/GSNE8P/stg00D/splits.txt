@@ -190,9 +190,10 @@ stg00D_45.c:
 	.text       start:0x000201A8 end:0x00020380
 	.rodata     start:0x00000988 end:0x00000990
 
-stg00D_46.c:
-	.text       start:0x0002056C end:0x0002167C
+OBJECT/o_spring.c:
+	.text       start:0x0002056C end:0x00021690
 	.rodata     start:0x00000990 end:0x000009F0
+	.bss        start:0x00000AF0 end:0x00000AF8
 
 stg00D_47.c:
 	.text       start:0x00021690 end:0x000229E4

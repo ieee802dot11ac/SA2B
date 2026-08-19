@@ -390,9 +390,10 @@ stg32D_95.c:
 	.text       start:0x000415A0 end:0x000418D8
 	.rodata     start:0x000012F0 end:0x00001318
 
-stg32D_96.c:
-	.text       start:0x00041944 end:0x00042A54
+OBJECT/o_spring.c:
+	.text       start:0x00041944 end:0x00042A68
 	.rodata     start:0x00001318 end:0x00001378
+	.bss        start:0x00000DB0 end:0x00000DB8
 
 stg32D_97.c:
 	.text       start:0x00042A68 end:0x00043C18

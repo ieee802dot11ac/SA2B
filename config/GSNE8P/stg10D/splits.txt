@@ -350,9 +350,10 @@ stg10D_85.c:
 	.text       start:0x000408A4 end:0x00040BDC
 	.rodata     start:0x00001290 end:0x000012B8
 
-stg10D_86.c:
-	.text       start:0x00040C48 end:0x00041D58
+OBJECT/o_spring.c:
+	.text       start:0x00040C48 end:0x00041D6C
 	.rodata     start:0x000012B8 end:0x00001318
+	.bss        start:0x00001060 end:0x00001068
 
 stg10D_87.c:
 	.text       start:0x00041D6C end:0x000430C0
